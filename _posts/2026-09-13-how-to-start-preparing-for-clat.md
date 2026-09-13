@@ -2,7 +2,7 @@
 title: "How to Start Preparing for CLAT: Your First Month"
 standfirst: "Week one, month one, and what to deliberately ignore at the start. Concrete, unglamorous, and designed to survive a bad week."
 description: "Week one, month one, and what to deliberately ignore at the start. Concrete, unglamorous, and designed to survive a bad week."
-category: "How to prepare"
+section: "How to prepare"
 order: 2
 ---
 Most CLAT preparation fails in the first month — not from lack of effort, but from starting with the wrong things and burning out on a schedule nobody could keep.

@@ -2,7 +2,7 @@
 title: "Is Static GK Important for CLAT? How the Section Really Splits"
 standfirst: "Less than most candidates assume, but not zero. Static knowledge earns its place where it supports a current story — and rarely anywhere else."
 description: "Less than most candidates assume, but not zero. Static knowledge earns its place where it supports a current story — and rarely anywhere else."
-category: "Straight answers"
+section: "Straight answers"
 order: 5
 ---
 **Static GK matters less in CLAT than in almost any other competitive exam — but it is not worthless.** The distinction that makes this useful is *which* static knowledge pays.

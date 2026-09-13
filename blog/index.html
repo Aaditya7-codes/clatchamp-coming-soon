@@ -11,7 +11,7 @@ description: "Plain answers about the CLAT exam: what each section tests, how to
 
 {% assign cats = "Exam basics,Straight answers,Section guides,How to prepare,Admissions" | split: "," %}
 {% for c in cats %}
-  {% assign posts = site.posts | where: "category", c | sort: "order" %}
+  {% assign posts = site.posts | where: "section", c | sort: "order" %}
   {% if posts.size > 0 %}
   <section class="cat-block">
     <div class="cat-head"><h2>{{ c }}</h2><span class="count">{{ posts.size }} articles</span></div>

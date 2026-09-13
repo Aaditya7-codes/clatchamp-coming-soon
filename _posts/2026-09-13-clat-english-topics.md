@@ -2,7 +2,7 @@
 title: "CLAT English Topics and Question Types"
 standfirst: "Inference, tone, main idea and vocabulary in context — what each question type looks like, and what the correct answer usually has in common."
 description: "Inference, tone, main idea and vocabulary in context — what each question type looks like, and what the correct answer usually has in common."
-category: "Section guides"
+section: "Section guides"
 order: 3
 ---
 The [English section](/blog/what-is-the-english-section-in-clat/) is comprehension from 450-word passages — about 22–26 questions. There is no separate grammar component. Here are the question types, and what the right answer tends to look like in each.

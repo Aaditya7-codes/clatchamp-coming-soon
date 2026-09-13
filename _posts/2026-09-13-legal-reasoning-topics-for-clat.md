@@ -2,7 +2,7 @@
 title: "Legal Reasoning Topics for CLAT: What Keeps Recurring"
 standfirst: "The principle areas that appear most often — for familiarity, not memorisation. The exam always supplies the principle you need."
 description: "The principle areas that appear most often — for familiarity, not memorisation. The exam always supplies the principle you need."
-category: "Section guides"
+section: "Section guides"
 order: 1
 ---
 Before the list, the caveat that makes it useful: **CLAT supplies the principle in the passage.** You are never expected to recall a rule. This list is for familiarity — so that when a passage sets out a principle about negligence, the vocabulary and shape of the argument are not new to you.

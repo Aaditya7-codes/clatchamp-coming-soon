@@ -2,7 +2,7 @@
 title: "CLAT Maths Topics: The Complete List"
 standfirst: "Arithmetic, ratio, percentage, averages and data interpretation. Nothing past Class 10 — this is the whole list, not a summary of it."
 description: "Arithmetic, ratio, percentage, averages and data interpretation. Nothing past Class 10 — this is the whole list, not a summary of it."
-category: "Section guides"
+section: "Section guides"
 order: 5
 ---
 [Quantitative Techniques](/blog/what-are-quantitative-techniques-in-clat/) is roughly 10–14 questions, and the mathematics does not go beyond **Class 10**. This is the complete list rather than a selection from a longer one.

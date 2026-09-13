@@ -2,7 +2,7 @@
 title: "How to Prepare for CLAT English: A Reading Plan That Works"
 standfirst: "Reading beats vocabulary lists, and one exercise beats all the rest. Here is what to read, for how long, and how to check yourself without an answer key."
 description: "Reading beats vocabulary lists, and one exercise beats all the rest. Here is what to read, for how long, and how to check yourself without an answer key."
-category: "How to prepare"
+section: "How to prepare"
 order: 1
 ---
 The [English section](/blog/what-is-the-english-section-in-clat/) is comprehension, not grammar, and comprehension is built by reading. That sounds too simple to be a plan, so here is the specific version.

@@ -2,7 +2,7 @@
 title: "What Is Legal Reasoning in CLAT? How the Section Works"
 standfirst: "Legal Reasoning gives you a principle and a set of facts, and asks you to apply one to the other. No prior knowledge of law is needed — and using any can cost you marks."
 description: "Legal Reasoning gives you a principle and a set of facts, and asks you to apply one to the other. No prior knowledge of law is needed — and using any can cost you marks."
-category: "Exam basics"
+section: "Exam basics"
 order: 1
 ---
 Legal Reasoning is the section of CLAT that gives you a **legal principle** and a **set of facts**, then asks you to apply the first to the second. It is the largest section of the paper alongside Current Affairs, at roughly 28–32 of the 120 questions.

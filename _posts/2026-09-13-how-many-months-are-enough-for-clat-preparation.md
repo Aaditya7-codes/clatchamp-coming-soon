@@ -2,7 +2,7 @@
 title: "How Many Months Are Enough for CLAT Preparation? Plans for 6, 12 and 24"
 standfirst: "There is no single right answer. Here is what each runway realistically allows, and what you have to give up on the shortest one."
 description: "There is no single right answer. Here is what each runway realistically allows, and what you have to give up on the shortest one."
-category: "Straight answers"
+section: "Straight answers"
 order: 4
 ---
 There is no single number, and anyone who gives you one is selling something. What matters is what a given runway lets you do — and what it forces you to drop.

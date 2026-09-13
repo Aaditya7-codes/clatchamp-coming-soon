@@ -2,7 +2,7 @@
 title: "How to Prepare for CLAT Legal Reasoning: Read the Principle First"
 standfirst: "Apply the rule you were handed, strictly, and log every error by the type of trap. The method takes ten minutes to learn and months to stop abandoning."
 description: "Apply the rule you were handed, strictly, and log every error by the type of trap. The method takes ten minutes to learn and months to stop abandoning."
-category: "How to prepare"
+section: "How to prepare"
 order: 5
 ---
 Most candidates lose [Legal Reasoning](/blog/what-is-legal-reasoning-in-clat/) marks for the same reason, and it is not a gap in legal knowledge. It is the opposite: they know something about the law, and they let it override the principle printed in front of them.

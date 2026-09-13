@@ -2,7 +2,7 @@
 title: "Is Self-Study Enough for CLAT? What a Complete Plan Has to Include"
 standfirst: "It can be. But self-study fails in four predictable places, and a plan that does not name them is not a plan."
 description: "It can be. But self-study fails in four predictable places, and a plan that does not name them is not a plan."
-category: "Straight answers"
+section: "Straight answers"
 order: 3
 ---
 **Yes, self-study can be enough for CLAT.** It is enough for a good number of candidates every year.

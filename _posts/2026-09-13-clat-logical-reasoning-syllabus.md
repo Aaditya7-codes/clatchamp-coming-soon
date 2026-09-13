@@ -2,7 +2,7 @@
 title: "CLAT Logical Reasoning Syllabus: Every Question Type"
 standfirst: "Assumption, inference, strengthen, weaken, flaw and method — what each looks like on the paper, and the test that cracks each one."
 description: "Assumption, inference, strengthen, weaken, flaw and method — what each looks like on the paper, and the test that cracks each one."
-category: "Section guides"
+section: "Section guides"
 order: 4
 ---
 [CLAT's Logical Reasoning](/blog/what-is-logical-reasoning-in-clat/) is argument analysis from short passages — roughly 22–26 questions. Below is every type that appears, with the test that resolves it.

@@ -2,7 +2,7 @@
 title: "CLAT GK Topics: What Is Actually Asked"
 standfirst: "The categories CLAT's news passages really draw on, how far back current affairs is examined, and where static knowledge fits."
 description: "The categories CLAT's news passages really draw on, how far back current affairs is examined, and where static knowledge fits."
-category: "Section guides"
+section: "Section guides"
 order: 2
 ---
 [Current Affairs including General Knowledge](/blog/what-is-current-affairs-and-gk-in-clat/) is roughly 28–32 questions — about a quarter of CLAT. Here is what the passages actually cover.

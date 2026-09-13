@@ -2,7 +2,7 @@
 title: "What Type of Questions Are Asked in CLAT? One From Each Section"
 standfirst: "Every section is passage-based. Here is a representative question from each of the five, with the reasoning shown."
 description: "Every section is passage-based. Here is a representative question from each of the five, with the reasoning shown."
-category: "Exam basics"
+section: "Exam basics"
 order: 9
 ---
 Every section of CLAT is **passage-based**. You are given something to read — 400 to 500 words — and asked questions that depend on it. Nothing is standalone trivia or bare calculation.

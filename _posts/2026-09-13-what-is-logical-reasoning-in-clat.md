@@ -2,7 +2,7 @@
 title: "What Is Logical Reasoning in CLAT? Arguments, Not Puzzles"
 standfirst: "Logical Reasoning in CLAT is passage-based argument analysis — identifying conclusions, assumptions and flaws. It is not seating arrangements, blood relations or coding-decoding."
 description: "Logical Reasoning in CLAT is passage-based argument analysis — identifying conclusions, assumptions and flaws. It is not seating arrangements, blood relations or coding-decoding."
-category: "Exam basics"
+section: "Exam basics"
 order: 2
 ---
 Logical Reasoning in CLAT is **passage-based argument analysis**. You read a short piece of reasoning — usually 300 to 450 words — and answer questions about how it works: what it concludes, what it assumes, what would weaken it.

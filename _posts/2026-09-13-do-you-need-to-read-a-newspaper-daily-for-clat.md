@@ -2,7 +2,7 @@
 title: "Do You Need to Read a Newspaper Daily for CLAT? What Actually Helps"
 standfirst: "The most repeated advice in CLAT preparation, examined. Daily reading helps enormously; reading a newspaper cover to cover mostly does not."
 description: "The most repeated advice in CLAT preparation, examined. Daily reading helps enormously; reading a newspaper cover to cover mostly does not."
-category: "Straight answers"
+section: "Straight answers"
 order: 6
 ---
 **You need to read daily. You do not need to read a newspaper cover to cover.**

@@ -2,7 +2,7 @@
 title: "Is Coaching Necessary for CLAT? What It Gives You, and What It Doesn't"
 standfirst: "No, coaching is not necessary — plenty of candidates get into good NLUs without it. But it supplies four things that self-study has to replace deliberately."
 description: "No, coaching is not necessary — plenty of candidates get into good NLUs without it. But it supplies four things that self-study has to replace deliberately."
-category: "Straight answers"
+section: "Straight answers"
 order: 2
 ---
 **No. Coaching is not necessary for CLAT.** Candidates get into good National Law Universities every year without it.

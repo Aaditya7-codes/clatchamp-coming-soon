@@ -2,7 +2,7 @@
 title: "CLAT Exam Pattern: Sections, Marks and Timing"
 standfirst: "120 questions, two hours, five sections, pen and paper. One mark for a correct answer, 0.25 deducted for a wrong one, and no sectional cut-offs."
 description: "120 questions, two hours, five sections, pen and paper. One mark for a correct answer, 0.25 deducted for a wrong one, and no sectional cut-offs."
-category: "Exam basics"
+section: "Exam basics"
 order: 6
 verified: 2026-09-13
 ---

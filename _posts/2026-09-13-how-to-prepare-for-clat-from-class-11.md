@@ -2,7 +2,7 @@
 title: "How to Prepare for CLAT from Class 11: A Two-Year Plan"
 standfirst: "Two years is the comfortable runway. Here is how to use it — including the part most guides dodge, which is how any of this fits around your boards."
 description: "Two years is the comfortable runway. Here is how to use it — including the part most guides dodge, which is how any of this fits around your boards."
-category: "How to prepare"
+section: "How to prepare"
 order: 3
 ---
 Starting in Class 11 gives you roughly **two years**, and it is the best position to be in — not because you can cover more material, but because [reading ability](/blog/how-to-prepare-for-clat-english/) takes months to build and cannot be rushed at the end.

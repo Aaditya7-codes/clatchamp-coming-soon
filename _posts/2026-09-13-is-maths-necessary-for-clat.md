@@ -2,7 +2,7 @@
 title: "Is Maths Necessary for CLAT? What the Quantitative Section Actually Asks"
 standfirst: "Yes, there is a maths section — about ten questions of Class 10 arithmetic. No, you do not need to have studied maths in Class 11 or 12."
 description: "Yes, there is a maths section — about ten questions of Class 10 arithmetic. No, you do not need to have studied maths in Class 11 or 12."
-category: "Straight answers"
+section: "Straight answers"
 order: 1
 ---
 **Yes, CLAT has a maths section. No, you do not need to have taken maths in Class 11 or 12.**

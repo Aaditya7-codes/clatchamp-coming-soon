@@ -2,7 +2,7 @@
 title: "How Many Questions Are There in CLAT? 120, Split Five Ways"
 standfirst: "120 questions in 120 minutes, across five sections. Here is the split, and what it leaves you per question."
 description: "120 questions in 120 minutes, across five sections. Here is the split, and what it leaves you per question."
-category: "Exam basics"
+section: "Exam basics"
 order: 8
 verified: 2026-09-13
 ---

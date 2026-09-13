@@ -2,7 +2,7 @@
 title: "How to Prepare for CLAT from Class 12: The One-Year Version"
 standfirst: "One year is enough, and it requires triage. Here is what to prioritise, what to drop on purpose, and how to run it alongside boards."
 description: "One year is enough, and it requires triage. Here is what to prioritise, what to drop on purpose, and how to run it alongside boards."
-category: "How to prepare"
+section: "How to prepare"
 order: 4
 ---
 One year is enough time to prepare for CLAT. It is not enough time to do everything, so the plan has to include what you give up — deliberately, rather than by running out of weeks.

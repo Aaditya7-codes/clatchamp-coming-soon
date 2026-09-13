@@ -2,7 +2,7 @@
 title: "What Is Current Affairs & GK in CLAT? A Quarter of the Paper"
 standfirst: "Current Affairs and General Knowledge is passage-based, roughly 28–32 questions, and about a quarter of the marks. Most preparation material for it is the wrong shape."
 description: "Current Affairs and General Knowledge is passage-based, roughly 28–32 questions, and about a quarter of the marks. Most preparation material for it is the wrong shape."
-category: "Exam basics"
+section: "Exam basics"
 order: 4
 ---
 Current Affairs including General Knowledge is, alongside Legal Reasoning, the **largest section of CLAT** — roughly 28–32 of the 120 questions, about a quarter of the paper.

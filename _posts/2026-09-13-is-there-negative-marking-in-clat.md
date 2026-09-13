@@ -2,7 +2,7 @@
 title: "Is There Negative Marking in CLAT? Yes — and When Guessing Still Pays"
 standfirst: "0.25 marks are deducted for every wrong answer. That penalty is mild enough that eliminating even one option makes guessing worthwhile."
 description: "0.25 marks are deducted for every wrong answer. That penalty is mild enough that eliminating even one option makes guessing worthwhile."
-category: "Exam basics"
+section: "Exam basics"
 order: 7
 verified: 2026-09-13
 ---

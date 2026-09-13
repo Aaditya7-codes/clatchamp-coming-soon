@@ -2,7 +2,7 @@
 title: "What Is the English Section in CLAT? Comprehension, Not Grammar"
 standfirst: "The English section is comprehension from 450-word passages — inference, tone and main idea. Vocabulary lists and grammar drills are not where the marks are."
 description: "The English section is comprehension from 450-word passages — inference, tone and main idea. Vocabulary lists and grammar drills are not where the marks are."
-category: "Exam basics"
+section: "Exam basics"
 order: 5
 ---
 The English Language section of CLAT is a **comprehension test**. You read a passage of roughly 450 words and answer questions about what it says, what it implies, and how it says it. It is about 22–26 of the 120 questions, a fifth of the paper.

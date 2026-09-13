@@ -4,7 +4,7 @@ layout: default
 <article class="post">
   <a class="backlink" href="{{ '/blog/' | relative_url }}"><span aria-hidden="true">&#8592;</span> All posts</a>
   <header class="post-head">
-    <span class="cat">{{ page.category }}</span>
+    <span class="cat">{{ page.section }}</span>
     <h1>{{ page.title }}</h1>
     {% if page.standfirst %}<p class="standfirst">{{ page.standfirst }}</p>{% endif %}
     <p class="byline">
@@ -20,7 +20,7 @@ layout: default
   <div class="prose">{{ content }}</div>
 
   {% assign rel = site.posts | where_exp: "p", "p.url != page.url" %}
-  {% assign same = rel | where: "category", page.category %}
+  {% assign same = rel | where: "section", page.section %}
   {% if same.size > 0 %}
   <section class="related">
     <h2>Related</h2>

@@ -2,7 +2,7 @@
 title: "CLAT Syllabus: The Complete Breakdown"
 standfirst: "All five sections, what each covers, and how much it is worth. A map rather than a wall of text — each section links out to its own guide."
 description: "All five sections, what each covers, and how much it is worth. A map rather than a wall of text — each section links out to its own guide."
-category: "Exam basics"
+section: "Exam basics"
 order: 10
 ---
 The CLAT syllabus is defined less by topics than by **skills**. The Consortium does not publish a chapter list the way a board exam does; it publishes the five areas the paper tests and the approximate weight of each.
