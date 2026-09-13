@@ -1,0 +1,34 @@
+---
+layout: default
+---
+<article class="post">
+  <a class="backlink" href="{{ '/blog/' | relative_url }}"><span aria-hidden="true">&#8592;</span> All posts</a>
+  <header class="post-head">
+    <span class="cat">{{ page.category }}</span>
+    <h1>{{ page.title }}</h1>
+    {% if page.standfirst %}<p class="standfirst">{{ page.standfirst }}</p>{% endif %}
+    <p class="byline">
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%-d %B %Y" }}</time>
+      {% if page.verified %} · Last verified {{ page.verified | date: "%-d %B %Y" }}{% endif %}
+    </p>
+  </header>
+
+  {% if page.verified %}
+  <div class="verify"><strong>Checked against official sources.</strong> Figures on this page are taken from the Consortium of NLUs notification for CLAT 2027. Rules change between cycles — always confirm against the Consortium before acting on a deadline.</div>
+  {% endif %}
+
+  <div class="prose">{{ content }}</div>
+
+  {% assign rel = site.posts | where_exp: "p", "p.url != page.url" %}
+  {% assign same = rel | where: "category", page.category %}
+  {% if same.size > 0 %}
+  <section class="related">
+    <h2>Related</h2>
+    <ul>
+      {% for p in same limit: 4 %}
+      <li><a href="{{ p.url | relative_url }}">{{ p.title }}</a>{% if p.standfirst %}<span>{{ p.standfirst | truncate: 96 }}</span>{% endif %}</li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+</article>

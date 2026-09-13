@@ -1,0 +1,11 @@
+<header class="masthead">
+  <a class="brand" href="{{ '/' | relative_url }}" aria-label="CLAT Champ home">
+    <span class="bolt" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m13 2-9 12h7l-1 8 10-12h-7l1-8Z"/></svg></span>
+    <span class="nm">CLAT Champ</span>
+  </a>
+  <nav class="nav" aria-label="Main">
+    <a href="{{ '/' | relative_url }}"{% if page.url == '/' %} class="on" aria-current="page"{% endif %}>Home</a>
+    <a href="{{ '/blog/' | relative_url }}"{% if page.url contains '/blog' %} class="on" aria-current="page"{% endif %}>Blog</a>
+    <span class="chip-soon"><span class="dot" aria-hidden="true"></span>Coming soon</span>
+  </nav>
+</header>

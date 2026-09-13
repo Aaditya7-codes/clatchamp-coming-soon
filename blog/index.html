@@ -1,0 +1,28 @@
+---
+layout: page
+title: "CLAT Blog — Plain Answers About the Exam"
+description: "Plain answers about the CLAT exam: what each section tests, how to prepare, and how admission works. No book lists, no coaching pitch."
+---
+<header class="page-head">
+  <p class="kicker">The CLAT Champ blog</p>
+  <h1>Notes on preparing for CLAT.</h1>
+  <p>Plain answers about the exam itself — what each section tests, how to prepare for it, and how admission actually works. No book lists, no app rankings, nothing to sell you.</p>
+</header>
+
+{% assign cats = "Exam basics,Straight answers,Section guides,How to prepare,Admissions" | split: "," %}
+{% for c in cats %}
+  {% assign posts = site.posts | where: "category", c | sort: "order" %}
+  {% if posts.size > 0 %}
+  <section class="cat-block">
+    <div class="cat-head"><h2>{{ c }}</h2><span class="count">{{ posts.size }} articles</span></div>
+    <ol class="post-list">
+      {% for p in posts %}
+      <li class="post-row">
+        <div><h3><a href="{{ p.url | relative_url }}">{{ p.title }}</a></h3>
+        {% if p.standfirst %}<p class="deck">{{ p.standfirst }}</p>{% endif %}</div>
+      </li>
+      {% endfor %}
+    </ol>
+  </section>
+  {% endif %}
+{% endfor %}
