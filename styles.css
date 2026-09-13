@@ -4,3 +4,12 @@
 
 /* Keep supporting copy legible at every viewport. */
 .support{font-size:16px}.preview-heading,.preview-tag,.reading-label,.launch-label{font-size:12px}.preview-heading{flex-wrap:wrap}.takeaway strong,.pillar p{font-size:14px}.takeaway p{font-size:13px}
+
+/* 404 page: single-column hero and a return link. */
+.hero.notfound{grid-template-columns:1fr;max-width:760px;align-items:start}
+.hero.notfound h1{font-size:clamp(3.2rem,5.6vw,4.8rem)}
+.home-link{display:inline-flex;align-items:center;gap:10px;border:1px solid #79639488;border-radius:14px;padding:15px 20px;background:#35294d70;color:var(--ink);text-decoration:none;font-size:15px;font-weight:500}
+.home-link span{color:#c4b4ff}
+.home-link:hover{border-color:var(--accent)}
+.home-link:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
+@media(max-width:760px){.hero.notfound h1{font-size:min(3.6rem,15vw)}}
