@@ -24,11 +24,17 @@ The problem is that a great deal of material published during the period when th
 
 ## What there *is* a requirement about
 
-**Educational qualification, not age.** You need to have passed Class 12 with 45% (40% for SC and ST), or to be appearing for it in the current year and able to prove the result at admission. See [CLAT eligibility criteria](/blog/clat-eligibility-criteria/).
+**Educational qualification, not age.** You need to have passed Class 12 with 45% — or 40% if you are an SC, ST or PwD candidate — or to be appearing for it and able to prove the result at admission. See [CLAT eligibility criteria](/blog/clat-eligibility-criteria/).
 
-## A caution worth stating
+## The Consortium's own wording
 
-Age rules are exactly the kind of provision that changes between cycles, and this one has already changed once and been litigated. Before you make a decision that depends on it — particularly if you are applying some years after school — **check the Consortium's notification for the current cycle**. That is the only text that governs, and it takes two minutes.
+For CLAT 2027 the Consortium of NLUs states it plainly:
+
+> There is no upper age limit for candidates appearing for UG Programme for the CLAT 2027.
+
+That is the governing text, and it is unambiguous.
+
+One caution even so: age rules are exactly the kind of provision that changes between cycles, and this one has already been introduced, challenged and stayed once. If you are applying some years after school, check the notification for the cycle you are sitting. It takes two minutes.
 
 ## Where to go next
 

@@ -1,15 +1,15 @@
 ---
 title: "CLAT Eligibility Criteria: Marks, Subjects and Categories"
-standfirst: "45% in Class 12 for the general category, 40% for SC and ST, no subject requirement and no upper age limit. Candidates still sitting their boards may apply."
-description: "45% in Class 12 for the general category, 40% for SC and ST, no subject requirement and no upper age limit. Candidates still sitting their boards may apply."
+standfirst: "45% in Class 12, or 40% for SC, ST and PwD candidates. No subject requirement, no upper age limit, and candidates still sitting their boards may apply."
+description: "45% in Class 12, or 40% for SC, ST and PwD candidates. No subject requirement, no upper age limit, and candidates still sitting their boards may apply."
 section: "Admissions"
 order: 1
 verified: 2026-09-13
 ---
 For **CLAT UG**, you need to have passed Class 12 (or an equivalent examination) with a minimum of:
 
-- **45%** marks — General, OBC, PwD and other categories
-- **40%** marks — SC and ST
+- **45%** marks — all other candidates, including General and OBC
+- **40%** marks — **SC, ST and PwD** candidates
 
 There is **no upper age limit**, and **no subject requirement**. You may have taken any stream.
 
@@ -41,7 +41,11 @@ Eligibility differs: an LL.B. or equivalent, with minimum marks generally set hi
 
 ## Where the figures come from
 
-The exam date, fees and application deadline on this site are taken from the **Consortium of NLUs** notification for CLAT 2027. The percentage thresholds above are widely and consistently reported, but you should confirm them against the Consortium's own eligibility clause before relying on them — rules can change between cycles, and only the Consortium's text governs.
+These thresholds are taken directly from the Consortium of NLUs eligibility clause for CLAT 2027, which states the requirement as *"Forty five percent (45%) of marks or its equivalent in grade"*, and *"Forty Percent (40%) of marks or equivalent in case of candidates belonging to SC/ST/PwD categories"*.
+
+Note that **PwD candidates fall under the 40% threshold**, alongside SC and ST — a point several secondary sources get wrong by grouping PwD with the general requirement.
+
+Rules can change between cycles, and only the Consortium's own text governs. Verify against the current notification before acting on it.
 
 ## Where to go next
 

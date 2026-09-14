@@ -47,7 +47,7 @@ That is genuinely all. Eight months of this builds something no amount of Class 
 
 ## The part most guides dodge: your boards
 
-Class 11 and 12 are not free. Boards matter for [CLAT eligibility](/blog/clat-eligibility-criteria/) — you need 45% (40% for SC/ST) — and they matter for every alternative path you might take.
+Class 11 and 12 are not free. Boards matter for [CLAT eligibility](/blog/clat-eligibility-criteria/) — you need 45%, or 40% for SC, ST and PwD candidates — and they matter for every alternative path you might take.
 
 Three honest rules:
 

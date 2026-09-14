@@ -18,7 +18,7 @@ Counselling is where a CLAT rank becomes a seat, and it is the stage candidates 
 
 **4. Seat allotment rounds.** The Consortium allots seats by rank, category and preference. A seat is offered; you respond within the window.
 
-**5. Confirmation payment.** To hold an allotted seat you pay a confirmation amount — reported in recent cycles as around **₹30,000** for general-category candidates and **₹20,000** for SC, ST, OBC, BC, EWS and PwD candidates under the all-India category. Confirm the current figure against the Consortium, as amounts change.
+**5. Confirmation payment.** To hold an allotted seat you pay a confirmation amount, which differs by category. **The Consortium has not yet published these amounts for CLAT 2027** — they are announced with the counselling notification, after the result. Figures circulating now are carried over from previous cycles, and we are not going to reproduce them here: the amount runs to tens of thousands of rupees, and a wrong number is the kind of thing a family plans around.
 
 **6. Subsequent rounds**, as candidates withdraw and seats free up.
 
@@ -50,9 +50,11 @@ The important consequence: **floating is not risk-free in the way it sounds.** Y
 
 Class 10 and 12 certificates and mark sheets, the CLAT admit card and result, category certificate if applicable, domicile certificate where a state quota is claimed, photographs, and identity proof. Originals are required at admission.
 
-## Where these figures come from
+## Where this comes from
 
-The sequence above reflects how recent CLAT counselling cycles have run. The confirmation amounts are as widely reported and should be **verified against the Consortium's counselling notification** for your cycle before you rely on them — this is the page on this site most likely to move between years.
+The sequence above reflects how recent CLAT counselling cycles have run, not a published CLAT 2027 schedule — the Consortium releases counselling details after the exam, and it had not done so when this page was last checked.
+
+So treat this page as an explanation of **how counselling works**, not as a source for dates or amounts. Both come from the counselling notification when it is published, and this page will be updated then. It is the page on this site most likely to change between cycles.
 
 ## Where to go next
 
