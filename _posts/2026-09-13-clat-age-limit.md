@@ -1,43 +1,38 @@
 ---
 title: "CLAT Age Limit: There Isn't One"
-standfirst: "There is no upper age limit for CLAT. The belief that there is comes from a rule that was introduced and then stayed by the courts."
-description: "There is no upper age limit for CLAT. The belief that there is comes from a rule that was introduced and then stayed by the courts."
+standfirst: "CLAT UG 2027 has no upper age limit. Educational qualifications still apply, including the required Class 12 marks."
+description: "CLAT UG 2027 has no upper age limit. Educational qualifications still apply, including the required Class 12 marks."
 section: "Admissions"
 order: 2
-verified: 2026-09-13
+last_modified_at: 2026-09-18
 ---
-**There is no upper age limit for CLAT.** A candidate of any age who meets the [educational eligibility](/blog/clat-eligibility-criteria/) may sit the exam.
+**There is no upper age limit for CLAT UG 2027.** Age alone does not prevent you from applying; you must still meet the educational and other eligibility requirements.
 
-That is the answer. The rest of this page explains why so many people believe otherwise, because the confusion is genuine rather than careless.
+## Returning to study or taking another attempt
 
-## Where the confusion comes from
+If you completed school several years ago, check your qualification and marks against the current eligibility rules. A career change or previous CLAT attempt does not itself create an age restriction.
 
-An upper age limit was introduced for CLAT at one point — broadly 20 years for the general category and 22 for reserved categories. It was challenged, and the courts stayed its operation. The Consortium has since admitted candidates without an age bar.
+The published CLAT 2027 eligibility page does not state an attempt limit. That is a description of the current published criteria, not a promise that every future cycle will use identical rules.
 
-The problem is that a great deal of material published during the period when the rule existed is still online, still indexed, and still tells people they are too old. It is simply out of date.
+## What still needs checking
 
-## What this means in practice
+Confirm your Class 12 marks, nationality and any certificates required for the category you claim. Candidates sitting their qualifying examination in March or April 2027 may apply, but must provide proof of passing when admitted.
 
-- A 25-year-old who completed Class 12 years ago is eligible.
-- Someone changing career into law is eligible.
-- A candidate taking a second or third attempt is eligible, and there is **no cap on the number of attempts** either.
+## Avoid advice from the wrong cycle
 
-## What there *is* a requirement about
-
-**Educational qualification, not age.** You need to have passed Class 12 with 45% — or 40% if you are an SC, ST or PwD candidate — or to be appearing for it and able to prove the result at admission. See [CLAT eligibility criteria](/blog/clat-eligibility-criteria/).
-
-## The Consortium's own wording
-
-For CLAT 2027 the Consortium of NLUs states it plainly:
-
-> There is no upper age limit for candidates appearing for UG Programme for the CLAT 2027.
-
-That is the governing text, and it is unambiguous.
-
-One caution even so: age rules are exactly the kind of provision that changes between cycles, and this one has already been introduced, challenged and stayed once. If you are applying some years after school, check the notification for the cycle you are sitting. It takes two minutes.
+Check the year on any admissions guide before relying on it. For a future attempt, revisit that cycle's official eligibility page instead of assuming this page's rules still apply.
 
 ## Where to go next
 
-- [CLAT eligibility criteria](/blog/clat-eligibility-criteria/)
+- [educational eligibility](/blog/clat-eligibility-criteria/)
 - [CLAT registration: dates, fees and the form](/blog/clat-registration/)
 - [How many months are enough for CLAT preparation?](/blog/how-many-months-are-enough-for-clat-preparation/)
+
+- [CLAT exam pattern](/blog/clat-exam-pattern/)
+
+## Sources and scope
+
+Official references checked on 18 September 2026. Study routines and teaching examples are editorial suggestions, not official requirements.
+
+- [Official UG eligibility](https://clat2027.consortiumofnlus.ac.in/clat-2027/ug-eligibility.html)
+- [Official UG syllabus](https://clat2027.consortiumofnlus.ac.in/clat-2027/ug-syllabus.html)

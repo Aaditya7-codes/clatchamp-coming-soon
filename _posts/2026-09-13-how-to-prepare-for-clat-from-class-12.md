@@ -1,66 +1,61 @@
 ---
-title: "How to Prepare for CLAT from Class 12: The One-Year Version"
-standfirst: "One year is enough, and it requires triage. Here is what to prioritise, what to drop on purpose, and how to run it alongside boards."
-description: "One year is enough, and it requires triage. Here is what to prioritise, what to drop on purpose, and how to run it alongside boards."
+title: "How to Prepare for CLAT from Class 12: Plan for the Months You Have"
+standfirst: "Count back from the December exam, balance school work, and build a plan around your current skills."
+description: "Count back from the December exam, balance school work, and build a plan around your current skills."
 section: "How to prepare"
 order: 4
+last_modified_at: 2026-09-18
 ---
-One year is enough time to prepare for CLAT. It is not enough time to do everything, so the plan has to include what you give up — deliberately, rather than by running out of weeks.
+**For Class 12 CLAT preparation, count the months to the entrance exam and start with a diagnostic across all five sections.** Do not assume you have a full year after Class 12 begins.
 
-## The two constraints
+## Put the dates in the right order
 
-**Boards are in the same year.** They will take February and March almost entirely, and you should let them.
+CLAT 2027 is scheduled for **6 December 2026**. Candidates appearing for their qualifying examination in March or April 2027 can apply under the published eligibility rules. Those board examinations come after this CLAT sitting, not in the middle of a preparation year leading up to it.
 
-**Reading ability improves slowly.** Twelve months will move it, but not transform it. So the plan leans on the sections that respond faster.
+School tests and pre-boards can still overlap preparation. Use your school's actual calendar and the announced entrance date.
 
-## Months 1–3: foundations, fast
+## First two weeks: find the gaps
 
-- **Daily reading from day one.** One article, argument in one sentence, 15 minutes. Start now precisely because it is the slowest to improve. [How to prepare for CLAT English](/blog/how-to-prepare-for-clat-english/).
-- **Current affairs from day one.** Twelve months out, you are already inside the window the paper examines. A quarter of the paper, and the most compressible section on it.
-- **Learn [Legal Reasoning](/blog/how-to-prepare-for-clat-legal-reasoning/) method.** Technique, not knowledge — learnable in weeks, worth 28–32 questions.
-- **One diagnostic mock** in week two. You need to know where you stand.
+Read the format and syllabus. Try a full diagnostic or several sectional sets, recording accuracy and time. Establish reading and current-affairs study while revising basic maths and practising reasoning.
 
-## Months 4–6: sectional work
+Do not conclude from one difficult paper that a section cannot improve.
 
-- All five sections, allocated by your **error log** rather than by preference.
-- [Logical Reasoning](/blog/clat-logical-reasoning-syllabus/) properly — assumption and weaken questions especially.
-- [Quantitative Techniques](/blog/clat-maths-topics/) in a concentrated block. Four to six weeks of regular arithmetic handles most of it.
-- **Monthly mocks**, each properly analysed.
+## The main preparation period
 
-## Months 7–8: boards
+Rotate all five sections. Direct additional time towards errors that recur: weak vocabulary in context, unsupported inferences, missing GK background, rule exceptions or calculation mistakes.
 
-Drop to maintenance. Fifteen minutes of reading and ten of current affairs a day. Nothing else.
+Add timed sets and full mocks at intervals you can review properly. A standard mock is two hours, not three; use an extended duration when officially applicable. Review time depends on what needs resolving, not a compulsory ratio.
 
-This is not lost time if you protect the two daily habits — comprehension and current-affairs context both keep accumulating quietly. What you must not do is stop entirely for two months and expect to resume at the same level.
+## Fit the plan around school
 
-## Months 9–11: mocks and correction
+Reduce CLAT workload during intensive school assessments if necessary, then resume. Schedule school revision too; the qualifying examination still matters for eligibility. Avoid a plan that assumes February and March must occur before the December entrance exam.
 
-- **Fortnightly, then weekly mocks.**
-- Analysis takes longer than the mock. A three-hour mock deserves two hours of review; most candidates give it twenty minutes and wonder why scores plateau. [How to analyse a CLAT mock test](/blog/how-to-analyse-a-clat-mock-test/).
-- Current affairs revision in passage form.
+## Final weeks
 
-## Month 12: revision only
+Review recurring errors, revise current affairs and rehearse answer-sheet marking and a complete time budget. Keep practising comprehension: there is no evidence here for a fixed reading ceiling or a claim that a few weeks automatically fixes maths.
 
-No new material. Revise current affairs, re-read your error log, sit two or three timed mocks to hold rhythm, and sleep properly.
+## If you start late
 
-## What to drop on purpose
-
-**Vocabulary lists.** Low return per hour when you have few hours.
-
-**"Covering everything".** You cannot, and pretending otherwise wastes the weeks you do have.
-
-**The hardest Quantitative questions.** Secure the straightforward ones. Ten marks does not justify twenty hours.
-
-**Static GK beyond the supporting layer.** [Is static GK important for CLAT?](/blog/is-static-gk-important-for-clat/) sets out what earns its place.
-
-## The honest risk
-
-A candidate starting Class 12 with weak comprehension will feel a ceiling in English. Twelve months helps; it does not rebuild ten years of reading.
-
-That is not a reason to abandon the attempt. It is a reason to be strategic: [Current Affairs](/blog/what-is-current-affairs-and-gk-in-clat/) and [Legal Reasoning](/blog/what-is-legal-reasoning-in-clat/) together are half the paper, and both respond faster to a year of work than English does. Let them carry more.
+Choose achievable weekly tasks and evaluate progress. Fewer months require prioritisation, but they do not justify abandoning English or Quantitative Techniques by default. Use your diagnostic and later results to decide.
 
 ## Where to go next
 
+- [How to prepare for CLAT English](/blog/how-to-prepare-for-clat-english/)
+- [Legal Reasoning](/blog/how-to-prepare-for-clat-legal-reasoning/)
+- [Logical Reasoning](/blog/clat-logical-reasoning-syllabus/)
+- [Quantitative Techniques](/blog/clat-maths-topics/)
+- [How to analyse a CLAT mock test](/blog/how-to-analyse-a-clat-mock-test/)
+- [Is static GK important for CLAT?](/blog/is-static-gk-important-for-clat/)
+- [Current Affairs](/blog/what-is-current-affairs-and-gk-in-clat/)
+- [Legal Reasoning](/blog/what-is-legal-reasoning-in-clat/)
 - [How many months are enough for CLAT preparation?](/blog/how-many-months-are-enough-for-clat-preparation/)
 - [How to prepare for CLAT at home](/blog/how-to-prepare-for-clat-at-home/)
 - [Is coaching necessary for CLAT?](/blog/is-coaching-necessary-for-clat/)
+
+## Sources and scope
+
+Official references checked on 18 September 2026. Study routines and teaching examples are editorial suggestions, not official requirements.
+
+- [Official UG application and exam instructions](https://clat2027.consortiumofnlus.ac.in/clat-2027/ug-instructions.html)
+- [Official UG eligibility](https://clat2027.consortiumofnlus.ac.in/clat-2027/ug-eligibility.html)
+- [Official UG syllabus](https://clat2027.consortiumofnlus.ac.in/clat-2027/ug-syllabus.html)

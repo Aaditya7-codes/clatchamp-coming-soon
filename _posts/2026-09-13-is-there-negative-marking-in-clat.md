@@ -1,51 +1,53 @@
 ---
 title: "Is There Negative Marking in CLAT? Yes — and When Guessing Still Pays"
-standfirst: "0.25 marks are deducted for every wrong answer. That penalty is mild enough that eliminating even one option makes guessing worthwhile."
-description: "0.25 marks are deducted for every wrong answer. That penalty is mild enough that eliminating even one option makes guessing worthwhile."
+standfirst: "Wrong answers lose 0.25 marks. Understand the expected value of guessing and why a positive average is not a guaranteed gain."
+description: "Wrong answers lose 0.25 marks. Understand the expected value of guessing and why a positive average is not a guaranteed gain."
 section: "Exam basics"
 order: 7
-verified: 2026-09-13
+last_modified_at: 2026-09-18
 ---
-**Yes. CLAT deducts 0.25 marks for every wrong answer.** A correct answer earns 1 mark, and an unattempted question neither earns nor costs anything.
+**Yes. A wrong CLAT answer loses 0.25 marks; a correct answer earns 1 and an unanswered question scores 0.** The penalty affects both your score calculation and decisions under time pressure.
 
-That is the whole rule. What follows from it is more interesting than most candidates assume.
+## Calculate your score
 
-## The arithmetic of guessing
+Score = correct answers − 0.25 × wrong answers. For example, 80 correct and 20 wrong gives **75 marks**. If the paper has 120 questions, that example leaves 20 unanswered.
 
-Each question has four options. If you guess completely at random:
+## The expected value of a guess
 
-- You are right 1 time in 4 → **+1**
-- You are wrong 3 times in 4 → **3 × −0.25 = −0.75**
+For a question with four options and one correct answer, a genuinely random guess has:
 
-Net over four guesses: **+0.25 marks.** Slightly positive.
+**(1/4 × 1) + (3/4 × −0.25) = +0.0625 marks per question.**
 
-So even blind guessing is, on average, marginally better than leaving a blank. The margin is thin enough not to build a strategy on — but it settles the question of whether a random guess is *harmful*. It is not.
+Four such guesses have an expected total of +0.25. They do not guarantee one correct answer: all four could be wrong and lose a mark.
 
-Now eliminate one option. You are choosing from three:
+If you correctly eliminate one wrong option and choose equally among three, the expected value is **+1/6**, approximately **+0.167** per question. This is about 2.67 times the blind-guess expectation, not twice.
 
-- Right 1 time in 3 → **+1**
-- Wrong 2 times in 3 → **−0.5**
+If you correctly eliminate two wrong options, it becomes **+0.375** per question. These calculations assume the correct option remains available.
 
-Net over three guesses: **+0.5**, or about **+0.17 per question** — roughly double the blind-guess return.
+## The general threshold
 
-Eliminate two options and you are at even odds: right half the time for +1, wrong half for −0.25, netting **+0.375 per question**.
+If your probability of being correct is p, expected marks are **1.25p − 0.25**. The expectation is positive when p is above 20%, zero at 20% and negative below it.
 
-## What this means in practice
+You do not know p precisely for an individual question. Confidence can be misplaced, and an incorrect elimination can make matters worse.
 
-**Never leave a question blank because you are afraid of the penalty.** At a 0.25 deduction on four options, the maths does not support that caution.
+## What to do in practice
 
-**Elimination is worth more than recognition.** Ruling out one clearly wrong option doubles your expected return. On [Legal Reasoning](/blog/what-is-legal-reasoning-in-clat/), an option that relies on a fact the passage never stated can be struck immediately — no understanding of the principle required.
+First use time on questions you can answer and mark accurately. When deciding whether to guess, consider remaining time and the uncertainty. Positive expected marks are an average across possible outcomes, not protection against a lower score on this attempt.
 
-**The real cost of a hard question is time, not marks.** Four minutes on one question you get right earns 1 mark. Those same four minutes spent on four questions you are confident about earn 4. This is the calculation that matters, and it is covered in [time management in the CLAT exam](/blog/clat-time-management/).
+Practise elimination using the passage and the question's exact task. In a question asking for new information that strengthens an argument, an option is not wrong merely because the passage did not already state it.
 
-## A caution on the arithmetic above
-
-These are expected values across many questions, not a promise about any single one. They also assume genuinely random guessing. In practice candidates are drawn to options that *sound* right, which is exactly what wrong options are designed to do — so real-world guessing accuracy on questions you have not understood can be worse than one in four.
-
-The honest conclusion: guess rather than leave blanks, but do not let the arithmetic talk you into treating guessing as a strategy.
+Do not let last-second guessing disrupt answer-sheet alignment or prevent you from marking secure answers.
 
 ## Where to go next
 
+- [Legal Reasoning](/blog/what-is-legal-reasoning-in-clat/)
+- [time management in the CLAT exam](/blog/clat-time-management/)
 - [CLAT exam pattern](/blog/clat-exam-pattern/)
 - [How to analyse a CLAT mock test](/blog/how-to-analyse-a-clat-mock-test/)
-- [Time management in the CLAT exam](/blog/clat-time-management/)
+
+## Sources and scope
+
+Official references checked on 18 September 2026. Study routines and teaching examples are editorial suggestions, not official requirements.
+
+- [Official UG syllabus](https://clat2027.consortiumofnlus.ac.in/clat-2027/ug-syllabus.html)
+- [Official question-paper format](https://clat2027.consortiumofnlus.ac.in/clat-2027/ug-question-format.html)

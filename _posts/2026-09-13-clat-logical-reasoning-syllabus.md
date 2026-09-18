@@ -1,19 +1,20 @@
 ---
-title: "CLAT Logical Reasoning Syllabus: Every Question Type"
+title: "CLAT Logical Reasoning Syllabus: Question Types and Methods"
 standfirst: "Assumption, inference, strengthen, weaken, flaw and method — what each looks like on the paper, and the test that cracks each one."
 description: "Assumption, inference, strengthen, weaken, flaw and method — what each looks like on the paper, and the test that cracks each one."
 section: "Section guides"
 order: 4
+last_modified_at: 2026-09-18
 ---
-[CLAT's Logical Reasoning](/blog/what-is-logical-reasoning-in-clat/) is argument analysis from short passages — roughly 22–26 questions. Below is every type that appears, with the test that resolves it.
+[CLAT's Logical Reasoning](/blog/what-is-logical-reasoning-in-clat/) is argument analysis from short passages — roughly 22–26 questions. Below are useful question types to practise, not an exhaustive promise about the paper.
 
-**Before the list:** this section does not contain seating arrangements, blood relations, coding-decoding, or grid puzzles. Material sold for banking and SSC exams covers those and is the wrong preparation.
+**Before the list:** the published syllabus emphasises passage-based argument analysis. Prioritise those skills rather than treating generic puzzle drills as the syllabus.
 
 ## Main conclusion
 
 What is the author ultimately arguing?
 
-**The test:** ask *"and therefore what?"* of each candidate sentence. The conclusion is the one nothing else follows from. Evidence supports the conclusion; the conclusion supports nothing further in the passage.
+**The test:** ask *"and therefore what?"* of each candidate sentence. Find the overall claim the author wants you to accept. An intermediate conclusion can also support a later claim, so distinguish the main conclusion from supporting steps.
 
 ## Assumption
 
@@ -21,7 +22,7 @@ What must be true, though unstated, for the argument to work?
 
 **The test — negation.** Negate the option. If the argument collapses, it was a necessary assumption. If the argument survives, it was not.
 
-This single technique resolves most assumption questions, and it is the most reliable tool in the section.
+Use this for **necessary** assumptions. A question asking for a sufficient assumption has a different task: finding a premise that makes the conclusion follow.
 
 ## Strengthen
 
@@ -41,7 +42,7 @@ Note that weakening is not contradicting. An option that simply asserts the oppo
 
 What follows from the passage?
 
-**The test:** could this be false while everything in the passage is true? If yes, it is not an inference. As in [English](/blog/clat-english-topics/), the cautious option usually wins.
+**The test:** could this be false while everything in the passage is true? If yes, it is not an inference. As in [English](/blog/clat-english-topics/), match the strength of the answer to the evidence. For a best-supported inference, assess support rather than demanding deductive certainty.
 
 ## Flaw in the reasoning
 
@@ -49,7 +50,7 @@ What is wrong with the argument?
 
 The recurring ones are worth knowing by name:
 
-- **Correlation treated as causation** — the most tested flaw in the section
+- **Correlation treated as causation**
 - **Unrepresentative sample** — generalising from too few, or from a skewed group
 - **False dilemma** — presenting two options when others exist
 - **Circular reasoning** — assuming what is to be proved
@@ -64,9 +65,9 @@ How does the argument proceed — by analogy, by counter-example, by conceding a
 
 ## Parallel reasoning
 
-Which option's argument has the same structure as the passage's? Uncommon, and time-expensive when it appears. Strip both to their skeletons — *if A then B; A; therefore B* — and ignore the content.
+Which option's argument has the same structure as the passage's?  Strip both to their skeletons — *if A then B; A; therefore B* — and ignore the content.
 
-## The habit underneath all nine
+## The habit underneath these types
 
 State the argument in one sentence before reading the options: *"The author concludes X, because Y."* Nearly every type above becomes tractable once you have.
 
@@ -75,3 +76,10 @@ State the argument in one sentence before reading the options: *"The author conc
 - [What is Logical Reasoning in CLAT?](/blog/what-is-logical-reasoning-in-clat/)
 - [What is Legal Reasoning in CLAT?](/blog/what-is-legal-reasoning-in-clat/) — the close cousin
 - [How to analyse a CLAT mock test](/blog/how-to-analyse-a-clat-mock-test/)
+
+## Sources and scope
+
+Official references checked on 18 September 2026. Study routines and teaching examples are editorial suggestions, not official requirements.
+
+- [Official UG syllabus](https://clat2027.consortiumofnlus.ac.in/clat-2027/ug-syllabus.html)
+- [Official question-paper format](https://clat2027.consortiumofnlus.ac.in/clat-2027/ug-question-format.html)

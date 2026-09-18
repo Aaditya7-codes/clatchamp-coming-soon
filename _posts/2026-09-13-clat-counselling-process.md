@@ -1,63 +1,49 @@
 ---
 title: "CLAT Counselling Process, Round by Round"
-standfirst: "Registration, seat allotment, and what freeze, float and withdraw actually commit you to. The stage where good ranks get wasted."
-description: "Registration, seat allotment, and what freeze, float and withdraw actually commit you to. The stage where good ranks get wasted."
+standfirst: "How registration, allotment, freeze, float and exit work. The previous cycle explains the terms; CLAT 2027 dates and payment rules need their own notification."
+description: "How registration, allotment, freeze, float and exit work. The previous cycle explains the terms; CLAT 2027 dates and payment rules need their own notification."
 section: "Admissions"
 order: 9
-verified: 2026-09-13
+last_modified_at: 2026-09-18
 ---
-Counselling is where a CLAT rank becomes a seat, and it is the stage candidates understand least. Every year, people with workable ranks end up without the seat they could have had — usually through a preference list built carelessly, or a deadline missed.
+**CLAT counselling is the process of registering for seat allocation, receiving an offer and completing the required acceptance steps.** It is separate from applying for the exam. A rank alone does not complete admission.
 
-## The sequence
+The outline below explains the previous cycle's process. It is not a confirmed CLAT 2027 schedule or fee notice.
 
-**1. Result and rank published.** See [when will the CLAT result be declared?](/blog/when-will-clat-result-be-declared/)
+## Before allotment
 
-**2. Counselling registration.** Separate from your exam application, and it carries its own fee and deadline. Registering is not automatic — missing this step ends your candidacy regardless of rank.
+Check your candidate account for an invitation and follow the registration instructions. Submit preferences in your genuine order of choice, considering cost, course and location. Confirm the required number of preferences and whether changes are allowed under the current notice.
 
-**3. Preference filling.** You rank the participating universities in order. This list is the single most consequential thing you will do at this stage.
+## When a seat is offered
 
-**4. Seat allotment rounds.** The Consortium allots seats by rank, category and preference. A seat is offered; you respond within the window.
+**Freeze** means accepting that allocation without seeking an upgrade in later central rounds. It does not remove the need to complete payments and document checks.
 
-**5. Confirmation payment.** To hold an allotted seat you pay a confirmation amount, which differs by category. **The Consortium has not yet published these amounts for CLAT 2027** — they are announced with the counselling notification, after the result. Figures circulating now are carried over from previous cycles, and we are not going to reproduce them here: the amount runs to tens of thousands of rupees, and a wrong number is the kind of thing a family plans around.
+**Float** keeps you eligible for a higher listed preference, subject to the applicable round and payment rules. An upgrade replaces the earlier allocation; order preferences carefully.
 
-**6. Subsequent rounds**, as candidates withdraw and seats free up.
+**Exit** means leaving the counselling process. Refunds depend on the type of fee and the timing of exit. Do not assume all payments are refundable.
 
-**7. Admission at the university**, with original documents.
+## Payments and later rounds
 
-## Freeze, float and withdraw
+Counselling registration, confirmation and university fees are distinct. Use the CLAT 2027 notice for amounts, deadlines, adjustments and refunds. Previous-cycle amounts are deliberately not reproduced here.
 
-The three options that confuse people most. When a seat is allotted:
+Record every required action and deadline. A missed payment or response can affect an allocation. Keep receipts and confirm the status in your account.
 
-**Freeze** — you accept it and exit the process. You will not be considered in later rounds. Choose this when you are content with the allotted university.
+## Completing admission
 
-**Float** — you accept it provisionally but remain in the running for a university higher on your list. If a better preference opens up in a later round, you are moved to it. **You cannot move back.** Your current seat is released the moment you are upgraded.
+Follow the allotted university's document and payment instructions. Retain original qualification and applicable reservation certificates. The current notice determines the number of rounds and any final-round restrictions.
 
-**Withdraw** — you exit entirely, forfeiting the seat and usually part of the fee paid.
-
-The important consequence: **floating is not risk-free in the way it sounds.** You will not lose your seat by floating, but you can be moved to a university you ranked higher and then regret. Your preference order *is* your instruction — so rank honestly rather than aspirationally.
-
-## Where it goes wrong
-
-**A preference list too short.** Candidates list five universities, receive no allotment, and discover the process has moved on. Listing a university costs nothing.
-
-**Preferences by reputation alone.** Rank the list by what you actually want — location, fees, course, the five years you will live there — not by a league table you half-remember. [Cutoffs measure demand, not fit](/blog/clat-previous-year-cutoffs/).
-
-**Missing a window.** Allotment response windows are short, often a few days. Diarise every date the moment it is published, and check your candidate account rather than waiting to be told.
-
-**Assuming a category is automatic.** Reservation requires the certificate, produced when asked. Get the paperwork ready before the result, not after.
-
-## Documents to have ready
-
-Class 10 and 12 certificates and mark sheets, the CLAT admit card and result, category certificate if applicable, domicile certificate where a state quota is claimed, photographs, and identity proof. Originals are required at admission.
-
-## Where this comes from
-
-The sequence above reflects how recent CLAT counselling cycles have run, not a published CLAT 2027 schedule — the Consortium releases counselling details after the exam, and it had not done so when this page was last checked.
-
-So treat this page as an explanation of **how counselling works**, not as a source for dates or amounts. Both come from the counselling notification when it is published, and this page will be updated then. It is the page on this site most likely to change between cycles.
+**Historical reference:** the [Consortium's CLAT 2026 counselling instructions, hosted by a participating university](https://hnlu.ac.in/wp-content/uploads/2026/01/CLAT-2026-Counseling-Instructions-17th-Dec-2025.pdf) explain the terminology above. Use them for background only, not for CLAT 2027 deadlines or fees.
 
 ## Where to go next
 
-- [CLAT previous year cutoffs](/blog/clat-previous-year-cutoffs/)
+- [when will the CLAT result be declared?](/blog/when-will-clat-result-be-declared/)
+- [Cutoffs measure demand, not fit](/blog/clat-previous-year-cutoffs/)
 - [CLAT score vs rank](/blog/clat-score-vs-rank/)
 - [CLAT eligibility criteria](/blog/clat-eligibility-criteria/)
+
+## Sources and scope
+
+References checked on 18 September 2026. Historical counselling information is background only; use the current cycle’s notice for decisions.
+
+- [Official UG application and exam instructions](https://clat2027.consortiumofnlus.ac.in/clat-2027/ug-instructions.html)
+- [Official CLAT 2027 portal and notices](https://clat2027.consortiumofnlus.ac.in/clat-2027/)

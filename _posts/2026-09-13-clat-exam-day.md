@@ -1,57 +1,48 @@
 ---
-title: "CLAT Exam Day: What to Expect, Hour by Hour"
-standfirst: "Reporting, the hall, the OMR sheet, and the two hours themselves. Written to be read the night before."
-description: "Reporting, the hall, the OMR sheet, and the two hours themselves. Written to be read the night before."
+title: "CLAT Exam Day: Timings and a Practical Plan"
+standfirst: "The confirmed exam slot, how to plan your journey, and which details must come from your admit card."
+description: "The confirmed exam slot, how to plan your journey, and which details must come from your admit card."
 section: "Admissions"
 order: 5
-verified: 2026-09-13
+last_modified_at: 2026-09-18
 ---
-CLAT 2027 is on **Sunday, 6 December 2026, from 2:00 p.m. to 4:00 p.m.** Candidates in the PwD category are given until 4:40 p.m.
+**CLAT UG 2027 is scheduled for 6 December 2026, from 2:00 to 4:00 p.m.** The published instructions specify a 4:40 p.m. finish for eligible PwD candidates. Confirm your applicable timing and arrangements in the official instructions.
 
-An afternoon exam is unusual for school students, and it is worth taking seriously: your attention at 3:30 p.m. is not your attention at 9:00 a.m. If your mocks have all been morning ones, you have been rehearsing under conditions you will not face. Sit at least your last few [in the exam's own slot](/blog/how-to-analyse-a-clat-mock-test/).
+## Before travelling
 
-## The morning
+Read your admit card when issued. Use its reporting time, gate-closing time, centre address and permitted-item list. The exam start time is not your arrival deadline.
 
-Eat properly. Do not attempt to revise anything substantial — re-reading current affairs notes for twenty minutes is fine, starting a new topic is not.
+Plan the route and allow for delays. Prepare the required documents and permitted writing materials the night before. Do not assume the centre provides secure storage for bags or valuables.
 
-Leave earlier than you think you need to. Reporting time is well before the paper starts, and centres close their gates strictly.
+## At your seat
 
-## Arrival and verification
+Follow the invigilator's directions about opening the booklet and filling the answer sheet. Check your details and the booklet's completeness when instructed. Report printing problems promptly.
 
-Expect a queue. Your admit card and photo ID will be checked, your belongings deposited outside the hall, and you will be directed to an allotted seat. Carry only [what is permitted](/blog/documents-required-on-clat-exam-day/).
+## During the paper
 
-Verification takes time and is usually the most stressful part of the day. It is also entirely procedural — nothing about it is a test.
+Use the section order and time allocation you have tested in mocks. Budget for transferring answers to the OMR sheet and checking question numbers; do not postpone every marking decision to the final minute.
 
-## Before the paper starts
+If you are stuck, compare the time a question is taking with the remaining paper. Move on when appropriate and return if time permits. Guessing has uncertainty even when its mathematical expected value is positive.
 
-You will be given the OMR sheet and question booklet, and time to fill in your particulars. Do this carefully: roll number, booklet series, signature.
+## After the exam
 
-**Check the booklet.** Confirm it is complete, correctly printed and that the series matches what you have written. Raise anything wrong immediately — it cannot be fixed at 4:00 p.m.
+Use the Consortium's notifications for answer keys, any objection process and results. Do not assume earlier cycles' objection fees or refund rules still apply. If an objection window is announced, read its evidence requirements and deadline.
 
-## The two hours
-
-You have [120 minutes for 120 questions](/blog/how-many-questions-are-there-in-clat/), no sectional time limits, and no sectional cut-offs. Follow the order and budget you rehearsed — this is not the moment to improvise. [Time management in the CLAT exam](/blog/clat-time-management/) sets out a workable allocation.
-
-**Mark the OMR as you finish each block**, not at the end. Candidates who leave all marking to the last ten minutes lose marks to rushing, and occasionally to a shifted row, which can cost an entire section.
-
-**Do not leave blanks at the end.** With [0.25 deducted for a wrong answer](/blog/is-there-negative-marking-in-clat/) out of four options, a guess carries a slightly positive expected value, and an eliminated option makes it clearly worth marking.
-
-## If a passage defeats you
-
-Move on. A passage that has beaten one careful reading will usually beat a second, and the four minutes cost you more elsewhere. Come back if time allows.
-
-## Afterwards
-
-Provisional answer keys are usually released within days, with a window to challenge specific questions — normally on payment of a fee per question, refunded if your objection is upheld. If you keep a record of questions you found doubtful, note them down the same evening while they are fresh.
-
-Then leave it alone. Nothing you do between the paper and [the result](/blog/when-will-clat-result-be-declared/) changes the outcome.
-
-## Where this comes from
-
-Timings are from the **Consortium of NLUs** instructions for CLAT 2027. Hall procedure varies slightly between centres, and your admit card carries the binding instructions for your cycle.
+The journey and pacing suggestions here are preparation advice. Your admit card and current official directions govern admission to the hall and conduct during the exam.
 
 ## Where to go next
 
-- [Documents required on CLAT exam day](/blog/documents-required-on-clat-exam-day/)
-- [When will the CLAT result be declared?](/blog/when-will-clat-result-be-declared/)
+- [in the exam's own slot](/blog/how-to-analyse-a-clat-mock-test/)
+- [what is permitted](/blog/documents-required-on-clat-exam-day/)
+- [120 minutes for 120 questions](/blog/how-many-questions-are-there-in-clat/)
+- [Time management in the CLAT exam](/blog/clat-time-management/)
+- [0.25 deducted for a wrong answer](/blog/is-there-negative-marking-in-clat/)
+- [the result](/blog/when-will-clat-result-be-declared/)
 - [CLAT counselling process](/blog/clat-counselling-process/)
+
+## Sources and scope
+
+Official references checked on 18 September 2026. Study routines and teaching examples are editorial suggestions, not official requirements.
+
+- [Official UG application and exam instructions](https://clat2027.consortiumofnlus.ac.in/clat-2027/ug-instructions.html)
+- [Official question-paper format](https://clat2027.consortiumofnlus.ac.in/clat-2027/ug-question-format.html)

@@ -1,73 +1,55 @@
 ---
 title: "How to Analyse a CLAT Mock Test Properly"
-standfirst: "Sitting the mock is the easy half. The error log is where the marks come from, and it is the part almost everyone skips."
-description: "Sitting the mock is the easy half. The error log is where the marks come from, and it is the part almost everyone skips."
+standfirst: "Review mistakes, guesses and omissions, then turn recurring problems into the next week’s practice plan."
+description: "Review mistakes, guesses and omissions, then turn recurring problems into the next week’s practice plan."
 section: "How to prepare"
 order: 8
+last_modified_at: 2026-09-18
 ---
-Most candidates sit mocks diligently and analyse them badly. They check the score, glance at the wrong answers, think *"ah, of course"*, and move on — and then wonder why the score has not moved in two months.
+**Analyse a CLAT mock by checking why each mistake, guess or omission happened, then choose specific practice to address the pattern.** Keep the score, but do not stop at it.
 
-**Analysis should take longer than the mock.** Two hours to sit, two to three hours to review. If that ratio sounds wrong, it is the single most valuable thing on this page.
+## Sit the mock under useful conditions
 
-## Sitting it properly
+Use the standard two-hour duration, or your officially applicable extended duration. For exam rehearsal, work without pauses or external help. Practise some mocks in the announced exam slot.
 
-The analysis is only worth as much as the conditions.
+Keep confidence notes on permitted practice material, not as extra marks on a real OMR sheet. These notes help distinguish a secure answer from a lucky guess.
 
-- **Full two hours, timed, in one sitting.** No pausing.
-- **Afternoon, ideally 2:00 to 4:00 p.m.** — [the actual exam slot](/blog/clat-exam-pattern/). Your attention at 3:30 p.m. is not your attention at 9:00 a.m., and you need to know what it feels like.
-- **Phone away. No looking anything up.**
-- **Mark your confidence** on each question as you go — a tick for sure, a dot for guessed. This takes two seconds and makes the analysis far richer.
+## Review five groups
 
-## The four buckets
+1. **Correct and confident:** check the reasoning briefly, especially if the question took too long.
+2. **Correct but guessed:** explain the answer before treating the skill as secure.
+3. **Wrong, now understood:** record the specific error.
+4. **Wrong, still unclear:** revisit the passage and explanation; seek clarification if needed.
+5. **Unanswered:** distinguish time pressure from missing knowledge or a deliberate skip.
 
-Every question goes into one of four:
+## Make an error log
 
-**1. Right, and confident.** Move on. No time needed.
+For each issue, record the question, the reason and one corrective action. Useful tags include misread qualifier, missing GK fact, wrong base in a percentage, ignored exception, unsupported inference and OMR mismatch.
 
-**2. Right, but guessed.** The dangerous one. This is a mark you will not reliably get again, and the score is flattering you. Treat it as a wrong answer for study purposes.
+After several mocks, count the recurring issues. There is no fixed number of entries or two-error rule that applies to everyone.
 
-**3. Wrong, and you understand why.** Log it and correct the pattern.
+## Track several measures
 
-**4. Wrong, and you do not understand why.** The highest-value questions on the paper. Spend real time here.
+Record score, accuracy among attempted questions, attempt count and time by section. Compare reasonably similar papers. A percentile is additional context when the cohort and testing conditions are meaningful; it is not a guaranteed prediction of your exam rank.
 
-Most candidates analyse only bucket three. Bucket two is where the hidden fragility sits.
+Higher accuracy with fewer attempts could reflect better selection, slower work or a harder paper. Inspect timings and omissions before diagnosing the cause.
 
-## The error log
+## Reattempt and adjust
 
-For every question in buckets two, three and four, write **one line on why you went wrong**. Not the correct answer — the reason.
+After a gap, retry wrong, guessed and previously unanswered questions without the explanation. Then use fresh questions to see whether the correction transfers beyond a remembered answer.
 
-Use a fixed set of tags so patterns become countable:
-
-- **Misread the passage**
-- **Used outside knowledge** — especially in [Legal Reasoning](/blog/how-to-prepare-for-clat-legal-reasoning/)
-- **Added fact** — relied on something not stated
-- **Ignored exception**
-- **Too strong an inference** — picked the ambitious option
-- **Ran out of time**
-- **Careless** — knew it, misread the question or mis-marked
-
-After three mocks you will have perhaps sixty entries and a clear ranking. Almost everyone finds two tags account for over half their losses. Those two are your syllabus for the next month — not a general revision plan, those two.
-
-## What the score does and does not tell you
-
-Raw score is noise at the level of a few marks. What to track instead:
-
-- **Accuracy per section** — right as a share of attempted
-- **Attempt rate** — how many you reached at all
-- **Percentile**, against a cohort large enough to mean something
-
-A score that stays at 78 while accuracy rises and attempts fall is a **time management** problem, not a knowledge problem, and it needs a completely different fix. See [time management in the CLAT exam](/blog/clat-time-management/).
-
-## The re-attempt
-
-A week later, redo only the questions you got wrong — without looking at your notes. If you get them wrong again, the correction never took. That second pass is worth more than a fresh mock.
-
-## How often
-
-Monthly early on, fortnightly from about four months out, weekly in the final six weeks. More is not better: a mock you have not analysed is a mock you have not benefited from, and analysing properly takes hours.
+Allow enough review time to resolve the useful lessons; it may be shorter or longer than the mock. Increase frequency only when you can still review and correct. Weekly mocks near the exam are one possible schedule, not a universal requirement.
 
 ## Where to go next
 
-- [Time management in the CLAT exam](/blog/clat-time-management/)
-- [How to prepare for CLAT Legal Reasoning](/blog/how-to-prepare-for-clat-legal-reasoning/)
+- [the actual exam slot](/blog/clat-exam-pattern/)
+- [Legal Reasoning](/blog/how-to-prepare-for-clat-legal-reasoning/)
+- [time management in the CLAT exam](/blog/clat-time-management/)
 - [Is self-study enough for CLAT?](/blog/is-self-study-enough-for-clat/)
+
+## Sources and scope
+
+Official references checked on 18 September 2026. Study routines and teaching examples are editorial suggestions, not official requirements.
+
+- [Official UG application and exam instructions](https://clat2027.consortiumofnlus.ac.in/clat-2027/ug-instructions.html)
+- [Official question-paper format](https://clat2027.consortiumofnlus.ac.in/clat-2027/ug-question-format.html)

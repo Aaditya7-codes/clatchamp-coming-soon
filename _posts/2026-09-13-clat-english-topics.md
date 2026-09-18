@@ -4,8 +4,9 @@ standfirst: "Inference, tone, main idea and vocabulary in context — what each 
 description: "Inference, tone, main idea and vocabulary in context — what each question type looks like, and what the correct answer usually has in common."
 section: "Section guides"
 order: 3
+last_modified_at: 2026-09-18
 ---
-The [English section](/blog/what-is-the-english-section-in-clat/) is comprehension from 450-word passages — about 22–26 questions. There is no separate grammar component. Here are the question types, and what the right answer tends to look like in each.
+The [English section](/blog/what-is-the-english-section-in-clat/) is comprehension from 450-word passages — about 22–26 questions. The published syllabus focuses on comprehension and language skills in context. Here are the question types, and what the right answer tends to look like in each.
 
 ## Main idea
 
@@ -19,17 +20,17 @@ The trap is that the most vivid part of a passage is often not its main point. A
 
 *"Which of the following can be inferred from the passage?"*
 
-The most-failed type, because candidates reward themselves for cleverness. An inference must follow from the passage — not be consistent with it, not be plausible given it.
+An inference must have support in the passage. Something merely possible or compatible with the text need not be the best-supported answer.
 
-**The right answer** is nearly always the modest one. Options with *always*, *never*, *all*, *proves* are usually too strong to survive.
+**The right answer** matches the strength of the evidence. Check words such as *always*, *never* and *all*, but do not reject them automatically if the passage supports them.
 
 ## Tone and attitude
 
 *"The author's attitude towards X can best be described as —"*
 
-Tone lives in word choice, and often in a single phrase. An author who calls a policy "well-intentioned" has told you something quite specific: approval of the motive, doubt about the result.
+Tone lives in word choice, and often in a single phrase. Calling a policy "well-intentioned" recognises its motive; the surrounding sentences determine whether the author also doubts its results.
 
-**The right answer** is rarely at the extremes. *Scathing* and *euphoric* are seldom correct; *sceptical*, *measured*, *qualified approval* frequently are.
+**The right answer** describes the language actually used. Strong or restrained tone labels can both be correct; support the choice with evidence.
 
 ## Vocabulary in context
 
@@ -51,14 +52,21 @@ The overlap with [Logical Reasoning](/blog/what-is-logical-reasoning-in-clat/) i
 
 ## What the passages are drawn from
 
-Non-fiction: essays, journalism, historical and cultural writing, occasionally literary criticism. Argumentative prose rather than narrative — which is why reading editorials and long-form essays is better rehearsal than reading novels.
+The official syllabus includes **fiction and non-fiction**, contemporary or historically significant. Read both: narratives can test perspective, implication and tone just as argumentative writing can test a claim.
 
 ## The habit that improves all six types
 
-After each passage, before the options: state the main argument in one sentence. Every question type above becomes easier once you can. It is the same instruction in [how to prepare for CLAT English](/blog/how-to-prepare-for-clat-english/), because it is the whole method.
+After reading, state the central idea in one sentence, then return to the evidence needed for each question. Use this alongside practice and answer review; no single exercise covers every skill. See [how to prepare for CLAT English](/blog/how-to-prepare-for-clat-english/).
 
 ## Where to go next
 
 - [What is the English section in CLAT?](/blog/what-is-the-english-section-in-clat/)
 - [How to prepare for CLAT English](/blog/how-to-prepare-for-clat-english/)
 - [How to improve reading speed for CLAT](/blog/how-to-improve-reading-speed-for-clat/)
+
+## Sources and scope
+
+Official references checked on 18 September 2026. Study routines and teaching examples are editorial suggestions, not official requirements.
+
+- [Official UG syllabus](https://clat2027.consortiumofnlus.ac.in/clat-2027/ug-syllabus.html)
+- [Official question-paper format](https://clat2027.consortiumofnlus.ac.in/clat-2027/ug-question-format.html)

@@ -1,63 +1,60 @@
 ---
 title: "Time Management in the CLAT Exam: A Per-Section Budget"
-standfirst: "Two hours, 120 questions, no sectional time limits. Here is how to spend them — and when to abandon a passage."
-description: "Two hours, 120 questions, no sectional time limits. Here is how to spend them — and when to abandon a passage."
+standfirst: "A worked 120-minute allocation, including review time, and a method for adapting it to your mock results."
+description: "A worked 120-minute allocation, including review time, and a method for adapting it to your mock results."
 section: "How to prepare"
 order: 10
+last_modified_at: 2026-09-18
 ---
-CLAT gives you **120 minutes for 120 questions** and — this is the part most candidates never plan around — **no sectional time limits**. The two hours are yours to distribute however you like.
+**Plan CLAT time by section, including reading, answering and OMR marking, and make the total fit 120 minutes.** Use mocks to adjust the allocation rather than assuming every question or passage needs the same time.
 
-That is a real strategic lever, and almost nobody uses it deliberately.
+## A worked starting budget
 
-## Think in blocks, not questions
+This is an illustrative practice plan, not an official allocation or a promise of the best order.
 
-"One minute per question" is arithmetically true and practically misleading. Questions arrive in sets attached to passages. A [Legal Reasoning](/blog/what-is-legal-reasoning-in-clat/) passage carries four to six questions; a [GK passage](/blog/what-is-current-affairs-and-gk-in-clat/) similar.
+| Section | Suggested time |
+|---|---|
+| Current Affairs & GK | 20 min |
+| Legal Reasoning | 30 min |
+| English Language | 25 min |
+| Logical Reasoning | 25 min |
+| Quantitative Techniques | 15 min |
+| Final checks / review | 5 min |
+| **Total** | **120 min** |
 
-The real unit is a **block**: roughly 450 words to read, plus five questions. About six minutes.
+The five section budgets include reading, calculation, answering and transferring answers. If you add five minutes to one, remove five elsewhere. Candidates entitled to extra time should build a plan around their applicable duration.
 
-Two hours is therefore about **20 to 24 blocks**. Holding that number in your head is far more useful than a per-question count, because it tells you what re-reading a passage actually costs.
+## Plan around the actual sets
 
-## A workable budget
+A set includes reading and its attached questions, but lengths and question counts vary. There is no official fixed count of twenty passages or universal six-minute set allowance. Use the actual mock to see how many sets your budget accommodates.
 
-| Section | Questions | Suggested time |
-|---|---|---|
-| Current Affairs & GK | 28–32 | 25–28 min |
-| Legal Reasoning | 28–32 | 32–35 min |
-| English Language | 22–26 | 24–26 min |
-| Logical Reasoning | 22–26 | 24–26 min |
-| Quantitative Techniques | 10–14 | 10–12 min |
-| Buffer / review | — | 5–8 min |
+## Choose an order you have tested
 
-Legal Reasoning gets more minutes per question than GK because applying a principle takes longer than recalling context. Quantitative gets the least — it is a tenth of the paper.
+Try a strong section first, then compare outcomes over similar mocks. Starting with GK may suit some students; difficult GK questions can still consume time. Keep a clear checkpoint for moving on.
 
-Adjust with your own mock data. These are starting numbers, not rules.
+## When to move on
 
-## Which section first?
+If you remain stuck after a focused attempt, consider other available marks. A reread can be useful when it resolves a specific uncertainty; repeatedly restarting the whole passage without a plan can use up the section budget.
 
-There is no correct order, but there is a principle: **start with a section where you are reliably strong.** The first ten minutes set your confidence for the remaining hundred and ten, and a brutal opening passage does real damage to the rest of the paper.
+## Protect answer-sheet time
 
-Many candidates open with [Current Affairs](/blog/what-is-current-affairs-and-gk-in-clat/) — you either have the context or you do not, so it resolves fast and banks marks early. Whatever you choose, **decide before exam day** and rehearse it in mocks. The hall is not the place to be inventing a strategy.
+Practise marking the OMR steadily and checking that question numbers match. Reserve the final buffer for checks and remaining decisions. Random guessing has a positive expected value under four equally likely options and +1/−0.25 marking, but an individual guess can lose marks. Do not sacrifice secure answers or accurate marking to rush guesses.
 
-## When to abandon a passage
+## Review the budget after each mock
 
-The hardest discipline on the paper.
-
-**The rule: if you have read a passage once and still cannot state what it is about, move on.** Come back if time permits. A passage that has defeated one careful reading will usually defeat a second, and the second costs four minutes you could spend banking three marks elsewhere.
-
-The arithmetic is stark. Four minutes on one hard question you eventually get right earns **1 mark**. The same four minutes across four questions you find straightforward earns **4**. Sunk cost is the enemy here — the minutes already spent are gone whether you continue or not.
-
-## Marking and the last ten minutes
-
-Mark answers on the OMR as you finish each block, not at the end. Candidates who leave all marking to the last ten minutes lose marks to rushing, and occasionally to a shifted row — an error that can cost an entire section.
-
-Reserve the final five minutes to fill anything still blank. Given [the marking scheme](/blog/is-there-negative-marking-in-clat/), a blind guess has a slightly positive expected value, and an eliminated option makes it clearly worthwhile. There is no reason to leave a blank at the end of the paper.
-
-## Practise the budget, not just the questions
-
-Every mock should be sat with the intended time allocation, and your analysis should include whether you kept to it. If you consistently overrun on one section, that is a finding as important as any wrong answer — and it is the one [mock analysis](/blog/how-to-analyse-a-clat-mock-test/) most often overlooks.
+Record time, attempted questions, correct answers and omissions by section. Change an allocation when the evidence suggests a better use of time; one unusually hard mock is not enough to establish a permanent rule.
 
 ## Where to go next
 
-- [How to analyse a CLAT mock test](/blog/how-to-analyse-a-clat-mock-test/)
+- [Legal Reasoning](/blog/what-is-legal-reasoning-in-clat/)
+- [GK passage](/blog/what-is-current-affairs-and-gk-in-clat/)
+- [the marking scheme](/blog/is-there-negative-marking-in-clat/)
+- [mock analysis](/blog/how-to-analyse-a-clat-mock-test/)
 - [CLAT exam pattern](/blog/clat-exam-pattern/)
-- [Is there negative marking in CLAT?](/blog/is-there-negative-marking-in-clat/)
+
+## Sources and scope
+
+Official references checked on 18 September 2026. Study routines and teaching examples are editorial suggestions, not official requirements.
+
+- [Official UG syllabus](https://clat2027.consortiumofnlus.ac.in/clat-2027/ug-syllabus.html)
+- [Official question-paper format](https://clat2027.consortiumofnlus.ac.in/clat-2027/ug-question-format.html)

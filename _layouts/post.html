@@ -9,7 +9,7 @@ layout: default
     {% if page.standfirst %}<p class="standfirst">{{ page.standfirst }}</p>{% endif %}
     <p class="byline">
       <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%-d %B %Y" }}</time>
-      {% if page.verified %} · Last verified {{ page.verified | date: "%-d %B %Y" }}{% endif %}
+      {% if page.last_modified_at %} · Updated {{ page.last_modified_at | date: "%-d %B %Y" }}{% elsif page.verified %} · Last verified {{ page.verified | date: "%-d %B %Y" }}{% endif %}
     </p>
   </header>
 

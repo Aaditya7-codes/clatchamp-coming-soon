@@ -4,9 +4,9 @@ standfirst: "Your rank depends on how everyone else did, not on your marks alone
 description: "Your rank depends on how everyone else did, not on your marks alone. Why the conversion shifts every year — and why we will not predict your rank."
 section: "Admissions"
 order: 7
-verified: 2026-09-13
+last_modified_at: 2026-09-18
 ---
-Your CLAT rank is not calculated from your score by a formula. It is your **position** among everyone who sat the paper. Which means the same mark can produce very different ranks in different years.
+Your CLAT rank is your **position in the ranked candidate list**, determined by scores and applicable tie-breaks. Your score alone cannot predict that position independently of other candidates; the same mark can yield different ranks in different years.
 
 ## How the score is arrived at
 
@@ -16,33 +16,33 @@ Simple arithmetic, and worth being clear about because it is often over-complica
 - Wrong answer: **−0.25**
 - Unattempted: **0**
 
-Out of 120. There is **no normalisation across shifts**, because CLAT is a single paper sat by everyone at the same time — unlike exams held in multiple sessions. There are also **no sectional cut-offs**: all 120 questions merge into one score.
+The published format has a maximum of 120 marks. Use the final key and any official instructions about withdrawn questions when calculating the result. The published format lists one overall test duration and no separate qualifying score for each section.
 
 ## Why the same score gives different ranks
 
 Rank depends on the distribution of everyone else's marks, which shifts with:
 
 - **Paper difficulty.** A harder paper compresses scores; the same 95 may rank higher.
-- **Number of candidates.** More candidates means more people above any given mark.
-- **The final answer key.** Questions dropped or corrected after objections move everyone.
+- **Number of candidates.** A different candidate pool can change how many people score above a given mark.
+- **The final answer key.** A withdrawn or re-keyed question can affect candidates differently, according to their answers and the announced scoring treatment.
 
 This is why treating a past year's score-to-rank table as a prediction is unsound. It describes what happened once.
 
 ## Tie-breaking
 
-Where candidates finish on the same score, the Consortium applies published tie-break rules — in recent cycles these have involved performance in the Legal Reasoning section, then age, then a computerised draw. **The specific order has changed between cycles**, so check the current notification rather than relying on a remembered version.
+The CLAT 2027 UG instructions specify this order for tied totals: higher marks in the Legal Aptitude section, then higher age, then a computerised draw. Read the current official instructions linked below.
 
-The practical implication: [Legal Reasoning](/blog/what-is-legal-reasoning-in-clat/) may carry weight beyond its 28–32 marks. A small extra reason to give the largest section the attention it already deserves.
+This gives [Legal Reasoning](/blog/what-is-legal-reasoning-in-clat/) a role in resolving ties, in addition to its contribution to the total.
 
 ## What we will not do
 
-**We will not offer a rank predictor.** You will find many, and they are built by fitting past data to a curve. In a good year they are roughly indicative. In a year when difficulty shifts, they are confidently wrong — and a candidate who has planned their [counselling preferences](/blog/clat-counselling-process/) around a predicted rank can lose a seat because of it.
+This page does not predict a rank from a future score. Historical tables describe a particular paper and candidate pool. They cannot guarantee your [counselling outcome](/blog/clat-counselling-process/).
 
-If you want a sense of scale, [previous year cutoffs](/blog/clat-previous-year-cutoffs/) are the honest version: real closing ranks from real years, with no pretence of forecasting yours.
+Our [cutoff guide](/blog/clat-previous-year-cutoffs/) explains how to interpret verified closing ranks; it does not publish a historical rank table.
 
 ## What actually matters for admission
 
-Not your score, and not even your rank in isolation. It is **your rank against the closing rank** of the universities you have listed, in your category. A rank that is disappointing in the general category may be comfortable in a reserved one, and vice versa — and state-domicile quotas at some universities change the picture again.
+Admission depends on rank, eligibility, category, preferences, available seats and completing the required steps. A closing rank describes the result of allocation; it is not a guaranteed threshold fixed in advance. A rank that is disappointing in the general category may be comfortable in a reserved one, and vice versa — and state-domicile quotas at some universities change the picture again.
 
 That is the number to think in, and it only becomes real at counselling.
 
@@ -51,3 +51,10 @@ That is the number to think in, and it only becomes real at counselling.
 - [CLAT previous year cutoffs](/blog/clat-previous-year-cutoffs/)
 - [CLAT counselling process](/blog/clat-counselling-process/)
 - [When will the CLAT result be declared?](/blog/when-will-clat-result-be-declared/)
+
+## Sources and scope
+
+Official references checked on 18 September 2026. Study routines and teaching examples are editorial suggestions, not official requirements.
+
+- [Official UG application and exam instructions](https://clat2027.consortiumofnlus.ac.in/clat-2027/ug-instructions.html)
+- [Official question-paper format](https://clat2027.consortiumofnlus.ac.in/clat-2027/ug-question-format.html)

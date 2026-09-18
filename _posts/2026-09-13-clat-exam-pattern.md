@@ -4,9 +4,9 @@ standfirst: "120 questions, two hours, five sections, pen and paper. One mark fo
 description: "120 questions, two hours, five sections, pen and paper. One mark for a correct answer, 0.25 deducted for a wrong one, and no sectional cut-offs."
 section: "Exam basics"
 order: 6
-verified: 2026-09-13
+last_modified_at: 2026-09-18
 ---
-CLAT is a **two-hour, pen-and-paper exam of 120 multiple-choice questions**, carrying 120 marks. CLAT 2027 is scheduled for **Sunday, 6 December 2026, from 2:00 p.m. to 4:00 p.m.** Candidates in the PwD category are given until 4:40 p.m.
+CLAT is a **two-hour, pen-and-paper exam of 120 multiple-choice questions**, carrying 120 marks. CLAT 2027 is scheduled for **Sunday, 6 December 2026, from 2:00 p.m. to 4:00 p.m.** Eligible PwD candidates have the published extended slot ending at 4:40 p.m.
 
 ## The five sections
 
@@ -18,7 +18,7 @@ CLAT is a **two-hour, pen-and-paper exam of 120 multiple-choice questions**, car
 | Logical Reasoning | 22–26 | ~20% |
 | Quantitative Techniques | 10–14 | ~10% |
 
-All five are compulsory. The Consortium publishes approximate weightage rather than a fixed count per section, so the exact split varies a little between papers — the ranges above reflect recent ones.
+All five sections are included; individual questions may be left unanswered. The Consortium publishes approximate weightage rather than a fixed count per section, so the exact split varies a little between papers — the ranges above are the published CLAT 2027 ranges.
 
 ## Marking
 
@@ -28,22 +28,29 @@ All five are compulsory. The Consortium publishes approximate weightage rather t
 
 ## Two things that surprise people
 
-**There are no sectional time limits.** The two hours are yours to distribute. You can spend fifty minutes on Legal Reasoning and twelve on Quantitative Techniques if that suits you. This is a real strategic lever and most candidates never plan for it — see [time management in the CLAT exam](/blog/clat-time-management/).
+**The published format specifies one overall time limit, not separate section timers.** The two hours are yours to distribute. You can spend fifty minutes on Legal Reasoning and twelve on Quantitative Techniques if that suits you. Plan this allocation in advance — see [time management in the CLAT exam](/blog/clat-time-management/).
 
-**There are no sectional cut-offs.** All 120 questions merge into one score. A weak section can be carried by strong ones, which changes how you should allocate preparation time as well as exam time.
+**The published format does not list separate qualifying cut-offs for each section.** Questions contribute to the total score; admission still depends on eligibility and allocation rules. A weak section can be carried by strong ones, which changes how you should allocate preparation time as well as exam time.
 
 ## What the time pressure actually looks like
 
-Two hours for 120 questions is **one minute per question** — but that framing misleads, because questions come in passage-based sets. A 450-word passage with five questions is more usefully budgeted as a single six or seven minute block: read once, properly, then answer five.
+Two hours for 120 questions is **one minute per question** — but that framing misleads, because questions come in passage-based sets. Plan reading and answering time together, allowing different budgets for different sections and set lengths.
 
-Candidates who treat it as 120 individual one-minute problems tend to re-read passages repeatedly and run out of time.
+There is no official fixed number of passages or universal time allowance per set.
 
 ## Everything is comprehension-led
 
-Since the paper was restructured, every section is built on passages. Even [Quantitative Techniques](/blog/what-are-quantitative-techniques-in-clat/) presents data inside a passage rather than as bare sums. This is the single most important fact about the exam's design, and it is why [reading](/blog/how-to-prepare-for-clat-english/) is the highest-leverage thing to practise.
+Since the paper was restructured, every section is built on passages. [Quantitative Techniques](/blog/what-are-quantitative-techniques-in-clat/) uses short numerical material; its length need not match an English or Legal passage. Practise [reading](/blog/how-to-prepare-for-clat-english/) alongside the knowledge, reasoning and calculation skills each section needs.
 
 ## Where to go next
 
 - [How many questions are there in CLAT?](/blog/how-many-questions-are-there-in-clat/)
 - [Is there negative marking in CLAT?](/blog/is-there-negative-marking-in-clat/)
 - [CLAT syllabus](/blog/clat-syllabus/)
+
+## Sources and scope
+
+Official references checked on 18 September 2026. Study routines and teaching examples are editorial suggestions, not official requirements.
+
+- [Official UG application and exam instructions](https://clat2027.consortiumofnlus.ac.in/clat-2027/ug-instructions.html)
+- [Official question-paper format](https://clat2027.consortiumofnlus.ac.in/clat-2027/ug-question-format.html)

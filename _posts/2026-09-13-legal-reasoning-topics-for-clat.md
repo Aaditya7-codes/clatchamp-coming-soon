@@ -1,18 +1,19 @@
 ---
-title: "Legal Reasoning Topics for CLAT: What Keeps Recurring"
-standfirst: "The principle areas that appear most often — for familiarity, not memorisation. The exam always supplies the principle you need."
-description: "The principle areas that appear most often — for familiarity, not memorisation. The exam always supplies the principle you need."
+title: "Legal Reasoning Topics for CLAT: Areas to Practise"
+standfirst: "Legal, public-policy and moral scenarios to practise, without treating a topic list as a prediction of the paper."
+description: "Legal, public-policy and moral scenarios to practise, without treating a topic list as a prediction of the paper."
 section: "Section guides"
 order: 1
+last_modified_at: 2026-09-18
 ---
-Before the list, the caveat that makes it useful: **CLAT supplies the principle in the passage.** You are never expected to recall a rule. This list is for familiarity — so that when a passage sets out a principle about negligence, the vocabulary and shape of the argument are not new to you.
+Before the list, the caveat that makes it useful: **CLAT asks you to identify or infer principles in the passage and apply them.** Prior legal knowledge is not required, but contemporary legal and moral awareness can help. This list is for familiarity — so that when a passage sets out a principle about negligence, the vocabulary and shape of the argument are not new to you.
 
 Familiarity buys you reading speed. It does not buy you the answer.
 
-## The areas that recur
+## Areas for practice
 
 ### Law of torts
-The most common source by some distance, because tort principles are self-contained and easy to state in a paragraph.
+A useful area for practising conditions and exceptions. The official syllabus does not assign tort law a question share or rank it above other legal topics.
 
 - **Negligence** — duty of care, breach, resulting harm
 - **Vicarious liability** — when one person answers for another's act
@@ -25,7 +26,7 @@ The most common source by some distance, because tort principles are self-contai
 ### Criminal law
 - General principles: act and intention together
 - **Culpable homicide and murder**, and the line between them
-- **Theft, extortion, robbery** — commonly tested because the distinctions are fine
+- **Theft, extortion, robbery** — practise distinguishing supplied definitions
 - **Private defence** and its limits
 - **Attempt** and **abetment**
 
@@ -42,24 +43,34 @@ The most common source by some distance, because tort principles are self-contai
 - Directive principles, and their relationship to rights
 
 ### Family and property law
-Appears less often, usually on succession, marriage and inheritance principles.
+Succession, marriage and inheritance can supply practice scenarios. These are illustrative themes, not a prediction of frequency.
+
+### Public policy and moral questions
+The syllabus also includes public-policy and moral enquiries. Practise following competing principles and reasoning about how a change in a rule alters its application.
 
 ## How to use this list
 
 Not as a syllabus to memorise. As a reading list of *shapes*.
 
-Spend an hour on tort law until you recognise how a negligence principle is phrased. Then move on. The aim is that no passage feels alien — not that you can recite anything.
+Read a short explanation, then practise applying a clearly stated rule. Move on when your answers show understanding; there is no universal one-hour requirement. The aim is that no passage feels alien — not that you can recite anything.
 
 The skill that earns marks is the one in [how to prepare for CLAT Legal Reasoning](/blog/how-to-prepare-for-clat-legal-reasoning/): break the principle into conditions, then test the facts against each.
 
 ## A warning about "important cases" lists
 
-You will find long lists of landmark judgments marketed as CLAT preparation. Case names are occasionally useful as [current affairs context](/blog/what-is-current-affairs-and-gk-in-clat/) — a judgment in the news may appear in a GK passage. They are rarely useful in Legal Reasoning, where the passage gives you what you need and outside knowledge actively misleads.
+You will find long lists of landmark judgments marketed as CLAT preparation. Case names are occasionally useful as [current affairs context](/blog/what-is-current-affairs-and-gk-in-clat/) — a judgment in the news may appear in a GK passage. They can support general awareness, but memorising citations is not a substitute for analysing the passage.
 
-If you are memorising case citations for this section, you are preparing for an exam that no longer exists.
+When answering, follow the rule stated or supported in the passage instead of silently substituting a remembered real-world rule.
 
 ## Where to go next
 
 - [What is Legal Reasoning in CLAT?](/blog/what-is-legal-reasoning-in-clat/)
 - [How to prepare for CLAT Legal Reasoning](/blog/how-to-prepare-for-clat-legal-reasoning/)
 - [CLAT syllabus](/blog/clat-syllabus/)
+
+## Sources and scope
+
+Official references checked on 18 September 2026. Study routines and teaching examples are editorial suggestions, not official requirements.
+
+- [Official UG syllabus](https://clat2027.consortiumofnlus.ac.in/clat-2027/ug-syllabus.html)
+- [Official question-paper format](https://clat2027.consortiumofnlus.ac.in/clat-2027/ug-question-format.html)

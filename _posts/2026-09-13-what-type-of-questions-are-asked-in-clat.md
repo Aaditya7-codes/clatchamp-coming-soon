@@ -1,63 +1,97 @@
 ---
 title: "What Type of Questions Are Asked in CLAT? One From Each Section"
-standfirst: "Every section is passage-based. Here is a representative question from each of the five, with the reasoning shown."
-description: "Every section is passage-based. Here is a representative question from each of the five, with the reasoning shown."
+standfirst: "Five short, original multiple-choice examples with answers and reasoning. These teach the tasks, not the full length or difficulty of the exam."
+description: "Five short, original multiple-choice examples with answers and reasoning. These teach the tasks, not the full length or difficulty of the exam."
 section: "Exam basics"
 order: 9
+last_modified_at: 2026-09-18
 ---
-Every section of CLAT is **passage-based**. You are given something to read — 400 to 500 words — and asked questions that depend on it. Nothing is standalone trivia or bare calculation.
+**CLAT UG uses multiple-choice questions across English, GK, Legal Reasoning, Logical Reasoning and Quantitative Techniques.** Questions use passages or numerical material; they do not all share the same passage length, and GK can require related knowledge beyond the text.
 
-Below is one representative question per section, written for this page rather than taken from a past paper, with the reasoning worked through.
+These five original, shortened teaching examples illustrate different tasks. They are not past-paper questions or calibrated full-length exam sets. Fictional scenarios and rules are labelled below.
 
-## English Language
+## 1. English Language
 
-> *A passage discusses a city's decision to pedestrianise its central district, noting that traders opposed it, that footfall rose 40% in the first year, and that the author's own scepticism "did not survive the evidence."*
+**Fictional passage:** A writer initially opposed pedestrianising a shopping street. After observing improved access and stronger footfall, she wrote: “My scepticism did not survive the evidence.”
 
-**Question:** The author's attitude to the pedestrianisation can best be described as —
-(A) consistently enthusiastic (B) initially doubtful, later persuaded (C) neutral throughout (D) critical
+**Question:** Which best describes her attitude?
 
-**Answer: B.** The phrase *"did not survive the evidence"* concedes an earlier position and abandons it. A fails because the author was not enthusiastic at the outset; C ignores the concession entirely.
+- A. Enthusiastic from the beginning
+- B. Initially doubtful, then persuaded
+- C. Neutral throughout
+- D. Still opposed despite the evidence
 
-Tone questions turn on a single phrase more often than on the passage's overall drift.
+**Answer: B.** Her initial opposition changes after observation. A ignores the initial doubt, C ignores both positions, and D contradicts the change.
 
-## Current Affairs and General Knowledge
+## 2. Current Affairs and General Knowledge
 
-> *A passage describes a new international agreement on shipping emissions, naming the body that negotiated it and the year targets take effect.*
+**Original background passage:** International climate reporting often refers to the Paris Agreement. It is a treaty adopted at COP21 in 2015, intended to guide a collective response to climate change. Understanding the institutions and events behind such references is part of studying an ongoing international issue.
 
-Questions divide into two kinds: those answerable from the passage, and those requiring adjacent knowledge the passage assumes — which body oversees the sector, what an earlier agreement covered. Reading the news with understanding prepares you for both. A fact list prepares you for neither.
+**Question:** In which city was COP21, where the agreement was adopted, held?
 
-## Legal Reasoning
+- A. Glasgow
+- B. Paris
+- C. Dubai
+- D. Copenhagen
 
-> **Principle:** A person who voluntarily accepts a known risk cannot later claim compensation for harm arising from that risk.
->
-> **Facts:** A spectator buys a ticket for an unprotected stand at a cricket ground. The ticket carries a printed warning about stray balls. She is struck and injured.
+**Answer: B.** The UNFCCC records adoption at COP21 in Paris on 12 December 2015. The other cities are not the location of that conference. This short example tests background knowledge; it is not a claim that the topic will appear in CLAT 2027. [Official UNFCCC reference](https://unfccc.int/process-and-meetings/the-paris-agreement).
 
-**Question:** Is the club liable?
+## 3. Legal Reasoning
 
-**Answer: No** — but the route matters. Acceptance was voluntary (she chose that stand), the risk was known (printed warning), and the harm arose from that risk (a stray ball). All three conditions are satisfied.
+**Hypothetical rule for this exercise only:** A club owes no compensation for an injury caused by a risk the spectator knowingly and voluntarily accepted.
 
-An option reaching "not liable" on the ground that *"cricket clubs are never liable for spectator injuries"* would be wrong despite the right outcome. That reasoning is not the principle's.
+**Facts:** Before choosing a seat, Mira reads and understands a warning about stray balls. She freely accepts that risk. A stray ball then injures her.
 
-## Logical Reasoning
+**Question:** Under the supplied rule, does the club owe compensation?
 
-> *An argument holds that since library membership fell the year after a streaming service launched locally, the service caused the decline.*
+- A. Yes, because every injury creates liability.
+- B. No, because the accepted risk caused the injury.
+- C. No, because clubs can never owe compensation.
+- D. Yes, because a warning always creates liability.
 
-**Question:** Which most weakens the argument?
+**Answer: B.** All conditions of the supplied rule are met. A and D invent rules; C is broader than the rule provided. This is not legal advice about real sports injuries.
 
-The answer will be the option supplying an alternative cause — the library cut opening hours that year, say. Correlation-to-causation is the most commonly tested flaw in this section.
+## 4. Logical Reasoning
 
-## Quantitative Techniques
+**Fictional argument:** Library membership fell after a streaming service launched locally. Therefore, the streaming service caused the fall.
 
-> *A table gives a school's enrolment by stream across four years.*
+**Question:** Which additional fact most weakens that explanation?
 
-Questions ask for percentage change, ratio between streams, or an average. The arithmetic is Class 10; **the difficulty is extraction** — identifying which row and column the question actually refers to. Most marks lost here are lost before any calculation begins.
+- A. The service offers several film genres.
+- B. The library has existed for many years.
+- C. The service’s logo changed recently.
+- D. At the same time, the library halved its opening hours, preventing many members from visiting.
 
-## The pattern across all five
+**Answer: D.** It provides a plausible alternative cause of falling membership. A, B and C do not explain the decline. D weakens the argument without proving the service had no effect.
 
-Read once, carefully, rather than three times quickly. Every section rewards it, and no section rewards speed at the cost of accuracy.
+## 5. Quantitative Techniques
+
+**Fictional data:** A school's enrolment rises from 240 students to 300 students.
+
+**Question:** What is the percentage increase?
+
+- A. 20%
+- B. 25%
+- C. 60%
+- D. 80%
+
+**Answer: B.** The increase is 60. Divide by the original 240: 60 ÷ 240 × 100 = **25%**. A uses the final total as the base; C confuses the numerical increase with a percentage; D is the original enrolment as a percentage of the final total.
+
+## How to use the examples
+
+Explain your chosen option and why the others fail. Then practise longer, fresh sets covering the full published skills; these short examples cannot establish exam readiness.
 
 ## Where to go next
 
 - [CLAT exam pattern](/blog/clat-exam-pattern/)
 - [CLAT syllabus](/blog/clat-syllabus/)
 - [How to prepare for CLAT English](/blog/how-to-prepare-for-clat-english/)
+
+- [How to start preparing for CLAT](/blog/how-to-start-preparing-for-clat/)
+
+## Sources and scope
+
+Official references checked on 18 September 2026. Study routines and teaching examples are editorial suggestions, not official requirements.
+
+- [Official UG syllabus](https://clat2027.consortiumofnlus.ac.in/clat-2027/ug-syllabus.html)
+- [Official question-paper format](https://clat2027.consortiumofnlus.ac.in/clat-2027/ug-question-format.html)

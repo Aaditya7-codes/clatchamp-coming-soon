@@ -1,68 +1,51 @@
 ---
 title: "How to Prepare Current Affairs for CLAT: Passages, Not Lists"
-standfirst: "A quarter of the paper, and the section where most effort is wasted on the wrong format. Here is how to read, note and revise it."
-description: "A quarter of the paper, and the section where most effort is wasted on the wrong format. Here is how to read, note and revise it."
+standfirst: "Combine current-affairs knowledge, relevant background, recall and passage practice in a manageable revision routine."
+description: "Combine current-affairs knowledge, relevant background, recall and passage practice in a manageable revision routine."
 section: "How to prepare"
 order: 7
+last_modified_at: 2026-09-18
 ---
-[Current Affairs including General Knowledge](/blog/what-is-current-affairs-and-gk-in-clat/) is roughly 28–32 questions — a quarter of CLAT. It is also where preparation most often takes the wrong shape.
+**Prepare CLAT current affairs by learning significant events and their background, revising that knowledge, and answering passage-based questions.** Reading alone and memorising isolated facts each leave gaps.
 
-## The format problem, first
+## Use the syllabus to choose themes
 
-The exam gives you a **450-word news passage** and asks questions on it. Most preparation material is a bullet list of facts.
+Include current events, arts and culture, international affairs and historical events of continuing significance. News about law, government, economics, science, environment and sport can provide useful material within that broad scope.
 
-Those are different skills. A fact list trains isolated recall. The paper asks you to read an argument under time pressure and reason around it, sometimes using knowledge the passage assumes but does not state.
+The official syllabus does not rank these themes or prescribe a fixed news window. Do not assume that anything older than twelve months is irrelevant.
 
-So the single most useful change you can make: ensure a real share of your practice is **in passage form**. Not all of it — compilations are efficient for coverage — but if none of your practice looks like the exam, you are rehearsing the wrong thing.
+## A suggested daily routine
 
-## The daily habit
+Start with a brief scan, then read one significant story in depth. Ask what happened, who or which institution was involved, why it matters and what background explains it. Increase the time when a story needs more work; ten minutes is not a complete coverage guarantee.
 
-**Ten to fifteen minutes, six days a week.**
+Use reliable reporting to identify events and official announcements or documents to check important details. Retain the source and date in your notes.
 
-- Scan national, international, legal-constitutional and economic news.
-- For anything significant, ask: *what is the context here?* Not the date — the background. Which body, which law, which earlier agreement.
-- Read one story properly rather than twenty headlines. [Do you need to read a newspaper daily for CLAT?](/blog/do-you-need-to-read-a-newspaper-daily-for-clat/) covers the shape of this.
+## Make notes you can revise
 
-Headline-scanning produces the comfortable feeling of being informed and builds neither comprehension nor context.
+Organise notes by theme, with dates where they matter. Keep a concise summary and a few recall questions. Three lines may suit a simple event; a complex judgment or agreement may need more.
 
-## Note-making that survives revision
+Revisit notes weekly and monthly. Test recall before looking at the answer, then correct omissions. Review older material when an ongoing story makes it relevant again.
 
-Notes you never revisit are a waste of the hour that made them. Two rules:
+## Practise both recall and passages
 
-**Organise by theme, not by date.** "Trade and tariffs" is revisable. "17 August" is not — come November you will have no idea why you wrote something down.
+Answer fresh passage sets as well as short factual questions. Some answers require related knowledge not stated in the passage, so comprehension alone cannot replace learning the facts.
 
-Use the categories the passages use: national, international, economy, legal and constitutional, science and environment, awards and sport. They are set out in [CLAT GK topics](/blog/clat-gk-topics/).
+For a weekly exercise, take one story and write a short summary plus a few sourced questions. Treat this as revision; it is not a substitute for solving unseen questions whose answers you have not just written.
 
-**Three lines per item, maximum.** What happened, why it matters, what background it assumes. Anything longer will not be revised.
+## Let errors guide the next session
 
-## The revision cycle
-
-Current affairs decays fast. Without deliberate revision, most of what you read in March is gone by December.
-
-- **Weekly:** ten minutes re-reading the week's notes.
-- **Monthly:** thirty minutes on the month.
-- **From three months out:** a rolling pass over the whole period, theme by theme.
-
-The monthly pass is the one people skip, and it is the one that does the work.
-
-## How far back to go
-
-Roughly the **twelve months before the paper**, weighted towards the last six to eight. For CLAT 2027 on 6 December 2026, that means from about December 2025, with heaviest emphasis on April–November 2026.
-
-Starting earlier than twelve months out has limited value here — it will not still be current.
-
-## Static knowledge
-
-A supporting layer, not a parallel syllabus. Learn what the passages assume: the Constitution's basic architecture, how Parliament and the courts work, the major international bodies, basic economic vocabulary. Skip capitals, currencies and "firsts". [Is static GK important for CLAT?](/blog/is-static-gk-important-for-clat/) has the full split.
-
-## A weekly self-test
-
-Take one news story from the week. Write 450 words on it as though it were an exam passage, then write four questions — two answerable from your passage, two needing background.
-
-It takes half an hour and it is the closest thing to rehearsing the actual task. It also exposes, quickly, how much context you are missing.
+Separate missing knowledge from misreading, confusion between similar institutions and outdated information. Each needs a different correction. Avoid assuming that all wrong GK answers come from the same cause.
 
 ## Where to go next
 
-- [What is Current Affairs & GK in CLAT?](/blog/what-is-current-affairs-and-gk-in-clat/)
+- [Current Affairs including General Knowledge](/blog/what-is-current-affairs-and-gk-in-clat/)
+- [Do you need to read a newspaper daily for CLAT?](/blog/do-you-need-to-read-a-newspaper-daily-for-clat/)
 - [CLAT GK topics](/blog/clat-gk-topics/)
 - [Is static GK important for CLAT?](/blog/is-static-gk-important-for-clat/)
+
+## Sources and scope
+
+Official references checked on 18 September 2026. Study routines and teaching examples are editorial suggestions, not official requirements.
+
+- [Official UG syllabus](https://clat2027.consortiumofnlus.ac.in/clat-2027/ug-syllabus.html)
+- [Official question-paper format](https://clat2027.consortiumofnlus.ac.in/clat-2027/ug-question-format.html)
