@@ -26,6 +26,7 @@ defaults:
 exclude:
   - .qa/
   - README.md
+  - assets/brand/README.md
   - .gitignore
   - "*.cjs"
 
