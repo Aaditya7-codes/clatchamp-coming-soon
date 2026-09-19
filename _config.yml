@@ -21,6 +21,7 @@ defaults:
   - scope: { path: "", type: "posts" }
     values:
       layout: post
+      image: /assets/brand/social-preview.png
 
 exclude:
   - .qa/
