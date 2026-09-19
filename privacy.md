@@ -2,100 +2,76 @@
 layout: legal
 permalink: /privacy/
 updated: 2026-09-19
-title: "Privacy Policy — What CLAT Champ Collects About You"
-standfirst: "Nothing. No accounts, no cookies, no analytics, no tracking. Here is exactly what that means, and the two places your data does go."
-description: "CLAT Champ sets no cookies, runs no analytics and asks for no personal information. What your browser discloses to our host and to Google Fonts, explained plainly."
+title: "Privacy Policy"
+standfirst: "How CLAT CHAMP handles information in the app, on this website and when you contact us."
+description: "CLAT CHAMP privacy policy: on-device study data, Apple subscriptions, website hosting, fonts, email support and your choices."
 ---
 
-**This website collects nothing about you.** There is no sign-up, no login, no
-newsletter, no cookie banner and no analytics. We do not know who you are, how
-many of you there are, or which pages you read.
+Effective date: **19 September 2026**.
 
-That is unusual enough that it is worth showing our working, because "we value
-your privacy" is what every site says while doing the opposite. Below is what
-actually happens when you open a page here.
+## About this policy
 
-## What we do not do
+This policy covers the CLAT CHAMP iPhone app and clatchamp.com, including www.clatchamp.com. CLAT CHAMP is operated by Aaditya Sharma, trading as CLAT CHAMP. “We” and “our” refer to Aaditya Sharma. For privacy questions or requests, contact the CLAT CHAMP Team at [privacy@clatchamp.com](mailto:privacy@clatchamp.com).
 
-- **No cookies.** This site sets none, of any kind. That is why you have never
-  seen a consent banner here.
-- **No analytics.** No page-view counters, no heatmaps, no session recording.
-- **No advertising**, and no advertising or tracking networks.
-- **No email collection.** There is no newsletter and no waiting list.
-- **No accounts**, so there is nothing to store about you.
-- **Nothing is sold or shared**, because there is nothing to sell or share.
+## Study information stays on your device
 
-## What happens automatically
+The app stores your optional name, target CLAT year, preparation stage, preferences, answers, unfinished sets, practice and mock-test history, reading measurements, streaks and achievements on your device. It uses this information to run practice sessions, recommend sets, calculate results and display progress. You can use the app without creating an account or supplying your name.
 
-Two things receive your device's IP address when you load a page. Neither is
-something we can see or look up, but you should know they exist.
+The current app does not send your profile or study history to a CLAT CHAMP server. There is no CLAT CHAMP account or cloud-sync service. The app does not include advertising, third-party analytics or cross-app tracking. It does not request access to your contacts, location, camera or microphone.
 
-**Our host.** The site is served by GitHub Pages. Like every web host, it
-receives the IP address and browser details of each request in order to send
-the page back, and keeps short-lived server logs for security and abuse
-prevention. We have no access to those logs.
+## Apple purchases
 
-**Google Fonts.** The page loads two typefaces from `fonts.googleapis.com` and
-`fonts.gstatic.com`. Your browser contacts Google directly to fetch them, which
-discloses your IP address and browser details to Google on every page load. We
-receive nothing from this and set no Google cookie, but the request happens
-whether you want it or not. We are moving these font files onto our own server
-to remove that disclosure entirely.
+Apple handles subscription payments and payment details. The app uses Apple’s StoreKit service to check verified transaction and subscription information, such as the product purchased, transaction identifiers, expiry and refund status, to grant or restore Premium access. This information is checked in the app; the current app does not send it to a CLAT CHAMP server. We do not receive your card details.
 
-## Things that look like tracking but are not
+Apple separately handles App Store transactions, device services, backups and any diagnostics you choose to share under Apple’s policies. Restoring purchases restores eligible Premium access, not your study history. Deleting the app does not cancel a subscription; manage or cancel it in your Apple subscription settings.
 
-**The search box on the blog** runs entirely inside your browser. Every guide is
-already on the page; typing only hides the ones that do not match. What you type
-is never transmitted anywhere, and we never see it.
+## Website hosting and fonts
 
-**The countdown on the home page** is arithmetic your browser does against a
-fixed date. Nothing is sent or stored.
+The website is hosted on GitHub Pages. Requests to the website provide GitHub with technical information such as your IP address and browser/request details. GitHub processes this information under its own privacy statement, including for serving and securing its services. We do not control GitHub’s retention periods.
 
-**Topic filters** work the same way — they hide and show cards that are already
-loaded.
+The website currently loads fonts from Google Fonts. Your browser contacts Google to request them, disclosing information such as your IP address, browser details and the requested resource. These font requests are part of the website, not the app’s bundled reading screens. Google’s privacy terms apply to its processing.
 
-## If you email us
+We have not added advertising, analytics, tracking cookies, newsletter forms or user accounts to the website. Blog search, topic filters and the countdown run in your browser; the site does not send your search text to us. The app’s local study storage is separate from website cookies.
 
-`contact@clatchamp.com` and `privacy@clatchamp.com` are real mailboxes, handled
-by Google Workspace. If you write to us, we receive your email address and
-whatever you put in the message, and Google processes and stores it as our email
-provider. We keep correspondence only as long as it is useful for replying, and
-we do not add you to any list — there is no list.
+## When you contact us
 
-## Links to other sites
+If you email support@clatchamp.com, contact@clatchamp.com or privacy@clatchamp.com, we receive your email address, message and any attachments or details you choose to send. Our email service is provided through Google Workspace. We use correspondence to respond, troubleshoot issues, correct content and handle privacy requests. We do not add support contacts to a marketing list.
 
-We link out to official sources, most often the Consortium of NLUs. Once you
-follow a link you are on someone else's site under their privacy policy, not
-ours. We have no control over what they collect.
+Please send only what is needed, and remove personal information from screenshots where possible. Do not send passwords, full payment-card details or identity documents unless an appropriate verification process has specifically been explained to you.
 
-## Readers under 18
+## Sharing and service providers
 
-Most of our readers are school students, and India's Digital Personal Data
-Protection Act sets a higher bar for children's data. We meet it the simplest
-way available: we do not collect personal data from anyone, of any age. There
-is no profiling, no behavioural tracking and no advertising directed at anyone
-here.
+We do not sell personal information or share it for targeted advertising. Website hosting, font delivery and email involve the providers described above. Their services may process information in countries other than your own, under their applicable privacy terms and safeguards. Study history held only on your device is not uploaded to those providers by CLAT CHAMP.
 
-If that ever changes — for example if we add a way to save your progress — we
-will say so on this page before it happens, not after.
+We may disclose correspondence where necessary to comply with a legal obligation, respond to a lawful request or protect against abuse. We do not authorise service providers to use correspondence we entrust to them for their own advertising.
 
-## Your rights, and how to use them
+## Retention and deletion
 
-Because we hold no personal data about readers, there is normally nothing to
-access, correct or delete. The exception is email you have sent us. If you have
-written to us and want that correspondence deleted, ask and we will delete it.
+Local study information stays on your device for continued use. You can edit or remove your name in Settings. To remove the app’s local data, use iOS Settings to delete the app, rather than offloading it. This can permanently remove your saved progress. iOS device backups are managed separately by Apple and your device settings; a restored backup may restore app data. We cannot remotely access, recover or delete study information stored only on your device.
 
-For any privacy question, or to raise a grievance about how we handle personal
-data, write to **[privacy@clatchamp.com](mailto:privacy@clatchamp.com)**. We
-aim to reply within seven days.
+We retain support and privacy correspondence only as long as reasonably necessary to handle the request, related follow-up, security or legal obligations. You can ask us to delete correspondence. Where information must be retained for a legal obligation or an unresolved dispute, we will explain the applicable limitation. Service providers manage their own operational records and backups under their policies.
 
-## Changes to this policy
+## Your choices and privacy requests
 
-If this policy changes, the date at the top of the page changes with it. We will
-not quietly broaden what we collect and backdate the page.
+You can use practice without providing your name and can stop using the app or website at any time. To request access to, correction of or deletion of information you have sent us, or to raise a privacy concern, email privacy@clatchamp.com. You may also ask to withdraw consent where our processing relies on it; this does not affect prior lawful processing. We may need proportionate information to verify a request. We will respond in accordance with applicable law.
 
-## Something wrong on this site?
+Your available rights depend on applicable law and may include a right to complain to the relevant authority. We cannot change Apple’s payment records or another provider’s independently held information; requests about those records should also be directed to that provider.
 
-If you spot a factual error in a guide, tell us at
-**[contact@clatchamp.com](mailto:contact@clatchamp.com)** and we will correct it
-and note the correction.
+## Students and younger users
+
+CLAT CHAMP is an exam-preparation service that may be used by students under 18. The current app has no account registration, advertising or cross-app tracking, and study personalisation takes place on the device. Younger users should involve a parent or guardian before making purchases or sending personal information by email. A parent or guardian may contact privacy@clatchamp.com about information a child has sent us. Any future feature that collects children’s personal data will require a separate assessment and any safeguards or consent required by applicable law.
+
+## Security, external links and changes
+
+We limit the information requested to what is needed for the service. No storage or transmission system can be guaranteed completely secure. Protect your device and avoid sharing unnecessary personal information in support messages.
+
+Links to exam sources, legal information and other websites open services governed by their own privacy policies. Opening this policy on the website involves the website requests described above.
+
+We will update this policy when our practices change and revise the date shown here. Material changes will be communicated through the app or website as appropriate, and consent will be requested where required.
+
+## Provider privacy information
+
+- [Apple Privacy Policy](https://www.apple.com/legal/privacy/)
+- [GitHub General Privacy Statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement)
+- [Google Privacy Policy](https://policies.google.com/privacy)
+- [Google Workspace privacy information](https://workspace.google.com/security/)

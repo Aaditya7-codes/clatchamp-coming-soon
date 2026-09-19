@@ -44,7 +44,7 @@ launch date, and there is nothing on this site to download, join, reserve or pay
 for. If you see a claim otherwise anywhere else, it did not come from us.
 
 These terms cover this website and blog only. If and when the app ships, it will
-have its own terms and its own privacy policy.
+have its own terms. Our [Privacy Policy](/privacy/) covers both the website and the app.
 
 ## Using what is here
 
