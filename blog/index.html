@@ -3,26 +3,33 @@ layout: page
 title: "CLAT Blog — Plain Answers About the Exam"
 description: "Plain answers about the CLAT exam: what each section tests, how to prepare, and how admission works. No book lists, no coaching pitch."
 ---
-<header class="page-head">
-  <p class="kicker">The CLAT Champ blog</p>
-  <h1>Notes on preparing for CLAT.</h1>
-  <p>Plain answers about the exam itself — what each section tests, how to prepare for it, and how admission actually works. No book lists, no app rankings, nothing to sell you.</p>
-</header>
+<link rel="stylesheet" href="{{ '/blog/blog.css' | relative_url }}">
+<div id="champ-blog">
+<section class="cb-intro"><div><p class="cb-eyebrow">The CLAT Champ Blog</p><h1>Less confusion.<br>More direction.</h1><p class="cb-deck">Understand the exam. Build your preparation plan.<br>Find a clear answer to your next CLAT question.</p></div><span class="cb-library">{{ site.posts.size }} guides · Free to read</span></section>
+<section class="cb-feature" aria-label="Recommended starting point"><div><div class="cb-eyebrow">Start here</div><h2>New to CLAT?<br>Start with the big picture.</h2><p>Get to know the paper before you build a study plan. These three guides put the essentials in order.</p><a class="cb-cta" href="/blog/clat-exam-pattern/">Understand the exam <span aria-hidden="true">↗</span></a></div><div class="cb-route"><a href="/blog/clat-exam-pattern/"><span class="cb-number">01</span>Know the exam pattern</a><a href="/blog/clat-syllabus/"><span class="cb-number">02</span>Explore the syllabus</a><a href="/blog/how-to-start-preparing-for-clat/"><span class="cb-number">03</span>Begin your preparation</a></div></section>
 
 {% assign cats = "Exam basics,Straight answers,Section guides,How to prepare,Admissions" | split: "," %}
-{% for c in cats %}
-  {% assign posts = site.posts | where: "section", c | sort: "order" %}
-  {% if posts.size > 0 %}
-  <section class="cat-block">
-    <div class="cat-head"><h2>{{ c }}</h2><span class="count">{{ posts.size }} articles</span></div>
-    <ol class="post-list">
-      {% for p in posts %}
-      <li class="post-row">
-        <div><h3><a href="{{ p.url | relative_url }}">{{ p.title }}</a></h3>
-        {% if p.standfirst %}<p class="deck">{{ p.standfirst }}</p>{% endif %}</div>
-      </li>
-      {% endfor %}
-    </ol>
-  </section>
-  {% endif %}
-{% endfor %}
+<section id="cb-guides" aria-label="Browse CLAT guides">
+  <div class="cb-tools"><h2>Find your next step</h2>
+    <label class="cb-search" hidden><span class="cb-search-icon" aria-hidden="true">⌕</span><input type="search" aria-label="Search guides" placeholder="Search topics or questions…"></label>
+  </div>
+  <div class="cb-filters" role="group" aria-label="Filter by topic" hidden>
+    <button type="button" data-category="" aria-pressed="true">All guides <span>{{ site.posts.size }}</span></button>
+    {% for c in cats %}{% assign count = site.posts | where: "section", c | size %}
+    <button type="button" data-category="{{ c | escape }}" aria-pressed="false">{{ c }} <span>{{ count }}</span></button>
+    {% endfor %}
+  </div>
+  <div class="cb-results" hidden><span class="cb-count" role="status" aria-live="polite"></span><button class="cb-clear" type="button" hidden>Clear filters</button></div>
+  <ul class="cb-grid">
+  {% assign featured = "clat-exam-pattern,how-to-start-preparing-for-clat,how-to-analyse-a-clat-mock-test,is-coaching-necessary-for-clat,how-to-improve-reading-speed-for-clat,clat-eligibility-criteria" | split: "," %}
+  {% for slug in featured %}{% assign p = site.posts | where: "slug", slug | first %}{% if p %}{% include blog-card.html post=p %}{% endif %}{% endfor %}
+  {% for c in cats %}
+    {% assign posts = site.posts | where: "section", c | sort: "order" %}
+    {% for p in posts %}{% unless featured contains p.slug %}{% include blog-card.html post=p %}{% endunless %}{% endfor %}
+  {% endfor %}
+  </ul>
+  <p class="cb-empty" hidden>No guides found. Try a broader topic, such as “English” or “mock”.</p>
+  <div class="cb-bottom"><button class="cb-more" type="button" hidden>Show more guides ↓</button></div>
+</section>
+</div>
+<script src="{{ '/blog/blog.js' | relative_url }}" defer></script>

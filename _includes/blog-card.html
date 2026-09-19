@@ -1,0 +1,10 @@
+{% assign entry = include.post %}
+{% assign card = site.data.blog_cards[entry.slug] %}
+<li class="cb-article" data-category="{{ entry.section | escape }}" data-search="{{ entry.title | escape }} {{ entry.standfirst | escape }}">
+  <a class="cb-article-link" href="{{ entry.url | relative_url }}">
+    <p class="cb-category">{{ entry.section }}</p>
+    <h3>{{ card.title | default: entry.title | escape }}</h3>
+    <p class="cb-summary">{{ card.summary | default: entry.standfirst | escape }}</p>
+    <span class="cb-read"><span>Read guide</span><span aria-hidden="true">↗</span></span>
+  </a>
+</li>
