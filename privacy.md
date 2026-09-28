@@ -31,7 +31,7 @@ You can use the free parts of the web version without signing in. To buy or use 
 
 Razorpay processes web payments. You give your payment details to Razorpay, not to us; we do not receive your card, UPI or bank details. Razorpay tells us whether a payment or renewal succeeded and the subscription period, and may process your contact details, payment information and device data under its own privacy policy, including for fraud prevention and legal compliance. Signing in keeps a session token in your browser so you stay signed in. When Premium is active, the web version also saves Premium practice content in your browser so it keeps working offline.
 
-Web Premium and iPhone Premium are currently separate purchases. Signing in on the web does not share your study history between devices.
+Signing in does not copy your study history between devices or browsers.
 
 ## Website hosting and fonts
 

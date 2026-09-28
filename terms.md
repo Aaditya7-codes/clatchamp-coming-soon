@@ -40,13 +40,13 @@ search for both.
 
 ## The app
 
-CLAT CHAMP is available as an iPhone app and as a web version at
+CLAT CHAMP is a practice app that runs in your browser at
 [clatchamp.com/app](/app/). Some practice is free. The rest needs a Premium
 subscription. Practice questions are original exam-style material written for
 preparation; they are not past papers and do not predict your CLAT score or admission.
 
-These terms cover this website, its blog and the web version. The iPhone app is
-also governed by Apple’s standard licence terms. Our [Privacy Policy](/privacy/)
+These terms cover this website, its blog and the app. If we release CLAT CHAMP
+on iPhone, that version will also be governed by Apple’s standard licence terms. Our [Privacy Policy](/privacy/)
 covers the website, the web version and the app.
 
 ## Premium on the web
@@ -63,7 +63,7 @@ address; it is how you sign back in and how we identify your subscription. A
 subscription is for one household’s personal study. Please don’t share or resell
 access, or copy, scrape or republish the practice material.
 
-Web Premium and iPhone Premium are separate purchases for now. We may change
+We may change
 prices or plans for future periods; we will tell you before a change applies to
 your subscription, and you can cancel before it does.
 

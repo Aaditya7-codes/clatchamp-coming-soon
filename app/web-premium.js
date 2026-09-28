@@ -143,7 +143,7 @@
  // ------------------------------------------------------------------ CLATPremium interface
  function controls(){
   const priceButtons=Object.keys(plans).reverse().map(p=>`<button class="pm-plan" data-practice="premium-plan" data-product="${productIds[p]}" aria-pressed="${selected===p}" ${busy?'disabled':''}><span>${plans[p].label}<small>${plans[p].note}</small></span><strong>${esc(cfg.prices?.[p])}</strong></button>`).join('');
-  if(!configured)return `<div class="pm-plans" role="group" aria-label="Subscription plans">${priceButtons}</div><button class="cs-primary" disabled>Web Premium opens soon</button><p class="pm-billing">Premium on the web is almost ready. Your free sets, Mock 1 and Question of the Day work now.</p>`;
+  if(!configured)return `<div class="pm-plans" role="group" aria-label="Subscription plans">${priceButtons}</div><button class="cs-primary" disabled>Premium subscriptions open shortly</button><p class="pm-billing">We’re finishing secure payments for Premium. Everything free — one full set per subject, Mock 1 and Question of the Day — works now.</p>`;
   if(hasAccess()){const now=active()[0];return `<div class="pm-active">✓ Premium active · All five subjects</div><p class="pm-billing">${now.cancel_at_cycle_end||now.status==='cancelled'?'Ends':'Renews'} on ${date(now.current_end)}.</p><button class="cs-text-button" data-web-account>Manage account</button>`;}
   return `<div class="pm-plans" role="group" aria-label="Subscription plans">${priceButtons}</div>
   <button class="cs-primary" data-practice="premium-buy" ${busy?'disabled':''}>${busy?'Please wait…':`Subscribe · ${esc(cfg.prices?.[selected])} ${plans[selected].per}`}</button>
@@ -159,7 +159,7 @@
   action(action,id){
    if(action==='premium-plan'){const p=Object.keys(productIds).find(k=>productIds[k]===id);if(p&&!busy){selected=p;notify();}return;}
    if(action==='premium-buy'){if(!configured)return;checkout();return;}
-   if(action==='premium-restore'||action==='premium-manage'){if(!configured){message='Web Premium opens soon.';notify();return;}openDialog(session?'account':'email');return;}
+   if(action==='premium-restore'||action==='premium-manage'){if(!configured){message='Premium subscriptions open shortly.';notify();return;}openDialog(session?'account':'email');return;}
    if(action==='premium-refresh'){refresh().catch(e=>{message=e.message;notify();});}
   }};
  // Settings shows this summary; the full policy lives on the website.

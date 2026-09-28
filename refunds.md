@@ -38,10 +38,6 @@ Because Premium content is available immediately, we do not refund the unused pa
 
 Email [support@clatchamp.com](mailto:support@clatchamp.com) within 7 days of the charge, from the address you signed in with, with the payment date and amount. Approved refunds go back to the original payment method, usually within 5–7 working days of approval, depending on your bank. Nothing here limits any right you have under applicable law.
 
-## Purchases made in the iPhone app
-
-Subscriptions bought in the CLAT CHAMP iPhone app are sold and billed by Apple. Manage or cancel them in your Apple subscription settings, and request refunds from Apple at [reportaproblem.apple.com](https://reportaproblem.apple.com). We cannot cancel or refund Apple purchases.
-
 ## Contact
 
 CLAT CHAMP is operated by Aaditya Sharma, trading as CLAT CHAMP. Billing questions: [support@clatchamp.com](mailto:support@clatchamp.com).
