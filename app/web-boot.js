@@ -1,4 +1,4 @@
-// Runs after every module script and before the app starts. It swaps stubs for real
+// Loaded by web-sync.js after the other modules, before the app starts. It swaps stubs for real
 // content (cached, Premium or today's free daily set), then starts the app scripts.
 // Content only ever grows on a device, so saved progress is never pruned.
 (async () => {
@@ -66,4 +66,5 @@
   for(const d of screen.querySelectorAll(':scope>details:has(>.cs-reading),.mock-screen>.mock-passage,.mock-screen>.mock-navigator'))if(!d.open)d.open=true;};
  new MutationObserver(openPanels).observe(screen,{childList:true,subtree:true});
  wide.addEventListener?.('change',openPanels);openPanels();
+ dispatchEvent(new Event('clat-web-ready'));
 })().catch(e=>{console.error(e);const s=document.getElementById('cs-screen');if(s)s.innerHTML='<p class="web-loading">CLAT CHAMP couldn’t start. Please reload the page.</p>';});

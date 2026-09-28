@@ -4,7 +4,7 @@ permalink: /privacy/
 updated: 2026-09-28
 title: "Privacy Policy"
 standfirst: "How CLAT CHAMP handles information in the app, on this website and when you contact us."
-description: "CLAT CHAMP privacy policy: on-device study data, web sign-in, Apple and Razorpay subscriptions, website hosting, fonts, email support and your choices."
+description: "CLAT CHAMP privacy policy: study data in the app and your browser, free web accounts that save your progress, Apple and Razorpay subscriptions, website hosting, fonts, email support and your choices."
 ---
 
 Effective date: **28 September 2026**.
@@ -13,11 +13,11 @@ Effective date: **28 September 2026**.
 
 This policy covers the CLAT CHAMP iPhone app, the CLAT CHAMP web version at clatchamp.com/app, and clatchamp.com, including www.clatchamp.com. CLAT CHAMP is operated by Aaditya Sharma, trading as CLAT CHAMP. “We” and “our” refer to Aaditya Sharma. For privacy questions or requests, contact the CLAT CHAMP Team at [privacy@clatchamp.com](mailto:privacy@clatchamp.com).
 
-## Study information stays on your device
+## Study information
 
 The app stores your optional name, target CLAT year, preparation stage, preferences, answers, unfinished sets, practice and mock-test history, reading measurements, streaks and achievements on your device. It uses this information to run practice sessions, recommend sets, calculate results and display progress. You can use the app without creating an account or supplying your name.
 
-The web version stores the same information in your browser’s storage on the device you use. Neither the app nor the web version sends your profile or study history to a CLAT CHAMP server, and there is no cloud sync of study history, including when you sign in on the web. The app does not include advertising, third-party analytics or cross-app tracking. It does not request access to your contacts, location, camera or microphone.
+On the web, you can practise without an account. The web version then keeps the same information in your browser’s storage on that computer only, and does not send it to us. If you create a free web account, the web version also saves this study information to your account so you can continue on any computer where you sign in; see “Web accounts and Razorpay payments” below. The iPhone app does not send your profile or study history to a CLAT CHAMP server. Neither version includes advertising, third-party analytics or cross-app tracking. It does not request access to your contacts, location, camera or microphone.
 
 ## Apple purchases
 
@@ -25,13 +25,15 @@ Apple handles subscription payments and payment details. The app uses Apple’s 
 
 Apple separately handles App Store transactions, device services, backups and any diagnostics you choose to share under Apple’s policies. Restoring purchases restores eligible Premium access, not your study history. Deleting the app does not cancel a subscription; manage or cancel it in your Apple subscription settings.
 
-## Web sign-in and Razorpay payments
+## Web accounts and Razorpay payments
 
-You can use the free parts of the web version without signing in. To buy or use Premium on the web, you sign in with your email address and a one-time code. We then store your email address, an account identifier, and your subscription records: the plan, status, renewal or end date and Razorpay subscription identifier. We use these only to sign you in, provide and restore Premium, prevent misuse, handle billing questions and meet legal obligations. Accounts, subscription records and Premium content are held with our database provider, Supabase, and sign-in codes are emailed through its email service.
+You can use the free parts of the web version without an account. An account is free and optional, and is needed for Premium. You create one, and sign in, with your email address and a one-time code, or with Google sign-in. If you use Google, Google shares your email address with us and may also share your name and profile picture, which our database provider stores with your account; we use only your email address.
+
+For each account we store your email address, an account identifier, and your study information: your optional name, target CLAT year, preparation stage, preferences, answers, unfinished sets, practice and mock-test history, reading measurements, streaks and achievements. For Premium we also store your subscription records: the plan, status, renewal or end date and Razorpay subscription identifier. We use this information only to sign you in, save your progress and restore it on any computer where you sign in, run practice and show your progress, provide and restore Premium, prevent misuse, handle support and billing questions, and meet legal obligations. Accounts, study information, subscription records and Premium content are held with our database provider, Supabase, and sign-in codes are emailed through its email service.
 
 Razorpay processes web payments. You give your payment details to Razorpay, not to us; we do not receive your card, UPI or bank details. Razorpay tells us whether a payment or renewal succeeded and the subscription period, and may process your contact details, payment information and device data under its own privacy policy, including for fraud prevention and legal compliance. Signing in keeps a session token in your browser so you stay signed in. When Premium is active, the web version also saves Premium practice content in your browser so it keeps working offline.
 
-Signing in does not copy your study history between devices or browsers.
+If you sign in on a browser that already has progress saved without an account, that progress is added to your account. Signing out removes your study information from that browser; it stays in your account.
 
 ## Website hosting and fonts
 
@@ -49,15 +51,15 @@ Please send only what is needed, and remove personal information from screenshot
 
 ## Sharing and service providers
 
-We do not sell personal information or share it for targeted advertising. Website hosting, font delivery, web sign-in, payments and email involve the providers described above. Their services may process information in countries other than your own, under their applicable privacy terms and safeguards. Study history held only on your device is not uploaded to those providers by CLAT CHAMP.
+We do not sell personal information or share it for targeted advertising. Website hosting, font delivery, web sign-in, payments and email involve the providers described above. Their services may process information in countries other than your own, under their applicable privacy terms and safeguards. Study history is uploaded only if you create a web account, and then only to our database provider for the purposes described above.
 
 We may disclose correspondence where necessary to comply with a legal obligation, respond to a lawful request or protect against abuse. We do not authorise service providers to use correspondence we entrust to them for their own advertising.
 
 ## Retention and deletion
 
-Local study information stays on your device for continued use. In the web version, clearing this site’s data in your browser removes saved progress and downloaded content on that browser. You can edit or remove your name in Settings. To remove the app’s local data, use iOS Settings to delete the app, rather than offloading it. This can permanently remove your saved progress. iOS device backups are managed separately by Apple and your device settings; a restored backup may restore app data. We cannot remotely access, recover or delete study information stored only on your device.
+Local study information stays on your device for continued use. In the web version without an account, clearing this site’s data in your browser removes saved progress and downloaded content on that browser. You can edit or remove your name in Settings. To remove the app’s local data, use iOS Settings to delete the app, rather than offloading it. This can permanently remove your saved progress. iOS device backups are managed separately by Apple and your device settings; a restored backup may restore app data. We cannot remotely access, recover or delete study information stored only on your device.
 
-We keep your web account and subscription records while your account is open. You can ask us to delete your account at privacy@clatchamp.com; we will delete it, except for payment and invoice records we must keep for tax, accounting or dispute purposes, which we keep only for the period the law requires. We retain support and privacy correspondence only as long as reasonably necessary to handle the request, related follow-up, security or legal obligations. You can ask us to delete correspondence. Where information must be retained for a legal obligation or an unresolved dispute, we will explain the applicable limitation. Service providers manage their own operational records and backups under their policies.
+We keep your web account, the study information saved to it and your subscription records while your account is open. You can delete your account at any time from **Account** in the web version, which permanently deletes the account and the study information saved to it and ends any web subscription immediately; or ask us at privacy@clatchamp.com. We delete everything except the payment and invoice records we must keep for tax, accounting or dispute purposes, which we keep only for the period the law requires. We retain support and privacy correspondence only as long as reasonably necessary to handle the request, related follow-up, security or legal obligations. You can ask us to delete correspondence. Where information must be retained for a legal obligation or an unresolved dispute, we will explain the applicable limitation. Service providers manage their own operational records and backups under their policies.
 
 ## Your choices and privacy requests
 
@@ -67,7 +69,7 @@ Your available rights depend on applicable law and may include a right to compla
 
 ## Students and younger users
 
-CLAT CHAMP is an exam-preparation service that may be used by students under 18. The iPhone app has no account registration, and neither the app nor the web version includes advertising or cross-app tracking; study personalisation takes place on the device. Web sign-in and Premium purchases on the web are intended for a parent or guardian, or for learners aged 18 or over; younger learners should ask a parent or guardian to sign in and subscribe for them. Younger users should also involve a parent or guardian before sending personal information by email. A parent or guardian may contact privacy@clatchamp.com about information a child has sent us. Any future feature that collects children’s personal data will require a separate assessment and any safeguards or consent required by applicable law.
+CLAT CHAMP is an exam-preparation service that may be used by students under 18. The iPhone app has no account registration, and neither the app nor the web version includes advertising or cross-app tracking. A free web account is optional. To create one, a learner must confirm that they are 18 or older, or that a parent or guardian agrees. Premium purchases on the web are intended for a parent or guardian, or for learners aged 18 or over. We use a learner’s information only to provide the practice service, never for advertising or profiling unrelated to their practice. Younger users should involve a parent or guardian before sending personal information by email. A parent or guardian may contact privacy@clatchamp.com to review or delete a child’s account and the information saved to it.
 
 ## Security, external links and changes
 

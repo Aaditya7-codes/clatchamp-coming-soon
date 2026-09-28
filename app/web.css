@@ -27,6 +27,25 @@ html,body{background:#191625}
 .wa-small a,.wa-dialog a{color:#d6c4ff}
 .wa-email{font-weight:600;overflow-wrap:anywhere}
 .wa-signed{font-size:14px;color:#b9b1cc;overflow-wrap:anywhere}
+.wa-dialog h3{margin:18px 0 6px;font-size:15px;color:#f5f1ff}
+.wa-consent{display:flex!important;gap:10px;align-items:flex-start;margin:4px 0 14px;font-size:14px!important;line-height:1.5;color:#d6cfe6!important;cursor:pointer}
+.wa-consent input{flex:none;width:20px;height:20px;min-height:0;margin:2px 0 0;padding:0;accent-color:#6241db}
+.wa-google{display:flex;align-items:center;justify-content:center;gap:12px;width:100%;min-height:52px;border:0;border-radius:14px;background:#fff;color:#1f1f1f;font:inherit;font-weight:600;cursor:pointer}
+.wa-google:disabled{opacity:.6;cursor:default}
+.wa-google:focus-visible,.wa-header:focus-visible,.wa-inline:focus-visible{outline:2px solid #b9a5ff;outline-offset:2px}
+.wa-or{display:flex;align-items:center;gap:12px;margin:16px 0 4px!important;font-size:13px;color:#b9b1cc!important}
+.wa-or::before,.wa-or::after{content:"";flex:1;height:1px;background:#443a54}
+.wa-sync{font-size:14px;color:#b8f1df!important}
+.wa-sync-local,.wa-sync-offline,.wa-sync-stale{color:#ffd9a8!important}
+.wa-dialog .wa-danger{color:#ffb4b4}
+.wa-actions{display:grid;gap:8px}
+.wa-dialog .wa-danger-button{background:#b3261e}
+.wa-header{display:inline-flex;align-items:center;gap:8px;min-height:40px;padding:0 14px;border:1px solid #443a54;border-radius:999px;background:#221c30;color:#f5f1ff;font:600 14px/1 Inter,ui-sans-serif,system-ui,sans-serif;cursor:pointer;position:relative;flex:none}
+.wa-header:hover{background:#2c2540}
+.wa-avatar{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;margin-left:-8px;border-radius:50%;background:#6241db;color:#fff;font-size:13px}
+.wa-dot{position:absolute;top:4px;right:4px;width:8px;height:8px;border-radius:50%;background:#ffb86b}
+.wa-inline{border:0;padding:0;background:none;color:#d6c4ff;font:inherit;text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+.wa-toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);z-index:50;max-width:calc(100vw - 32px);margin:0;padding:12px 18px;border-radius:14px;background:#2c2540;border:1px solid #5a4d70;color:#f5f1ff;font:15px/1.5 Inter,ui-sans-serif,system-ui,sans-serif;box-shadow:0 12px 30px #0008}
 
 /* =====================================================================
    Laptop and desktop layout (≥1024px): the portal is designed for computers.
@@ -54,6 +73,8 @@ html,body{background:#191625}
   display:flex;flex-direction:column;gap:4px;padding:100px 16px 24px;border-top:0;border-right:1px solid #2c2540;background:#15121e;z-index:13;margin:0}
  #clat-prototype #cs-screen>.cs-tabbar button{flex-direction:row;justify-content:flex-start;gap:14px;min-height:48px;padding:0 16px;font-size:15px;font-weight:600;border-radius:12px;cursor:pointer}
  #clat-prototype #cs-screen>.cs-tabbar button:hover{background:#221c30;color:#f5f1ff}
+ /* Account button sits at the foot of the sidebar */
+ #clat-prototype:has(.cs-tabbar) .wa-header{position:fixed;left:16px;bottom:24px;width:216px;justify-content:flex-start;padding:0 16px;z-index:15}
  /* Focus mode inside a set or mock: no sidebar, brand stays at the top */
  #clat-prototype:not(:has(.cs-tabbar)) .cs-top{padding:20px clamp(32px,4vw,64px);border-bottom:1px solid #2c2540}
 

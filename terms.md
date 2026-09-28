@@ -7,11 +7,11 @@ standfirst: "Free to read, an optional Premium subscription, and no connection t
 description: "Terms of use for CLAT Champ: an independent CLAT information site and practice app, with no affiliation to the Consortium of NLUs, the NLUs, or any examination body."
 ---
 
-**CLAT Champ is an independent website that explains the CLAT exam, and a
-practice app.** It is not affiliated with, endorsed by, or connected to the
+**CLAT Champ is an independent website that explains the CLAT exam, with an
+online practice portal.** It is not affiliated with, endorsed by, or connected to the
 Consortium of National Law Universities, any National Law University, or any
 other examination or government body. Nothing here is official. The guides are
-free; the only thing for sale is an optional Premium subscription for the app.
+free; the only thing for sale is an optional Premium subscription for the practice portal.
 
 By reading the site you accept the terms below. They are short, and written to
 be understood rather than to be impressive.
@@ -38,7 +38,7 @@ outcomes. We do not publish figures we cannot verify — which is why you will n
 find a rank predictor or a table of counselling fees here, even though people
 search for both.
 
-## The app
+## The practice portal
 
 CLAT CHAMP is an online practice portal that runs in your web browser at
 [clatchamp.com/app](/app/). Some practice is free. The rest needs a Premium
@@ -49,6 +49,18 @@ These terms cover this website, its blog and the practice portal. If we release 
 on iPhone, that version will also be governed by Apple’s standard licence terms. Our [Privacy Policy](/privacy/)
 covers the website, the web version and the app.
 
+## Your account
+
+You can practise without an account; your progress then stays in that browser
+only. A free account, created with your email address or Google sign-in, saves
+your profile and practice progress so you can carry on from any computer. To
+create one you must be 18 or older, or have a parent or guardian’s agreement.
+
+Keep access to the email address or Google account you sign in with; it is how
+you sign back in and how we identify your progress and any subscription. One
+account is for one learner. Sign out when you finish on a shared computer.
+You can delete your account at any time from **Account** in the portal.
+
 ## Premium on the web
 
 Web Premium is sold by Aaditya Sharma, trading as CLAT CHAMP, and paid through
@@ -57,11 +69,10 @@ including any applicable taxes, until you cancel. Cancelling stops the next
 renewal; Premium continues until the end of the period already paid for. Refunds
 are covered by our [Cancellation & Refunds policy](/refunds/).
 
-To subscribe you sign in with an email address. Sign-in and purchases are for a
-parent or guardian, or for learners aged 18 or over. Keep access to that email
-address; it is how you sign back in and how we identify your subscription. A
-subscription is for one household’s personal study. Please don’t share or resell
-access, or copy, scrape or republish the practice material.
+To subscribe you need an account. Purchases are for a parent or guardian, or for
+learners aged 18 or over. A subscription is for one learner’s personal study.
+Please don’t share or resell access, or copy, scrape or republish the practice
+material.
 
 We may change
 prices or plans for future periods; we will tell you before a change applies to

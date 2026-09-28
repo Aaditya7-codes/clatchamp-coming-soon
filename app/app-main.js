@@ -59,7 +59,7 @@
    screen.innerHTML=`<section class="home-premium-layout">${settings.homeIntro()}
    ${freshWorkout.card()}
 
-   <div class="dash-heading"><h2>Practice by subject</h2></div><div class="dash-grid">${sections.map(s=>`<button class="dash-section" data-action="open-practice" data-set="${s.id}"><span class="dash-icon">${icon(s.icon)}</span><b>${shortNames[s.section]}</b></button>`).join('')}</div><button class="cs-primary pm-home-upgrade" data-action="open-premium">${icon('gem')}${globalThis.CLATPremium?.hasAccess()?'Your Premium subscription':'Upgrade to Premium'}</button><p class="dash-bank-note">${icon('layers')}Your progress is saved on this device</p></section>`;
+   <div class="dash-heading"><h2>Practice by subject</h2></div><div class="dash-grid">${sections.map(s=>`<button class="dash-section" data-action="open-practice" data-set="${s.id}"><span class="dash-icon">${icon(s.icon)}</span><b>${shortNames[s.section]}</b></button>`).join('')}</div><button class="cs-primary pm-home-upgrade" data-action="open-premium">${icon('gem')}${globalThis.CLATPremium?.hasAccess()?'Your Premium subscription':'Upgrade to Premium'}</button>${globalThis.CLATWebSync.note(icon)}</section>`;
   }
   if(daily.view==='progress')screen.innerHTML=globalThis.CLATProgress.render(actualBaseline?{wpm:baselineWpm,accuracy:baselineAccuracy}:null,{subjects:practice.summary(),mistakes:globalThis.CLATMistakes.queue(globalThis.CLATPracticeSets).length});
   if(daily.view==='settings')screen.innerHTML=settings.render();
