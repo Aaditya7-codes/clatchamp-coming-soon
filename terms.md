@@ -40,12 +40,12 @@ search for both.
 
 ## The app
 
-CLAT CHAMP is a practice app that runs in your browser at
+CLAT CHAMP is an online practice portal that runs in your web browser at
 [clatchamp.com/app](/app/). Some practice is free. The rest needs a Premium
 subscription. Practice questions are original exam-style material written for
 preparation; they are not past papers and do not predict your CLAT score or admission.
 
-These terms cover this website, its blog and the app. If we release CLAT CHAMP
+These terms cover this website, its blog and the practice portal. If we release CLAT CHAMP
 on iPhone, that version will also be governed by Apple’s standard licence terms. Our [Privacy Policy](/privacy/)
 covers the website, the web version and the app.
 

@@ -59,4 +59,11 @@
  screen.innerHTML='';
  for(const src of ['app-main.js','launch.js'])await new Promise((ok,no)=>{const s=document.createElement('script');s.src=src;s.onload=ok;s.onerror=()=>no(new Error(src));document.body.append(s);});
  globalThis.lucide?.createIcons({attrs:{width:20,height:20}});
+
+ // On laptops the passage and mock navigator are permanent panels, so keep them open.
+ const wide=matchMedia('(min-width:1024px)');
+ const openPanels=()=>{if(!wide.matches)return;
+  for(const d of screen.querySelectorAll(':scope>details:has(>.cs-reading),.mock-screen>.mock-passage,.mock-screen>.mock-navigator'))if(!d.open)d.open=true;};
+ new MutationObserver(openPanels).observe(screen,{childList:true,subtree:true});
+ wide.addEventListener?.('change',openPanels);openPanels();
 })().catch(e=>{console.error(e);const s=document.getElementById('cs-screen');if(s)s.innerHTML='<p class="web-loading">CLAT CHAMP couldn’t start. Please reload the page.</p>';});

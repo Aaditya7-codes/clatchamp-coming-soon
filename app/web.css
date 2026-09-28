@@ -27,3 +27,78 @@ html,body{background:#191625}
 .wa-small a,.wa-dialog a{color:#d6c4ff}
 .wa-email{font-weight:600;overflow-wrap:anywhere}
 .wa-signed{font-size:14px;color:#b9b1cc;overflow-wrap:anywhere}
+
+/* =====================================================================
+   Laptop and desktop layout (≥1024px): the portal is designed for computers.
+   Sidebar navigation, a dashboard home, split passage/question screens and
+   a three-column mock. Phones and tablets keep the single-column layout.
+   #cs-screen (an id) is used so these rules beat the app's own stylesheets.
+   ===================================================================== */
+@media (min-width:1024px){
+ #clat-prototype{max-width:none!important;margin:0}
+ #clat-prototype .cs-phone{border:0!important;min-height:100dvh}
+ #clat-prototype #cs-screen{min-height:100dvh;padding:40px clamp(32px,4vw,64px) 72px;box-sizing:border-box}
+ /* One readable column by default; blocks fill it, buttons stay compact */
+ #clat-prototype #cs-screen>*:not(.cs-tabbar){width:100%;max-width:760px;margin-left:auto;margin-right:auto;box-sizing:border-box}
+ #clat-prototype #cs-screen>:is(button,.cs-primary,.cs-text-button){width:auto;min-width:220px;padding-left:28px;padding-right:28px;
+  margin-left:max(0px,calc((100% - 760px) / 2))}
+ #clat-prototype #cs-screen .cs-action-stack{display:flex;flex-wrap:wrap;gap:12px}
+ #clat-prototype #cs-screen .cs-action-stack>*{width:auto;min-width:220px;padding-left:28px;padding-right:28px;margin:0}
+ #clat-prototype .cs-tab-spacer{display:none!important}
+ #clat-prototype #cs-screen>.cs-complete-icon{width:60px;margin-left:max(0px,calc((100% - 760px) / 2))}
+
+ /* Sidebar: brand + main navigation */
+ #clat-prototype:has(.cs-tabbar) .cs-top{position:fixed;left:0;top:0;width:248px;padding:28px 26px;z-index:14;background:transparent;box-sizing:border-box}
+ #clat-prototype:has(.cs-tabbar) #cs-screen{margin-left:248px}
+ #clat-prototype #cs-screen>.cs-tabbar{position:fixed;left:0;top:0;bottom:0;transform:none;width:248px;max-width:none;
+  display:flex;flex-direction:column;gap:4px;padding:100px 16px 24px;border-top:0;border-right:1px solid #2c2540;background:#15121e;z-index:13;margin:0}
+ #clat-prototype #cs-screen>.cs-tabbar button{flex-direction:row;justify-content:flex-start;gap:14px;min-height:48px;padding:0 16px;font-size:15px;font-weight:600;border-radius:12px;cursor:pointer}
+ #clat-prototype #cs-screen>.cs-tabbar button:hover{background:#221c30;color:#f5f1ff}
+ /* Focus mode inside a set or mock: no sidebar, brand stays at the top */
+ #clat-prototype:not(:has(.cs-tabbar)) .cs-top{padding:20px clamp(32px,4vw,64px);border-bottom:1px solid #2c2540}
+
+ /* Home: dashboard grid */
+ #clat-prototype #cs-screen>.home-premium-layout{max-width:1120px;display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);
+  grid-template-areas:"intro intro" "hero head" "hero grid" "up note";column-gap:32px;align-items:start}
+ .home-premium-layout>.dash-intro{grid-area:intro}
+ .home-premium-layout>.dash-hero{grid-area:hero;margin-bottom:0!important}
+ .home-premium-layout>.dash-heading{grid-area:head}
+ .home-premium-layout>.dash-grid{grid-area:grid}
+ .home-premium-layout>.pm-home-upgrade{grid-area:up;justify-self:start;width:auto!important;padding:0 28px}
+ .home-premium-layout>.dash-bank-note{grid-area:note;align-self:center;justify-self:end;margin:0}
+
+ /* Practice subject chooser: cards in a grid */
+ #clat-prototype #cs-screen>.practice-chooser{max-width:1000px}
+ #clat-prototype #cs-screen .cs-subject-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px}
+ #clat-prototype #cs-screen .cs-subject-list .cs-option{margin:0;min-height:76px}
+ #clat-prototype #cs-screen .practice-chooser .practice-premium{width:auto;padding:0 28px;margin-top:20px}
+
+ /* Progress: use the width */
+ #clat-prototype #cs-screen:has(.dash-overview,.pr-chart,[class*="progress"])>*:not(.cs-tabbar){max-width:1000px}
+
+ /* Questions: passage stays open on the left, question on the right */
+ #clat-prototype #cs-screen:has(>details>.cs-reading){display:grid;grid-template-columns:minmax(0,1.15fr) minmax(360px,.85fr);
+  column-gap:48px;align-content:start}
+ #clat-prototype #cs-screen:has(>details>.cs-reading)>*:not(.cs-tabbar){grid-column:2;max-width:none;width:auto;margin-left:0;margin-right:0}
+ #clat-prototype #cs-screen:has(>details>.cs-reading)>details:has(>.cs-reading){grid-column:1;grid-row:1 / span 30;position:sticky;top:24px;
+  max-height:calc(100dvh - 120px);overflow:auto;padding-right:8px;scrollbar-width:thin}
+ #clat-prototype #cs-screen>details>summary:has(+.cs-reading){display:none}
+ #clat-prototype #cs-screen>details>.cs-reading{margin:0}
+ #clat-prototype #cs-screen .cs-question-actions{position:static;transform:none;max-width:none;width:auto;padding:16px 0 0;border-top:0;background:transparent}
+
+ /* Mock: passage | question | navigator */
+ #clat-prototype #cs-screen>.mock-screen{max-width:1400px;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(340px,.9fr) 260px;column-gap:36px;align-items:start}
+ #clat-prototype .mock-screen>*{grid-column:2}
+ #clat-prototype .mock-screen>:is(.mock-toolbar,.mock-status){grid-column:1 / -1}
+ #clat-prototype .mock-screen>.mock-navigator{grid-column:3;grid-row:3 / span 20;position:sticky;top:84px;max-height:calc(100dvh - 110px);overflow:auto;
+  padding:16px;border:1px solid #2c2540;border-radius:18px;background:#1c1729;scrollbar-width:thin;margin:0}
+ #clat-prototype .mock-screen>.mock-passage{grid-column:1;grid-row:3 / span 20;position:sticky;top:84px;max-height:calc(100dvh - 110px);overflow:auto;scrollbar-width:thin;margin:0}
+ #clat-prototype .mock-screen>:is(.mock-navigator,.mock-passage)>summary{pointer-events:none;list-style:none;font-weight:700;color:#f5f1ff}
+ #clat-prototype .mock-screen>:is(.mock-navigator,.mock-passage)>summary::-webkit-details-marker{display:none}
+ #clat-prototype .mock-screen .mock-grid{grid-template-columns:repeat(6,1fr)!important}
+ #clat-prototype .cs-option{cursor:pointer}
+}
+@media (min-width:1024px) and (max-width:1279px){
+ #clat-prototype #cs-screen>.mock-screen{grid-template-columns:minmax(0,1fr) minmax(320px,1fr)}
+ #clat-prototype .mock-screen>.mock-navigator{grid-column:1 / -1;grid-row:auto;position:static;max-height:none}
+}
