@@ -6,8 +6,8 @@
   <meta name="theme-color" content="#191625">
   <meta name="color-scheme" content="dark">
   <title>CLAT Champ — CLAT practice, mocks and a question every day</title>
-  <meta name="description" content="Practise all five CLAT sections with passage-based sets, full-length mocks and a daily question. Free to start in your browser — nothing to install.">
-  <meta property="og:title" content="CLAT Champ — Prepare for CLAT in your browser">
+  <meta name="description" content="Practise all five CLAT sections with original passage-based sets, full-length mocks with CLAT marking and a daily question. Free to start in your browser — nothing to install.">
+  <meta property="og:title" content="CLAT Champ — Practise CLAT the way the paper asks">
   <meta property="og:description" content="Passage-based practice for all five sections, full-length mocks and a question every day. Free to start.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.clatchamp.com/">
@@ -18,7 +18,7 @@
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="CLAT Champ — everything you need to prepare for CLAT. Free to start at clatchamp.com.">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="CLAT Champ — Prepare for CLAT in your browser">
+  <meta name="twitter:title" content="CLAT Champ — Practise CLAT the way the paper asks">
   <meta name="twitter:description" content="Passage-based practice for all five sections, full-length mocks and a question every day. Free to start.">
   <meta name="twitter:image" content="https://www.clatchamp.com/og.png">
   <meta name="twitter:image:alt" content="CLAT Champ — everything you need to prepare for CLAT. Free to start at clatchamp.com.">
@@ -33,26 +33,31 @@
   {
     "@context": "https://schema.org",
     "@graph": [
-      {
-        "@type": "WebSite",
-        "name": "CLAT Champ",
-        "url": "https://www.clatchamp.com/",
-        "inLanguage": "en-IN"
-      },
+      { "@type": "WebSite", "name": "CLAT Champ", "url": "https://www.clatchamp.com/", "inLanguage": "en-IN" },
       {
         "@type": "WebApplication",
         "name": "CLAT Champ",
         "url": "https://www.clatchamp.com/app/",
         "applicationCategory": "EducationalApplication",
         "operatingSystem": "Any (web browser)",
-        "description": "CLAT preparation: passage-based practice for all five sections, full-length mocks and a daily question.",
+        "description": "CLAT preparation: original passage-based practice for all five sections, full-length mocks and a daily question.",
         "offers": { "@type": "Offer", "price": "0", "priceCurrency": "INR" }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          { "@type": "Question", "name": "Is CLAT Champ free?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Question of the Day, one complete set in each of the five sections and full-length Mock 1 are free, with explanations and progress tracking. Premium adds the full question bank and all 10 mocks." } },
+          { "@type": "Question", "name": "Do I need to download anything or create an account?", "acceptedAnswer": { "@type": "Answer", "text": "No. CLAT Champ runs in your browser on a phone, tablet or laptop. Free practice needs no account; you only sign in with your email to subscribe to Premium." } },
+          { "@type": "Question", "name": "Are these real CLAT questions?", "acceptedAnswer": { "@type": "Answer", "text": "No. Every question is original, written in the style of recent CLAT papers: passage-based sets in English, Current Affairs & GK, Legal Reasoning, Logical Reasoning and Quantitative Techniques. CLAT Champ is independent and not affiliated with the Consortium of NLUs." } },
+          { "@type": "Question", "name": "How are the mocks marked?", "acceptedAnswer": { "@type": "Answer", "text": "Like CLAT: 120 questions in 120 minutes, +1 for a correct answer, −0.25 for a wrong answer and 0 for an unanswered question." } },
+          { "@type": "Question", "name": "Where is my progress saved?", "acceptedAnswer": { "@type": "Answer", "text": "In your browser, on your device. It is not uploaded to CLAT Champ. Use the same browser on the same device to keep your streak and history." } }
+        ]
       }
     ]
   }
   </script>
 </head>
-<body>
+<body class="home">
   <div class="shell">
     <header class="masthead">
       <a class="brand" href="/" aria-label="CLAT Champ home">
@@ -67,97 +72,186 @@
     </header>
 
     <main>
-      <section class="teaser" aria-labelledby="headline">
-        <p class="t-eyebrow rise r1">CLAT 2027 preparation</p>
-        <h1 id="headline" class="t-head rise r2">Everything you need to prepare for CLAT.</h1>
-        <p class="t-lede rise r2">Passage-based practice for all five sections, full-length mocks and a question every day. Free to start, right in your browser — nothing to install.</p>
-
-        <div class="cta-row rise r3">
-          <a class="btn-primary" href="/app/">Start practising free <span aria-hidden="true">&#8594;</span></a>
-          <a class="btn-quiet" href="/blog/">Read the CLAT guides</a>
+      <!-- Hero: the promise on the left, a real question to try on the right -->
+      <section class="hero" aria-labelledby="headline">
+        <div class="hero-copy">
+          <p class="countpill rise r1" id="countpill"><span class="tnum" id="days">—</span> days to CLAT 2027 <span aria-hidden="true">·</span> 6 December</p>
+          <h1 id="headline" class="hero-head rise r2">Practise CLAT the way the paper asks.</h1>
+          <p class="hero-lede rise r2">Passage-based sets for all five sections, full-length mocks with CLAT marking, and a new question every day. Free to start, right in your browser.</p>
+          <div class="cta-row rise r3">
+            <a class="btn-primary btn-lg" href="/app/">Start practising free <span aria-hidden="true">&#8594;</span></a>
+          </div>
+          <p class="cta-note rise r3">No download. No account needed for free practice.</p>
+          <ul class="facts rise r4" aria-label="What’s inside">
+            <li><strong class="tnum">1,010</strong><span>original questions</span></li>
+            <li><strong class="tnum">10</strong><span>full-length mocks</span></li>
+            <li><strong class="tnum">5</strong><span>CLAT sections</span></li>
+          </ul>
         </div>
 
-        <p class="countstrip rise r3">
-          <span class="cs-n tnum" id="days">—</span>
-          <span class="cs-l">days to CLAT&nbsp;2027</span>
-          <span class="cs-sep" aria-hidden="true"></span>
-          <span class="cs-d">6 December 2026</span>
-        </p>
-
-        <a class="glimpse rise r4" href="/app/" aria-label="Open CLAT Champ">
-          <span class="phone"><span class="screen">
-            <img src="/assets/app/home.jpg" width="390" height="844" alt="The CLAT Champ home screen: days to CLAT 2027, today’s Question of the Day and practice by subject.">
-          </span></span>
-        </a>
-      </section>
-
-      <section class="band" aria-labelledby="features">
-        <p class="t-eyebrow">What you get</p>
-        <h2 id="features" class="band-head">Practice that looks like the paper.</h2>
-        <div class="features">
-          <article class="feature">
-            <h3>All five sections</h3>
-            <p>English, Current Affairs &amp; GK, Legal Reasoning, Logical Reasoning and Quantitative Techniques — as passage-based sets, the way CLAT asks them.</p>
-          </article>
-          <article class="feature">
-            <h3>Question of the Day</h3>
-            <p>A fresh set every day, sized to finish in one sitting. Keep a streak going through the months before the exam.</p>
-          </article>
-          <article class="feature">
-            <h3>Full-length mocks</h3>
-            <p>120 questions in 120 minutes with CLAT marking: +1 for a correct answer, −0.25 for a wrong one. Flag, skip and move between sections freely.</p>
-          </article>
-          <article class="feature">
-            <h3>Speed and accuracy</h3>
-            <p>See your reading speed and accuracy by subject, revisit the questions you got wrong, and read an explanation for every answer.</p>
-          </article>
-        </div>
-
-        <div class="shots">
-          <figure>
-            <img src="/assets/app/reading.jpg" width="390" height="844" loading="lazy" alt="A Quantitative Techniques passage with a labelled diagram of a reading room.">
-            <figcaption>Read the passage — timed, so you learn your pace.</figcaption>
-          </figure>
-          <figure>
-            <img src="/assets/app/question.jpg" width="390" height="844" loading="lazy" alt="A multiple-choice question with four options and an answer selected.">
-            <figcaption>Answer, skip or save and come back later.</figcaption>
-          </figure>
+        <div class="try rise r3" id="try" aria-labelledby="try-title">
+          <div class="try-head">
+            <span class="try-tag">Try one now</span>
+            <span class="try-sec">Quantitative Techniques</span>
+          </div>
+          <img class="try-fig" src="/assets/app/reading-room.svg" width="520" height="360" alt="A 12 m by 8 m rectangle with a uniform 1 m walking strip inside all four edges. The centre is reserved for tables.">
+          <p class="try-passage">A rectangular reading room is 12 m long and 8 m wide, measured along its inside floor edges. A uniform 1 m-wide walking strip runs inside the room along all four walls. The central area left after this strip is reserved for tables.</p>
+          <h2 class="try-q" id="try-title">What is the area reserved for tables?</h2>
+          <div class="try-opts" role="group" aria-labelledby="try-title">
+            <button type="button" data-i="0"><b>A</b>60 m²</button>
+            <button type="button" data-i="1"><b>B</b>77 m²</button>
+            <button type="button" data-i="2"><b>C</b>80 m²</button>
+            <button type="button" data-i="3"><b>D</b>96 m²</button>
+          </div>
+          <div class="try-result" id="try-result" aria-live="polite" hidden></div>
         </div>
       </section>
 
-      <section class="band" aria-labelledby="pricing">
+      <!-- How it works -->
+      <section class="band" aria-labelledby="how">
+        <p class="t-eyebrow">How it works</p>
+        <h2 id="how" class="band-head">A plan you can keep for the months before CLAT.</h2>
+        <ol class="steps">
+          <li>
+            <span class="step-n">1</span>
+            <h3>Find your reading speed</h3>
+            <p>Read one short passage at your natural pace and answer five questions. You get your words per minute and accuracy as a starting point.</p>
+          </li>
+          <li>
+            <span class="step-n">2</span>
+            <h3>Practise a little every day</h3>
+            <p>Question of the Day gives you a fresh set each day, sized to finish in one sitting. Build a streak and let practice become a habit.</p>
+          </li>
+          <li>
+            <span class="step-n">3</span>
+            <h3>Test yourself like it’s the real thing</h3>
+            <p>Sit full-length mocks: 120 questions, 120 minutes, +1 and −0.25. Then review every answer and revisit your mistakes.</p>
+          </li>
+        </ol>
+      </section>
+
+      <!-- Feature rows with real screens -->
+      <section class="band rows" aria-labelledby="inside">
+        <p class="t-eyebrow">Inside the app</p>
+        <h2 id="inside" class="band-head">Built around how CLAT is actually set.</h2>
+
+        <div class="row">
+          <div class="row-copy">
+            <h3>Passages first, like the paper</h3>
+            <p>Every section is taught through passage-based sets — English comprehension, current affairs from 2025–26 news, legal principles, arguments and data. The timer measures how long you read, so you learn your real pace.</p>
+            <ul class="ticks">
+              <li>English, GK, Legal, Logical and Quant</li>
+              <li>Diagrams and tables where the question needs them</li>
+              <li>Original material, written for CLAT-style reasoning</li>
+            </ul>
+          </div>
+          <figure class="row-shot"><img src="/assets/app/reading.jpg" width="390" height="844" loading="lazy" alt="A Quantitative Techniques passage in the app with a labelled diagram of a reading room."></figure>
+        </div>
+
+        <div class="row row-flip">
+          <div class="row-copy">
+            <h3>Understand every answer</h3>
+            <p>After each set, see what you got right, the evidence in the passage behind every option, and a tip you can reuse. Wrong answers go into a revision list, so you meet them again before the exam does.</p>
+            <ul class="ticks">
+              <li>Explanation for every option, not just the answer</li>
+              <li>Mistake revision by subject</li>
+              <li>Skip, flag or save and come back later</li>
+            </ul>
+          </div>
+          <figure class="row-shot"><img src="/assets/app/question.jpg" width="390" height="844" loading="lazy" alt="A multiple-choice question in the app with four options and one selected."></figure>
+        </div>
+
+        <div class="row">
+          <div class="row-copy">
+            <h3>See yourself improve</h3>
+            <p>Your dashboard tracks accuracy and reading speed by subject over time, counts down to exam day and keeps your daily streak. With Premium, new sets are chosen from how you’re doing.</p>
+            <ul class="ticks">
+              <li>Accuracy and words per minute, by subject</li>
+              <li>Daily streak and achievements</li>
+              <li>Progress saved in your browser — no sign-up</li>
+            </ul>
+          </div>
+          <figure class="row-shot"><img src="/assets/app/home.jpg" width="390" height="844" loading="lazy" alt="The CLAT Champ home screen with the countdown to CLAT 2027, Question of the Day and practice by subject."></figure>
+        </div>
+      </section>
+
+      <!-- Pricing -->
+      <section class="band" aria-labelledby="pricing" id="pricing-section">
         <p class="t-eyebrow">Pricing</p>
-        <h2 id="pricing" class="band-head">Start free. Go further with Premium.</h2>
+        <h2 id="pricing" class="band-head">Start free. Go further when you’re ready.</h2>
         <div class="plans">
           <article class="plan">
             <h3>Free</h3>
-            <p class="price"><strong>₹0</strong></p>
+            <p class="price"><strong>₹0</strong> <span>forever</span></p>
             <ul>
               <li>Question of the Day, every day</li>
               <li>One complete set in each of the five sections</li>
-              <li>Full-length Mock 1</li>
+              <li>Full-length Mock 1 with CLAT marking</li>
               <li>Explanations, progress and reading speed</li>
             </ul>
             <a class="btn-primary" href="/app/">Start practising free</a>
           </article>
           <article class="plan plan-premium">
             <h3>Premium</h3>
-            <p class="price"><strong>₹999</strong> / 3 months <span>or</span> <strong>₹1,999</strong> / year</p>
+            <p class="price"><strong>₹1,999</strong> <span>/ year</span></p>
+            <p class="price-sub">About ₹5.50 a day. Or ₹999 for 3 months.</p>
             <ul>
               <li>Everything in Free</li>
-              <li>1,000+ practice questions across all five sections</li>
+              <li>All 1,010 questions across the five sections</li>
               <li>All 10 full-length mocks</li>
               <li>New sets chosen from how you’re doing</li>
+              <li>Cancel any time</li>
             </ul>
-            <p class="plan-note">Premium subscriptions open shortly. Start free now — your progress stays in your browser.</p>
+            <p class="plan-note">Premium subscriptions open shortly. Start free now — your progress carries straight over.</p>
           </article>
         </div>
       </section>
 
+      <!-- Parents -->
+      <section class="band parents" aria-labelledby="parents">
+        <div class="parents-inner">
+          <div>
+            <p class="t-eyebrow">For parents</p>
+            <h2 id="parents" class="band-head">Serious preparation, without the noise.</h2>
+          </div>
+          <ul class="trust">
+            <li><h3>No ads, no tracking</h3><p>No advertising, no third-party analytics and no selling of data.</p></li>
+            <li><h3>Study data stays on the device</h3><p>Practice history is saved in the browser, not uploaded to us.</p></li>
+            <li><h3>Honest about what it is</h3><p>Original exam-style practice from an independent team — not official CLAT material.</p></li>
+            <li><h3>Clear billing</h3><p>Simple prices, cancel any time, and a plain <a href="/refunds/">refund policy</a>.</p></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="band" aria-labelledby="faq">
+        <p class="t-eyebrow">Questions</p>
+        <h2 id="faq" class="band-head">Good to know.</h2>
+        <div class="faq">
+          <details><summary>Is CLAT Champ free?</summary><p>Yes. Question of the Day, one complete set in each of the five sections and full-length Mock 1 are free, with explanations and progress tracking. Premium adds the full question bank and all 10 mocks.</p></details>
+          <details><summary>Do I need to download anything or create an account?</summary><p>No. CLAT Champ runs in your browser on a phone, tablet or laptop. Free practice needs no account; you only sign in with your email to subscribe to Premium.</p></details>
+          <details><summary>Are these real CLAT questions?</summary><p>No. Every question is original, written in the style of recent CLAT papers. CLAT Champ is independent and not affiliated with the Consortium of National Law Universities. For the official pattern, see our guide to the <a href="/blog/clat-exam-pattern/">CLAT exam pattern</a>.</p></details>
+          <details><summary>How are the mocks marked?</summary><p>Like CLAT: 120 questions in 120 minutes, +1 for a correct answer, −0.25 for a wrong answer and 0 for an unanswered question. You can move between sections, flag questions and clear answers.</p></details>
+          <details><summary>Where is my progress saved?</summary><p>In your browser, on your device. It isn’t uploaded to CLAT Champ. Use the same browser on the same device to keep your streak and history.</p></details>
+        </div>
+      </section>
+
+      <!-- Guides -->
+      <section class="band" aria-labelledby="guides">
+        <p class="t-eyebrow">Free guides</p>
+        <h2 id="guides" class="band-head">Plain answers about CLAT.</h2>
+        <div class="guides">
+          <a class="guide" href="/blog/clat-exam-pattern/"><span class="cat">Exam basics</span><strong>CLAT Exam Pattern: Sections, Marks and Timing</strong><span>120 questions, two hours, five sections — and how the marking works.</span></a>
+          <a class="guide" href="/blog/how-to-start-preparing-for-clat/"><span class="cat">How to prepare</span><strong>How to Start Preparing for CLAT: Your First Month</strong><span>Week one, month one, and what to deliberately ignore at the start.</span></a>
+          <a class="guide" href="/blog/is-self-study-enough-for-clat/"><span class="cat">Straight answers</span><strong>Is Self-Study Enough for CLAT?</strong><span>What a complete plan has to include if you prepare on your own.</span></a>
+        </div>
+        <p class="guides-more"><a href="/blog/">All 40 guides <span aria-hidden="true">&#8594;</span></a></p>
+      </section>
+
       <section class="closer" aria-labelledby="closer">
-        <h2 id="closer">Try today’s question.</h2>
-        <p>No account, no download. Just open it and start.</p>
-        <a class="btn-primary" href="/app/">Open CLAT Champ <span aria-hidden="true">&#8594;</span></a>
+        <h2 id="closer">Your first set takes about ten minutes.</h2>
+        <p>Open CLAT Champ and start with today’s question.</p>
+        <a class="btn-primary btn-lg" href="/app/">Start practising free <span aria-hidden="true">&#8594;</span></a>
         <p class="indie">CLAT Champ is independent and not affiliated with the Consortium of National Law Universities.</p>
       </section>
     </main>
@@ -173,18 +267,52 @@
     </footer>
   </div>
 
+  <!-- Mobile: keep the main action in reach once the hero scrolls away -->
+  <div class="sticky-cta" id="sticky-cta" aria-hidden="true">
+    <a class="btn-primary" href="/app/" tabindex="-1">Start practising free <span aria-hidden="true">&#8594;</span></a>
+  </div>
+
   <script>
-    /* CLAT 2027 sits on 6 December 2026, per the Consortium of NLUs
-       notification. The countdown recomputes on every load, and hides
-       itself once the date has passed so it can never show a stale number. */
     (function () {
-      var EXAM = new Date('2026-12-06T00:00:00+05:30');
-      var days = Math.ceil((EXAM - new Date()) / 86400000);
-      var strip = document.querySelector('.countstrip');
-      if (days > 0 && days < 2000) {
-        document.getElementById('days').textContent = String(days);
-      } else if (strip) {
-        strip.hidden = true;
+      /* CLAT 2027: 6 December 2026, per the Consortium of NLUs notification.
+         Hides itself once the date has passed so it never shows a stale number. */
+      var days = Math.ceil((new Date('2026-12-06T00:00:00+05:30') - new Date()) / 86400000);
+      if (days > 0 && days < 2000) document.getElementById('days').textContent = String(days);
+      else document.getElementById('countpill').hidden = true;
+
+      /* Try-one question: the first question of the free Quant set, with its own explanation. */
+      var reasons = [
+        'Right. The strip takes 1 m off both ends of each side: (12 − 2) × (8 − 2) = 10 × 6 = 60 m².',
+        'Not quite. 77 = 11 × 7 takes the strip off only one side of each dimension.',
+        'Not quite. 80 = 10 × 8 shortens the length but leaves the width unchanged.',
+        'Not quite. 96 = 12 × 8 is the whole room, including the walking strip.'
+      ];
+      var box = document.getElementById('try'), out = document.getElementById('try-result');
+      box.querySelectorAll('.try-opts button').forEach(function (b) {
+        b.addEventListener('click', function () {
+          var i = Number(b.dataset.i);
+          box.querySelectorAll('.try-opts button').forEach(function (o) {
+            o.disabled = true;
+            if (o.dataset.i === '0') o.classList.add('is-right');
+          });
+          if (i !== 0) b.classList.add('is-wrong');
+          b.setAttribute('aria-pressed', 'true');
+          out.className = 'try-result ' + (i === 0 ? 'ok' : 'no');
+          out.innerHTML = '<p>' + reasons[i] + '</p><p class="try-tip"><b>Tip:</b> an inside border reduces each dimension by twice its width.</p>' +
+            '<a class="btn-primary" href="/app/">Try the full set free <span aria-hidden="true">&#8594;</span></a>';
+          out.hidden = false;
+        });
+      });
+
+      /* Sticky CTA on small screens after the hero's button leaves view. */
+      var sticky = document.getElementById('sticky-cta'), heroBtn = document.querySelector('.hero .btn-primary');
+      if ('IntersectionObserver' in window && sticky && heroBtn) {
+        new IntersectionObserver(function (e) {
+          var show = !e[0].isIntersecting && e[0].boundingClientRect.top < 0;
+          sticky.classList.toggle('on', show);
+          sticky.setAttribute('aria-hidden', show ? 'false' : 'true');
+          sticky.querySelector('a').tabIndex = show ? 0 : -1;
+        }).observe(heroBtn);
       }
     })();
   </script>
