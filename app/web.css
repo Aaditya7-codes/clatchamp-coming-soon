@@ -1,0 +1,29 @@
+/* Web-only layout: the app is a phone-width column, centred on larger screens. */
+html,body{background:#191625}
+#clat-prototype{max-width:560px!important;margin:0 auto}
+#clat-prototype .cs-question-actions,#clat-prototype .cs-tabbar{max-width:560px!important}
+@media(min-width:600px){
+ #clat-prototype .cs-phone{border-left:1px solid #2c2540!important;border-right:1px solid #2c2540!important;min-height:100dvh}
+}
+.web-loading{color:#b9b1cc;font:16px/1.6 Inter,ui-sans-serif,system-ui,sans-serif;padding:32px 0;text-align:center}
+
+/* Account dialog */
+.wa-dialog{width:min(420px,calc(100vw - 32px));max-height:calc(100dvh - 32px);overflow:auto;padding:24px;border:1px solid #443a54;border-radius:22px;background:#221c30;color:#f5f1ff;font:16px/1.6 Inter,ui-sans-serif,system-ui,sans-serif;box-shadow:0 24px 60px #0008}
+.wa-dialog::backdrop{background:#0d0b14cc}
+.wa-dialog h2{margin:0 36px 8px 0;font-size:24px;line-height:1.25;letter-spacing:-.4px}
+.wa-dialog p{margin:0 0 14px;color:#d6cfe6}
+.wa-dialog form{display:grid;gap:10px;margin:8px 0 14px}
+.wa-dialog label{font-size:14px;color:#b9b1cc}
+.wa-dialog input{font:inherit;font-size:18px;padding:13px 14px;border-radius:12px;border:1px solid #5a4d70;background:#191625;color:#f5f1ff;min-height:52px}
+.wa-dialog input:focus-visible{outline:2px solid #b9a5ff;outline-offset:2px}
+.wa-dialog .cs-primary{width:100%;min-height:52px;border:0;border-radius:14px;background:#6241db;color:#fff;font:inherit;font-weight:600;cursor:pointer}
+.wa-dialog .cs-primary:disabled{opacity:.6;cursor:default}
+.wa-dialog .cs-text-button{display:block;width:100%;min-height:46px;border:0;background:transparent;color:#d6c4ff;font:inherit;text-align:left;cursor:pointer;padding:0}
+.wa-dialog .pm-active{padding:6px 0;color:#a3e9cc;font-weight:600}
+.wa-close{position:absolute;top:16px;right:16px;width:40px;height:40px;border:0;border-radius:999px;background:#35294d;color:#f5f1ff;font-size:16px;cursor:pointer}
+.wa-error{color:#ffb4b4!important;font-size:15px}
+.wa-note{color:#b8f1df!important}
+.wa-small{font-size:13px;color:#b9b1cc!important;margin-top:10px!important}
+.wa-small a,.wa-dialog a{color:#d6c4ff}
+.wa-email{font-weight:600;overflow-wrap:anywhere}
+.wa-signed{font-size:14px;color:#b9b1cc;overflow-wrap:anywhere}

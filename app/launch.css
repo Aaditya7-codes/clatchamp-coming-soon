@@ -1,0 +1,20 @@
+@font-face{font-family:LaunchInter;src:url('launch-inter.woff2') format('woff2');font-weight:400;font-display:swap}
+.cs-launch{position:fixed;inset:0;z-index:1000;overflow:hidden;display:grid;place-items:center;background:#191625;color:#fff2d7;transition:opacity .28s ease;isolation:isolate}
+.cs-launch.is-leaving{opacity:0;pointer-events:none}
+.cs-launch-lockup{display:flex;flex-direction:column;align-items:center;gap:clamp(22px,6.48vw,32px);transform:translateY(-9px)}
+.cs-launch-mark{position:relative;width:clamp(112px,33.33vw,166px);aspect-ratio:860/725;background:#191625;isolation:isolate}
+.cs-launch-piece{position:absolute;inset:0;mix-blend-mode:lighten}
+.cs-launch-piece svg{display:block;width:100%;height:100%;overflow:hidden}
+.cs-launch-c{animation:cs-logo-reveal .9s .22s cubic-bezier(.65,0,.35,1) both}
+.cs-launch-lower{animation:cs-slash-arrive .56s .65s cubic-bezier(.16,1,.3,1) both}
+.cs-launch-upper{animation:cs-slash-arrive .5s .75s cubic-bezier(.16,1,.3,1) both}
+.cs-launch-wordmark-mask{overflow:hidden;padding:3px 0}
+.cs-launch-brand{margin:0;padding-left:.137em;font-family:LaunchInter,-apple-system,sans-serif;font-size:clamp(17px,4.72vw,24px);font-weight:400;line-height:1.2;letter-spacing:.137em;white-space:nowrap;animation:cs-brand-reveal .7s 1.2s cubic-bezier(.16,1,.3,1) both}
+.cs-launch-bloom{position:absolute;inset:-45%;background:radial-gradient(ellipse,rgba(197,168,240,.1),transparent 66%);opacity:0;animation:cs-launch-bloom .7s 1.8s both;pointer-events:none}
+@keyframes cs-logo-reveal{from{opacity:0;clip-path:polygon(0% 100%,0% 100%,0% 100%,0% 100%)}to{opacity:1;clip-path:polygon(0% -110%,210% 100%,0% 100%,0% -110%)}}
+@keyframes cs-slash-arrive{from{opacity:0;transform:translate(-14.17%,16.12%)}to{opacity:1;transform:none}}
+@keyframes cs-brand-reveal{from{opacity:0;transform:translateY(70%)}to{opacity:1;transform:none}}
+@keyframes cs-launch-bloom{0%{opacity:0;transform:scale(.86)}43%{opacity:1;transform:scale(1)}100%{opacity:0;transform:scale(1.08)}}
+.cs-launch.is-still *{animation:none!important}
+.cs-launch.is-still{transition:none}
+@media(prefers-reduced-motion:reduce){.cs-launch *{animation:none!important}.cs-launch{transition:none}}

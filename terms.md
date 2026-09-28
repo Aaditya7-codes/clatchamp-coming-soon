@@ -1,16 +1,17 @@
 ---
 layout: legal
 permalink: /terms/
-updated: 2026-09-19
+updated: 2026-09-28
 title: "Terms of Use — What CLAT Champ Is and Is Not"
-standfirst: "Free to read, nothing for sale, and no connection to the Consortium of NLUs or any law school. The rest is detail."
-description: "Terms of use for CLAT Champ: an independent, free CLAT information site with no affiliation to the Consortium of NLUs, the NLUs, or any examination body."
+standfirst: "Free to read, an optional Premium subscription, and no connection to the Consortium of NLUs or any law school. The rest is detail."
+description: "Terms of use for CLAT Champ: an independent CLAT information site and practice app, with no affiliation to the Consortium of NLUs, the NLUs, or any examination body."
 ---
 
-**CLAT Champ is a free, independent website that explains the CLAT exam.** It is
-not affiliated with, endorsed by, or connected to the Consortium of National Law
-Universities, any National Law University, or any other examination or
-government body. Nothing here is official, and nothing here is for sale.
+**CLAT Champ is an independent website that explains the CLAT exam, and a
+practice app.** It is not affiliated with, endorsed by, or connected to the
+Consortium of National Law Universities, any National Law University, or any
+other examination or government body. Nothing here is official. The guides are
+free; the only thing for sale is an optional Premium subscription for the app.
 
 By reading the site you accept the terms below. They are short, and written to
 be understood rather than to be impressive.
@@ -39,12 +40,32 @@ search for both.
 
 ## The app
 
-An app is in development. It has not been released, we have not announced a
-launch date, and there is nothing on this site to download, join, reserve or pay
-for. If you see a claim otherwise anywhere else, it did not come from us.
+CLAT CHAMP is available as an iPhone app and as a web version at
+[clatchamp.com/app](/app/). Some practice is free. The rest needs a Premium
+subscription. Practice questions are original exam-style material written for
+preparation; they are not past papers and do not predict your CLAT score or admission.
 
-These terms cover this website and blog only. If and when the app ships, it will
-have its own terms. Our [Privacy Policy](/privacy/) covers both the website and the app.
+These terms cover this website, its blog and the web version. The iPhone app is
+also governed by Apple’s standard licence terms. Our [Privacy Policy](/privacy/)
+covers the website, the web version and the app.
+
+## Premium on the web
+
+Web Premium is sold by Aaditya Sharma, trading as CLAT CHAMP, and paid through
+Razorpay. It is a renewing subscription: ₹999 every 3 months or ₹1,999 every year,
+including any applicable taxes, until you cancel. Cancelling stops the next
+renewal; Premium continues until the end of the period already paid for. Refunds
+are covered by our [Cancellation & Refunds policy](/refunds/).
+
+To subscribe you sign in with an email address. Sign-in and purchases are for a
+parent or guardian, or for learners aged 18 or over. Keep access to that email
+address; it is how you sign back in and how we identify your subscription. A
+subscription is for one household’s personal study. Please don’t share or resell
+access, or copy, scrape or republish the practice material.
+
+Web Premium and iPhone Premium are separate purchases for now. We may change
+prices or plans for future periods; we will tell you before a change applies to
+your subscription, and you can cancel before it does.
 
 ## Using what is here
 

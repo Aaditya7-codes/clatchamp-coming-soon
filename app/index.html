@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en-IN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="color-scheme" content="dark"><meta name="theme-color" content="#191625">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://*.razorpay.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://*.razorpay.com; font-src 'self'; connect-src 'self' https://*.razorpay.com; frame-src https://*.razorpay.com; base-uri 'none'; form-action 'self'">
+<title>CLAT CHAMP — Practice for CLAT</title>
+<meta name="description" content="Practise all five CLAT sections with passage-based sets, a daily question and full-length mocks.">
+<link rel="canonical" href="https://www.clatchamp.com/app/">
+<link rel="icon" type="image/png" href="brand-icon.png">
+<link rel="stylesheet" href="web.css">
+<script src="lucide.min.js"></script></head><body>
+<noscript><p style="color:#f5f1ff;font-family:system-ui;padding:24px">CLAT CHAMP needs JavaScript to run.</p></noscript>
+
+
+<style>
+#clat-prototype .cs-streak{display:inline-flex;align-items:center;gap:5px;padding:7px 9px;border:1px solid #a58ac64d;border-radius:999px;background:#221a32;color:#e9ddff;font-size:11px;white-space:nowrap}
+#clat-prototype .cs-streak svg{width:15px;height:15px;color:#d9b5ff}
+#clat-prototype .cs-streak strong{font-size:14px}
+#clat-prototype .dash-hero>.cs-meta{align-items:center;flex-wrap:nowrap;gap:8px}
+#clat-prototype .dash-hero>.cs-meta>.cs-kicker{font-size:10px;letter-spacing:1.2px}
+#clat-prototype .cs-option.cs-answer-correct[aria-pressed=true]{border-color:#78d8c1;background:#203b38;color:#e4fff7;opacity:1}
+#clat-prototype .cs-option:disabled{cursor:default}
+#clat-prototype .cs-answer-reward{display:flex;align-items:center;gap:9px;min-height:48px;margin:12px 0 16px;padding:12px 14px;border-radius:14px;background:var(--cs-soft);color:var(--cs-muted);font-size:14px;line-height:1.45}
+#clat-prototype .cs-answer-reward.is-correct{background:#203b38;color:#b8f1df}
+#clat-prototype .cs-reward-spark{margin-left:auto;display:flex;color:#a5e8d2}
+#clat-prototype .cs-reward-pulse{animation:cs-correct-glow 700ms ease-out both}
+#clat-prototype .cs-reward-enter{animation:cs-reward-arrive 350ms ease-out both}
+@keyframes cs-correct-glow{0%{box-shadow:0 0 0 0 #78d8c170}45%{box-shadow:0 0 0 6px #78d8c125}100%{box-shadow:0 0 0 10px #78d8c100}}
+@keyframes cs-reward-arrive{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
+@media(prefers-reduced-motion:reduce){#clat-prototype .cs-reward-pulse,#clat-prototype .cs-reward-enter{animation:none}}
+</style>
+<link rel="stylesheet" href="dashboard.css">
+<style>
+#clat-prototype{--cs-accent:#6241db;--cs-bg:#191625;--cs-panel:#252034;--cs-ink:#f5f1ff;--cs-muted:#b9b1cc;--cs-soft:#35294d;--cs-border:#443a54;font-family:Inter,ui-sans-serif,system-ui,sans-serif;color:var(--cs-ink);max-width:420px;margin:0 auto;font-size:15px;line-height:1.5}
+#clat-prototype *{box-sizing:border-box}#clat-prototype .cs-phone{background:var(--cs-bg);border:1px solid var(--cs-border);border-radius:28px;overflow:hidden}#clat-prototype .cs-top{padding:22px 24px 16px;display:flex;align-items:center;justify-content:space-between;gap:12px}#clat-prototype .cs-brand{font-size:14px;letter-spacing:1.6px;font-weight:500;display:flex;align-items:center;gap:8px}#clat-prototype .cs-brand i{color:var(--cs-accent)}#clat-prototype .cs-kicker{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--cs-muted)}#clat-prototype .cs-main{padding:12px 26px 26px;min-height:540px;display:flex;flex-direction:column}#clat-prototype h1{font-size:34px;line-height:1.12;letter-spacing:-1.3px;font-weight:500;margin:16px 0}#clat-prototype h2{font-size:27px;line-height:1.2;letter-spacing:-.7px;font-weight:500;margin:20px 0 10px}#clat-prototype p{margin:0 0 22px;color:var(--cs-muted);font-size:14px}#clat-prototype button{font:inherit;cursor:pointer}#clat-prototype .cs-primary{border:0;border-radius:16px;background:var(--cs-accent);color:#fff;min-height:52px;padding:14px 18px;width:100%;font-weight:500;display:flex;align-items:center;justify-content:center;gap:10px}#clat-prototype button:disabled{opacity:.4;cursor:default}#clat-prototype .cs-text-button{border:0;background:transparent;color:var(--cs-muted);padding:10px 0;min-height:44px}#clat-prototype .cs-footer{margin-top:auto;padding-top:24px}#clat-prototype .cs-note{text-align:center;font-size:12px;color:var(--cs-muted);margin-top:12px}#clat-prototype .cs-art{height:205px;position:relative;margin:8px 0 10px;background:radial-gradient(ellipse,var(--cs-soft) 0%,transparent 68%)}#clat-prototype .cs-orbit{position:absolute;inset:14px 52px;border:1px dashed var(--cs-border);border-radius:50%;transform:rotate(-25deg)}#clat-prototype .cs-paper{background:var(--cs-panel);border:1px solid var(--cs-border);border-radius:18px;position:absolute;width:158px;left:calc(50% - 79px);top:38px;padding:20px;transform:rotate(-9deg);box-shadow:0 16px 34px #35187912}#clat-prototype .cs-line{height:7px;border-radius:3px;background:var(--cs-border);margin:10px 0}#clat-prototype .cs-line.active{background:var(--cs-accent);width:82%}#clat-prototype .cs-token{position:absolute;display:flex;align-items:center;justify-content:center;background:var(--cs-accent);color:#fff;width:54px;height:54px;border-radius:18px;right:32px;top:19px;transform:rotate(12deg)}#clat-prototype .cs-stamp{position:absolute;bottom:16px;left:26px;padding:10px 14px;border-radius:12px;background:var(--cs-panel);border:1px solid var(--cs-border);font-size:12px;display:flex;align-items:center;gap:8px}#clat-prototype .cs-stamp i{color:var(--cs-accent)}#clat-prototype .cs-highlight{color:#b9a5ff}#clat-prototype .cs-progress{display:flex;gap:6px;margin-bottom:16px}#clat-prototype .cs-progress span{height:4px;flex:1;background:var(--cs-border);border-radius:8px}#clat-prototype .cs-progress .done{background:var(--cs-accent)}#clat-prototype .cs-options{display:grid;gap:10px;margin:6px 0 18px}#clat-prototype .cs-option{background:var(--cs-panel);border:1px solid var(--cs-border);color:var(--cs-ink);border-radius:16px;padding:15px;display:flex;align-items:center;gap:12px;text-align:left;width:100%;min-height:60px}#clat-prototype .cs-option[aria-pressed=true]{border-color:var(--cs-accent);background:var(--cs-soft)}#clat-prototype .cs-option small{display:block;font-size:12px;color:var(--cs-muted);margin-top:2px}#clat-prototype .cs-option .cs-radio{margin-left:auto;width:18px;height:18px;border:1px solid var(--cs-border);border-radius:50%;flex-shrink:0}#clat-prototype .cs-option[aria-pressed=true] .cs-radio{border:5px solid var(--cs-accent);background:var(--cs-panel)}#clat-prototype .cs-label{font-size:12px;color:var(--cs-muted);margin-bottom:10px}#clat-prototype .cs-minutes{display:flex;gap:8px}#clat-prototype .cs-minutes button{flex:1;border-radius:12px;min-height:46px;border:1px solid var(--cs-border);background:var(--cs-panel);color:var(--cs-ink)}#clat-prototype .cs-minutes button[aria-pressed=true]{background:var(--cs-soft);border-color:var(--cs-accent);color:var(--cs-ink)}#clat-prototype .cs-reading{padding:20px;background:var(--cs-panel);border:1px solid var(--cs-border);border-radius:18px;margin:8px 0 18px}#clat-prototype .cs-reading p{font-family:Georgia,serif;font-size:17px;line-height:1.75;color:var(--cs-ink);margin:14px 0 0}#clat-prototype .cs-meta{display:flex;justify-content:space-between;gap:10px;font-size:12px;color:var(--cs-muted)}#clat-prototype .cs-result{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:12px 0 22px}#clat-prototype .cs-stat{background:var(--cs-soft);border-radius:18px;padding:18px}#clat-prototype .cs-stat strong{display:block;font-size:28px;font-weight:500}#clat-prototype .cs-stat span{font-size:12px;color:var(--cs-muted)}#clat-prototype .cs-feedback{padding:16px;background:var(--cs-soft);border-radius:16px;font-size:14px;margin-top:14px}#clat-prototype .cs-path{display:grid;gap:0;margin-top:16px}#clat-prototype .cs-lesson{display:flex;gap:14px;padding:14px 0;align-items:center}#clat-prototype .cs-node{width:42px;height:42px;flex-shrink:0;display:flex;justify-content:center;align-items:center;border-radius:14px;background:var(--cs-soft);color:var(--cs-accent)}#clat-prototype .cs-lesson small{display:block;color:var(--cs-muted);font-size:12px}#clat-prototype details{font-size:13px;color:var(--cs-muted);margin-top:12px}#clat-prototype details p{margin-top:10px;font-size:14px}#clat-prototype [hidden]{display:none!important}@media(max-width:360px){#clat-prototype .cs-main{padding:10px 20px 22px}#clat-prototype .cs-top{padding:18px 20px 14px}#clat-prototype h1{font-size:30px}}
+#clat-prototype .cs-pillars{margin:4px 0 6px}#clat-prototype .cs-pillar{display:flex;gap:16px;padding:18px 0;align-items:center}#clat-prototype .cs-pillar+.cs-pillar{border-top:1px solid var(--cs-border)}#clat-prototype .cs-pillar-icon{display:flex;align-items:center;justify-content:center;width:48px;height:48px;flex-shrink:0;border-radius:16px;background:var(--cs-soft);color:#b9a5ff}#clat-prototype .cs-pillar h3{font-size:18px;font-weight:500;line-height:1.3;margin:3px 0 6px}#clat-prototype .cs-pillar p{font-size:13px;line-height:1.5;margin:0}#clat-prototype .cs-node{color:#b9a5ff}
+#clat-prototype .cs-workout{padding:22px;border-radius:22px;background:var(--cs-soft);margin:4px 0 18px}#clat-prototype .cs-workout h2{margin:16px 0 12px;font-size:30px}#clat-prototype .cs-workout-meta{font-size:12px;color:var(--cs-muted);margin:18px 0}#clat-prototype .cs-milestone{display:flex;gap:6px;margin:0 0 12px}#clat-prototype .cs-milestone span{height:5px;flex:1;border-radius:8px;background:var(--cs-border)}#clat-prototype .cs-milestone .filled{background:var(--cs-accent)}#clat-prototype .cs-letter{font-size:12px;color:var(--cs-muted);flex-shrink:0}#clat-prototype .cs-review-status{display:flex;align-items:center;flex-wrap:wrap;gap:8px;color:#b8d4ab;font-size:12px;margin-top:20px}#clat-prototype .cs-review-status span{color:var(--cs-muted);margin-left:auto}#clat-prototype .cs-review-question{font-size:23px}#clat-prototype .cs-choice-review{padding:16px;border-radius:16px;background:var(--cs-soft)}#clat-prototype .cs-choice-review p{color:var(--cs-ink);margin:8px 0 14px}#clat-prototype .cs-choice-review p:last-child{margin-bottom:0}#clat-prototype .cs-evidence{font-family:Georgia,serif;line-height:1.8;font-size:16px;margin:12px 0 20px;padding-left:16px;border-left:3px solid var(--cs-accent)}#clat-prototype mark{background:#51416c;color:var(--cs-ink);padding:2px 0}#clat-prototype h3{font-size:17px;font-weight:500;margin:14px 0 8px}#clat-prototype .cs-feedback p{margin:10px 0 0;color:var(--cs-ink)}#clat-prototype .cs-trap{padding:12px 0;border-bottom:1px solid var(--cs-border)}#clat-prototype .cs-trap p{margin:6px 0}#clat-prototype .cs-complete-icon{display:flex;align-items:center;justify-content:center;width:60px;height:60px;border-radius:20px;color:#b9a5ff;background:var(--cs-soft);margin-top:22px}#clat-prototype .cs-meta{flex-wrap:wrap}
+#clat-prototype .cs-question-actions{position:fixed;z-index:10;bottom:0;left:50%;transform:translateX(-50%);width:100%;max-width:420px;padding:12px 26px max(14px,env(safe-area-inset-bottom));background:var(--cs-bg);border-top:1px solid var(--cs-border);box-shadow:0 -10px 24px #19162518}#clat-prototype .cs-question-actions .cs-label{margin-bottom:8px;font-size:12px}
+</style>
+<div id="clat-prototype" aria-label="CLAT CHAMP">
+ <div class="cs-phone">
+  <header class="cs-top"><div class="cs-brand"><img class="cs-brand-logo" src="brand-icon.png" alt="" width="32" height="32">CLAT CHAMP</div></header>
+  <main class="cs-main" id="cs-screen" aria-live="polite"></main>
+ </div>
+</div>
+<link rel="stylesheet" href="onboarding.css">
+<script src="web-config.js"></script>
+<script src="scoring.js"></script>
+<script src="onboarding-starter.js"></script>
+<script src="onboarding.js"></script>
+<script src="progress.js"></script>
+<script src="workout-rewards.js"></script>
+<script src="practice-data.js"></script>
+<script src="content-public.js"></script>
+<script src="practice-order.js"></script>
+<script src="explanations.js"></script>
+<script src="mistake-revision.js"></script>
+<script src="skill-map.js"></script>
+<script src="personalisation.js"></script>
+<script src="previous-keys.js"></script>
+<script src="achievements.js"></script>
+<script src="app-information.js"></script>
+<script src="web-premium.js"></script>
+<script src="practice.js"></script>
+<script src="mocks-data-public.js"></script>
+<script src="mocks.js"></script>
+<script src="daily-workout.js"></script>
+<script src="settings.js"></script>
+<script src="web-boot.js"></script>
+
+<link rel="stylesheet" href="launch.css">
+
+
+<style>
+/* Shared practice and review typography; specific Home styles take precedence. */
+#clat-prototype .cs-kicker{font-size:13px;line-height:1.5;letter-spacing:.6px}
+#clat-prototype h1{font-size:28px;line-height:1.2;font-weight:600;letter-spacing:-.7px}
+#clat-prototype p{font-size:16px;line-height:1.6}
+#clat-prototype .cs-option{font-size:16px;line-height:1.5}
+#clat-prototype .cs-option small,#clat-prototype .cs-lesson small{font-size:14px;line-height:1.5}
+#clat-prototype .cs-label,#clat-prototype .cs-note,#clat-prototype .cs-meta,#clat-prototype .cs-stat span,#clat-prototype .cs-letter,#clat-prototype .cs-review-status{font-size:14px;line-height:1.5}
+#clat-prototype details{font-size:16px;line-height:1.6}
+#clat-prototype details p{font-size:16px}
+</style>
+
+<style>
+html{color-scheme:dark;background:#191625;-webkit-text-size-adjust:100%}
+body{margin:0;background:#191625}
+#clat-prototype{max-width:100%;font-family:-apple-system,BlinkMacSystemFont,system-ui,sans-serif}
+#clat-prototype .cs-phone{border:0!important;border-radius:0!important;overflow:visible}
+#clat-prototype .cs-top{padding:16px 24px 12px}
+#clat-prototype .cs-main{min-height:calc(100dvh - 76px);padding-bottom:26px}
+#clat-prototype .cs-workout{background:#302544}
+#clat-prototype .cs-stat{background:#252034}
+#clat-prototype button{touch-action:manipulation;-webkit-tap-highlight-color:transparent}
+#clat-prototype .cs-primary{min-height:54px}
+#clat-prototype .cs-question-actions,#clat-prototype .cs-tabbar{max-width:none}
+#clat-prototype .cs-text-button{min-height:48px}
+#clat-prototype .cs-option{min-height:58px}
+#clat-prototype .cs-phone svg{width:20px;height:20px;flex-shrink:0}
+#clat-prototype summary{padding:12px 0;min-height:44px;cursor:pointer}
+#clat-prototype .cs-reading p{font-size:18px;line-height:1.75}
+#clat-prototype .cs-stat strong{overflow-wrap:anywhere}
+</style>
+
+</body></html>
