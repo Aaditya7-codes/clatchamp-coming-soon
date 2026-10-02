@@ -1,7 +1,7 @@
 ---
 layout: legal
 permalink: /terms/
-updated: 2026-09-28
+updated: 2026-10-02
 title: "Terms of Use — What CLAT Champ Is and Is Not"
 standfirst: "Free to read, an optional Premium subscription, and no connection to the Consortium of NLUs or any law school. The rest is detail."
 description: "Terms of use for CLAT Champ: an independent CLAT information site and practice app, with no affiliation to the Consortium of NLUs, the NLUs, or any examination body."
@@ -64,7 +64,7 @@ You can delete your account at any time from **Account** in the portal.
 ## Premium on the web
 
 Web Premium is sold by Aaditya Sharma, trading as CLAT CHAMP, and paid through
-Razorpay. It is a renewing subscription: ₹999 every 3 months or ₹1,999 every year,
+Razorpay. It is a renewing subscription: ₹1,499 every 3 months or ₹1,999 every year,
 including any applicable taxes, until you cancel. Cancelling stops the next
 renewal; Premium continues until the end of the period already paid for. Refunds
 are covered by our [Cancellation & Refunds policy](/refunds/).

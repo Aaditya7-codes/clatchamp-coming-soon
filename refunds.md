@@ -1,13 +1,13 @@
 ---
 layout: legal
 permalink: /refunds/
-updated: 2026-09-28
+updated: 2026-10-02
 title: "Cancellation & Refunds"
 standfirst: "How CLAT CHAMP Premium subscriptions bought on this website renew, how to cancel, and when we refund."
 description: "CLAT CHAMP Premium on the web: prices, automatic renewal, cancelling, refunds and delivery of digital access."
 ---
 
-Effective date: **28 September 2026**.
+Effective date: **2 October 2026**.
 
 ## What you are buying
 
@@ -15,7 +15,7 @@ CLAT CHAMP Premium on [clatchamp.com/app](/app/) unlocks all practice sets and f
 
 | Plan | Price | Billed |
 |---|---|---|
-| 3 months | ₹999 | every 3 months |
+| 3 months | ₹1,499 | every 3 months |
 | 1 year | ₹1,999 | every year |
 
 Prices include any applicable taxes. Payments are processed by Razorpay using UPI, cards or net banking. We do not receive or store your card or UPI details.
