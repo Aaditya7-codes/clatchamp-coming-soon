@@ -1,6 +1,6 @@
 // Sign-up gate for the web portal. Runs before the app loads: a learner who isn't signed in sees a
 // full-page "Create your free account" (or "Sign in") screen instead of the practice portal.
-// Sign-up asks for the learner's first name, the age/consent confirmation, then Google or an email code.
+// Sign-up asks for the age/consent confirmation, then Google (which supplies the first name) or an email code (with a first name).
 // If the account server can't be reached, the learner may practise as a guest; progress is merged
 // into their account the next time they sign in.
 (() => {
@@ -16,6 +16,8 @@
  // After an account is created or signed in: keep the learner's first name, skip the old welcome
  // screens (the dashboard opens directly) and reload so progress is merged before the app starts.
  function finish(session){
+  const um=session?.user?.user_metadata||{};
+  if(mode==='signup'&&!name)name=String(um.given_name||um.name||um.full_name||'').trim().split(/\s+/)[0]||'';
   if(mode==='signup'&&name){const s=read(SETTINGS)||{version:1,name:'',examYear:'',stage:'',textSize:'standard',font:'serif',spacing:'standard',reduceMotion:false};write(SETTINGS,{...s,name:name.slice(0,40)});}
   const o=read(ONBOARDING)||{};write(ONBOARDING,{...o,version:2,contentVersion:globalThis.CLATOnboardingStarter?.version||o.contentVersion||3,complete:true});
   auth.saveSession(session);
@@ -24,8 +26,8 @@
  }
  const nameOk=()=>/\p{L}/u.test(name);
  function check(needsEmail){
-  if(mode==='signup'&&!nameOk())return 'Enter your first name.';
   if(mode==='signup'&&!consent)return 'Please tick the box to confirm your age or a parent’s or guardian’s agreement.';
+  if(mode==='signup'&&needsEmail&&!nameOk())return 'Enter your first name.';
   if(needsEmail&&!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email))return 'Enter a valid email address, like name@gmail.com.';
   return '';
  }
@@ -46,12 +48,11 @@
     <p class="su-small"><button type="button" class="su-link" data-su="back">Use a different email</button> · <button type="button" class="su-link" data-su="resend" ${dis}>Send a new code</button></p>`;
   }else{
    card=`<h2>${up?'Sign up free':'Sign in'}</h2><p class="su-sub">${up?'No card needed.':'Use the same Google account or email you signed up with.'}</p>
-    ${up?`<label for="su-name">Your first name</label><input id="su-name" class="su-input" autocomplete="given-name" maxlength="40" placeholder="e.g. Riya" value="${esc(name)}" ${dis}>
-    <p class="su-hint">The learner’s name, even if you sign up with a parent’s Google account.</p>
-    <label class="su-consent"><input type="checkbox" id="su-consent" ${consent?'checked':''} ${dis}><span>I’m 18 or older, or my parent or guardian agrees to me creating this account. I accept the <a href="/terms/" target="_blank" rel="noopener">Terms</a> and <a href="/privacy/" target="_blank" rel="noopener">Privacy Policy</a>.</span></label>`:''}
-    ${auth.google&&!busy&&(!up||(consent&&nameOk()))?'<div class="su-gsi" id="su-gsi"></div>':(auth.google?`<button type="button" class="su-google" data-su="google" ${dis}>${G}${up?'Sign up with Google':'Sign in with Google'}</button>`:'')}
+    ${up?`<label class="su-consent"><input type="checkbox" id="su-consent" ${consent?'checked':''} ${dis}><span>I’m 18 or older, or my parent or guardian agrees to me creating this account. I accept the <a href="/terms/" target="_blank" rel="noopener">Terms</a> and <a href="/privacy/" target="_blank" rel="noopener">Privacy Policy</a>.</span></label>`:''}
+    ${auth.google&&!busy&&(!up||consent)?'<div class="su-gsi" id="su-gsi"></div>':(auth.google?`<button type="button" class="su-google" data-su="google" ${dis}>${G}${up?'Sign up with Google':'Sign in with Google'}</button>`:'')}
     <p class="su-or"><span>or with your email</span></p>
-    <form data-su="send" novalidate><label for="su-email">Email address</label><input id="su-email" class="su-input" type="email" autocomplete="email" placeholder="you@example.com" value="${esc(email)}" ${dis}>
+    <form data-su="send" novalidate>${up?`<label for="su-name">Your first name</label><input id="su-name" class="su-input" autocomplete="given-name" maxlength="40" placeholder="e.g. Riya" value="${esc(name)}" ${dis}>
+    <p class="su-hint">The learner’s name, even if you sign up with a parent’s email address.</p>`:''}<label for="su-email">Email address</label><input id="su-email" class="su-input" type="email" autocomplete="email" placeholder="you@example.com" value="${esc(email)}" ${dis}>
     ${err}<button class="su-primary" ${dis}>${busy?'Sending…':'Email me a sign-in code'}</button></form>
     <p class="su-swap">${up?'Already have an account? <button type="button" class="su-link" data-su="mode">Sign in</button>':'New to CLAT Champ? <button type="button" class="su-link" data-su="mode">Create a free account</button>'}</p>`;
   }
@@ -96,7 +97,7 @@
    page.addEventListener('click',e=>{const b=e.target.closest('[data-su]');if(b&&b.tagName!=='FORM'){e.preventDefault();action(b.dataset.su);}});
    page.addEventListener('submit',e=>{e.preventDefault();action(e.target.dataset.su);});
    page.addEventListener('change',e=>{if(e.target.id==='su-consent'){keep();error='';render();page.querySelector('#su-gsi,.su-google')?.scrollIntoView?.({block:'nearest'});}});
-   page.addEventListener('input',e=>{if(e.target.id==='su-name'){const was=nameOk();keep();if(was!==nameOk()&&consent){render();const n=page.querySelector('#su-name');n.focus();n.setSelectionRange(n.value.length,n.value.length);}}});
+   page.addEventListener('input',()=>keep());
    render();page.querySelector('#su-name,#su-email')?.focus();
    // Offer guest practice only when the account server can't be reached.
    const ctl=new AbortController();setTimeout(()=>ctl.abort(),8000);
