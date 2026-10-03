@@ -3,7 +3,7 @@
 (() => {
  const auth=globalThis.CLATWebAuth,sync=globalThis.CLATWebSync,cfg=globalThis.CLATWebConfig||{},configured=auth.configured,payOpen=()=>cfg.paymentsOpen===true||(cfg.paymentsPreview||[]).includes(String(auth.email()||'').toLowerCase()); // closed until web-config.json says paymentsOpen: true; paymentsPreview lists accounts that may test live payments first
  const ENT='clat-web-entitlement-v1',AFTER='clat-web-after-sign-in';
- const plans={quarterly:{label:'3 months',note:'Billed every 3 months',per:'/ 3 months'},annual:{label:'1 year',note:'Billed annually',per:'/ year'}};
+ const plans={quarterly:{label:'3 months',note:'One payment · 3 months of access',per:'· 3 months'},annual:{label:'1 year',note:'One payment · 12 months of access',per:'· 1 year'}};
  const productIds={quarterly:'com.clatspeed.premium.quarterly',annual:'com.clatspeed.premium.annual'};
  const read=k=>{try{return JSON.parse(localStorage.getItem(k)||'null');}catch{return null;}};
  const write=(k,v)=>{try{v==null?localStorage.removeItem(k):localStorage.setItem(k,JSON.stringify(v));}catch{}};
@@ -17,6 +17,7 @@
  const active=()=>(entitlement?.rows||[]).filter(r=>r.current_end&&Date.parse(r.current_end)>Date.now());
  const renewing=()=>(entitlement?.rows||[]).find(r=>r.source==='razorpay'&&r.current_end&&Date.parse(r.current_end)>Date.now()&&!r.cancel_at_cycle_end&&r.status!=='cancelled');
  const hasAccess=()=>auth.signedIn()&&active().length>0;
+ const daysLeft=()=>auth.signedIn()?Math.max(0,...active().map(r=>(Date.parse(r.current_end)-Date.now())/86400000)):0;
  async function refresh(){
   if(!configured||!auth.signedIn())return hasAccess();
   const before=hasAccess();
@@ -33,15 +34,16 @@
   if(!auth.signedIn()){openDialog('email','buy');return;}
   busy=true;message='Opening secure checkout…';notify();
   try{
-   if(await refresh()){busy=false;message='Premium is already active on this account.';notify();return;}
-   const [sub]=await Promise.all([auth.api('/functions/v1/create-subscription',{method:'POST',body:{plan:selected}}),loadCheckout()]);
-   // Only the key and subscription: with name, description, logo, prefill and theme added, live checkout
+   await refresh();
+   if(daysLeft()>30){busy=false;message='Premium is already active on this account.';notify();return;}
+   const [order]=await Promise.all([auth.api('/functions/v1/create-order',{method:'POST',body:{plan:selected}}),loadCheckout()]);
+   // Only the key and order: with name, description, logo, prefill and theme added, live checkout
    // answered "No appropriate payment method found". Razorpay shows the brand name and logo from the account.
-   const rzp=new globalThis.Razorpay({key:sub.key_id,subscription_id:sub.subscription_id,
+   const rzp=new globalThis.Razorpay({key:order.key_id,order_id:order.order_id,
     handler:async response=>{
      message='Payment received. Unlocking Premium…';notify();
      try{
-      await auth.api('/functions/v1/verify-subscription',{method:'POST',body:response});
+      await auth.api('/functions/v1/verify-payment',{method:'POST',body:response});
       for(let i=0;i<5&&!(await refresh());i++)await new Promise(r=>setTimeout(r,1500));
       if(hasAccess()){message='Premium is active. Loading all sets…';notify();await sync.flush();setTimeout(()=>location.reload(),700);return;}
       message='Payment received. Premium will unlock shortly — reload this page in a minute.';
@@ -105,7 +107,7 @@
   const close='<button type="button" class="wa-close" data-wa="close" aria-label="Close">✕</button>';
   const dis=busy?'disabled':'';
   let html='';
-  if(step==='email')html=`${close}<h2 id="wa-title">${after==='buy'?'Sign in to subscribe':'Sign in or create a free account'}</h2>
+  if(step==='email')html=`${close}<h2 id="wa-title">${after==='buy'?'Sign in to get Premium':'Sign in or create a free account'}</h2>
    <p>Your profile and practice progress are saved to your account, so you can carry on from any computer.</p>
    <label class="wa-consent"><input type="checkbox" id="wa-consent" ${consent?'checked':''} ${dis}><span>I’m 18 or older, or my parent or guardian agrees to me creating this account.</span></label>
    ${auth.google&&consent&&!busy?'<div class="wa-gsi" id="wa-gsi" aria-live="polite"></div>':`<button type="button" class="wa-google" data-wa="google" ${dis}><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="#4285F4" d="M23.5 12.3c0-.8-.1-1.6-.2-2.3H12v4.4h6.5a5.5 5.5 0 0 1-2.4 3.6v3h3.9c2.2-2.1 3.5-5.1 3.5-8.7z"/><path fill="#34A853" d="M12 24c3.2 0 6-1.1 7.9-2.9l-3.9-3c-1.1.7-2.4 1.2-4 1.2-3.1 0-5.7-2.1-6.6-4.9h-4v3.1A12 12 0 0 0 12 24z"/><path fill="#FBBC05" d="M5.4 14.4a7.2 7.2 0 0 1 0-4.7V6.6h-4a12 12 0 0 0 0 10.9l4-3.1z"/><path fill="#EA4335" d="M12 4.8c1.7 0 3.3.6 4.5 1.8l3.4-3.4A12 12 0 0 0 1.4 6.6l4 3.1C6.3 6.9 8.9 4.8 12 4.8z"/></svg>Continue with Google</button>`}
@@ -119,7 +121,7 @@
    <p class="wa-sync wa-sync-${st.state}">${esc(sync.text())}</p>
    ${st.state==='stale'?'<button type="button" class="cs-primary" data-web-reload>Reload to combine progress</button>':''}
    <h3>Premium</h3>
-   ${now?`<div class="pm-active">✓ Premium active · ${esc(plans[now.plan]?.label||'')}</div><p>${now.cancel_at_cycle_end||now.status==='cancelled'?'Ends':'Renews'} on ${date(now.current_end)}.</p>`:'<p>No active Premium subscription on this account.</p>'}
+   ${now?`<div class="pm-active">✓ Premium active · ${esc(plans[now.plan]?.label||'')}</div><p>${now.cancel_at_cycle_end||now.status==='cancelled'?'Ends':'Renews'} on ${date(now.current_end)}.</p>`:'<p>No active Premium on this account.</p>'}
    ${err}${note}
    ${renew?`<button type="button" class="cs-text-button" data-wa="cancel" ${dis}>Cancel automatic renewal</button>`:''}
    <button type="button" class="cs-text-button" data-wa="refresh" ${dis}>Refresh Premium status</button>
@@ -131,7 +133,7 @@
    const renew=renewing();
    html=`${close}<h2 id="wa-title">Delete your account?</h2>
    <p>This permanently deletes your account, your profile and all practice progress saved to it, and signs you out. It can’t be undone.</p>
-   ${renew?'<p><b>Your Premium subscription will stop immediately</b> and the rest of the paid period won’t be refunded. To keep Premium until it ends, cancel renewal instead and delete your account later.</p>':''}
+   ${renew?'<p><b>Your Premium subscription will stop immediately</b> and the rest of the paid period won’t be refunded. To keep Premium until it ends, cancel renewal instead and delete your account later.</p>':hasAccess()?'<p><b>You have paid Premium time left.</b> Deleting your account ends it, and the unused time won’t be refunded.</p>':''}
    ${err}${note}
    <div class="wa-actions"><button type="button" class="cs-primary wa-danger-button" data-wa="delete" ${dis}>${busy?'Deleting…':'Delete my account'}</button><button type="button" class="cs-text-button" data-wa="account" ${dis}>Keep my account</button></div>`;
   }
@@ -193,14 +195,14 @@
  // ------------------------------------------------------------------ CLATPremium interface
  function controls(){
   const priceButtons=Object.keys(plans).reverse().map(p=>`<button class="pm-plan" data-practice="premium-plan" data-product="${productIds[p]}" aria-pressed="${selected===p}" ${busy?'disabled':''}><span>${plans[p].label}<small>${plans[p].note}</small></span><strong>${esc(cfg.prices?.[p])}</strong></button>`).join('');
-  if(configured&&hasAccess()){const now=active()[0];return `<div class="pm-active">✓ Premium active · All five subjects</div><p class="pm-billing">${now.cancel_at_cycle_end||now.status==='cancelled'?'Ends':'Renews'} on ${date(now.current_end)}.</p><button class="cs-text-button" data-web-account>Manage account</button>`;}
-  if(!configured||!payOpen())return `<div class="pm-plans" role="group" aria-label="Subscription plans">${priceButtons}</div><button class="cs-primary" disabled>Premium subscriptions open shortly</button><p class="pm-billing">We’re finishing secure payments for Premium. Everything free — one full set per subject, Mock 1 and Question of the Day — works now.</p>`;
-  if(hasAccess()){const now=active()[0];return `<div class="pm-active">✓ Premium active · All five subjects</div><p class="pm-billing">${now.cancel_at_cycle_end||now.status==='cancelled'?'Ends':'Renews'} on ${date(now.current_end)}.</p><button class="cs-text-button" data-web-account>Manage account</button>`;}
-  return `<div class="pm-plans" role="group" aria-label="Subscription plans">${priceButtons}</div>
-  <button class="cs-primary" data-practice="premium-buy" ${busy?'disabled':''}>${busy?'Please wait…':`Subscribe · ${esc(cfg.prices?.[selected])} ${plans[selected].per}`}</button>
-  <p class="pm-billing">Secure payment by Razorpay (UPI, cards, net banking). Renews automatically until you cancel; cancel any time and keep Premium until the end of the paid period. Premium works on any computer where you sign in.</p>
+  if(configured&&hasAccess()&&(daysLeft()>30||!payOpen())){const now=active()[0];return `<div class="pm-active">✓ Premium active · All five subjects</div><p class="pm-billing">${now.cancel_at_cycle_end||now.status==='cancelled'?'Ends':'Renews'} on ${date(now.current_end)}.</p><button class="cs-text-button" data-web-account>Manage account</button>`;}
+  if(!configured||!payOpen())return `<div class="pm-plans" role="group" aria-label="Premium passes">${priceButtons}</div><button class="cs-primary" disabled>Premium opens shortly</button><p class="pm-billing">We’re finishing secure payments for Premium. Everything free — one full set per subject, Mock 1 and Question of the Day — works now.</p>`;
+  return `<div class="pm-plans" role="group" aria-label="Premium passes">${priceButtons}</div>
+  ${hasAccess()?`<p class="pm-billing">Your Premium ends on ${date(active()[0].current_end)}. A new pass starts when it ends.</p>`:''}
+  <button class="cs-primary" data-practice="premium-buy" ${busy?'disabled':''}>${busy?'Please wait…':`${hasAccess()?'Extend Premium':'Get Premium'} · ${esc(cfg.prices?.[selected])} ${plans[selected].per}`}</button>
+  <p class="pm-billing">One payment by UPI, card or net banking, securely through Razorpay. No automatic renewal: Premium lasts from the day you pay for the period you choose, and you can add more time any time. Premium works on any computer where you sign in.</p>
   ${message?`<p class="pm-availability" role="status" aria-live="polite">${esc(message)}</p>`:''}
-  <div class="pm-account-actions">${auth.signedIn()?`<span class="wa-signed">Signed in as ${esc(auth.email())}</span><button class="cs-text-button" data-web-account>Account</button>`:'<button class="cs-text-button" data-web-account>Already subscribed? Sign in</button>'}</div>
+  <div class="pm-account-actions">${auth.signedIn()?`<span class="wa-signed">Signed in as ${esc(auth.email())}</span><button class="cs-text-button" data-web-account>Account</button>`:'<button class="cs-text-button" data-web-account>Already have Premium? Sign in</button>'}</div>
   <p class="pm-billing"><a href="/terms/">Terms of Use</a> · <a href="/privacy/">Privacy Policy</a> · <a href="/refunds/">Cancellation &amp; refunds</a></p>`;
  }
  globalThis.CLATPremium={hasAccess,controls,
@@ -210,7 +212,7 @@
   action(action,id){
    if(action==='premium-plan'){const p=Object.keys(productIds).find(k=>productIds[k]===id);if(p&&!busy){selected=p;notify();}return;}
    if(action==='premium-buy'){if(!configured||!payOpen())return;checkout();return;}
-   if(action==='premium-restore'||action==='premium-manage'){if(!configured){message='Premium subscriptions open shortly.';notify();return;}openDialog();return;}
+   if(action==='premium-restore'||action==='premium-manage'){if(!configured){message='Premium opens shortly.';notify();return;}openDialog();return;}
    if(action==='premium-refresh'){refresh().catch(e=>{message=e.message;notify();});}
   }};
  // Settings shows this summary; the full policy lives on the website.
