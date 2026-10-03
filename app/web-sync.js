@@ -129,6 +129,7 @@
    }
    settle();
   }
+  if(auth?.configured&&!on()&&globalThis.CLATWebSignup){if(screen)screen.innerHTML='';await globalThis.CLATWebSignup.gate();}
   for(const src of cfg.appScripts||[])await new Promise((ok,no)=>{const s=document.createElement('script');s.src=src;s.onload=ok;s.onerror=()=>no(new Error(src));document.body.append(s);});
   if(dirty.size)flush();
  })().catch(e=>{console.error(e);const s=document.getElementById('cs-screen');if(s)s.innerHTML='<p class="web-loading">CLAT CHAMP couldn’t start. Please reload the page.</p>';});
