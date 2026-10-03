@@ -1,7 +1,7 @@
 ---
 layout: legal
 permalink: /terms/
-updated: 2026-10-02
+updated: 2026-10-03
 title: "Terms of Use — What CLAT Champ Is and Is Not"
 standfirst: "Free to read, an optional Premium subscription, and no connection to the Consortium of NLUs or any law school. The rest is detail."
 description: "Terms of use for CLAT Champ: an independent CLAT information site and practice app, with no affiliation to the Consortium of NLUs, the NLUs, or any examination body."
@@ -51,10 +51,13 @@ covers the website, the web version and the app.
 
 ## Your account
 
-You can practise without an account; your progress then stays in that browser
-only. A free account, created with your email address or Google sign-in, saves
-your profile and practice progress so you can carry on from any computer. To
-create one you must be 18 or older, or have a parent or guardian’s agreement.
+Practice on the web needs a free account. You create one with Google sign-in or
+your email address, and give your first name. The account saves your profile and
+practice progress so you can carry on from any computer. To create one you must
+be 18 or older, or have a parent or guardian’s agreement. If the sign-in service
+cannot be reached, the portal may let you practise without an account for the
+time being; your progress then stays in that browser and is added to your
+account when you next sign in.
 
 Keep access to the email address or Google account you sign in with; it is how
 you sign back in and how we identify your progress and any subscription. One
@@ -64,9 +67,10 @@ You can delete your account at any time from **Account** in the portal.
 ## Premium on the web
 
 Web Premium is sold by Aaditya Sharma, trading as CLAT CHAMP, and paid through
-Razorpay. It is a renewing subscription: ₹1,499 every 3 months or ₹1,999 every year,
-including any applicable taxes, until you cancel. Cancelling stops the next
-renewal; Premium continues until the end of the period already paid for. Refunds
+Razorpay, using UPI, cards or net banking. It is a renewing subscription: ₹1,499 every 3 months or ₹1,999 every year,
+including any applicable taxes, until you cancel. To cancel,
+sign in, open **Account** and choose **Cancel automatic renewal**. Cancelling stops
+the next renewal; Premium continues until the end of the period already paid for. Refunds
 are covered by our [Cancellation & Refunds policy](/refunds/).
 
 To subscribe you need an account. Purchases are for a parent or guardian, or for
@@ -126,6 +130,7 @@ subject to the jurisdiction of the courts of India.
 ## Contact
 
 **[contact@clatchamp.com](mailto:contact@clatchamp.com)** for anything about the
-site, including corrections.
+site, including corrections. **[support@clatchamp.com](mailto:support@clatchamp.com)**
+for your account or a payment. See also our [Contact page](/contact/).
 **[privacy@clatchamp.com](mailto:privacy@clatchamp.com)** for privacy questions
 — see our [Privacy Policy](/privacy/).

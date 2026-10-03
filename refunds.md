@@ -1,13 +1,13 @@
 ---
 layout: legal
 permalink: /refunds/
-updated: 2026-10-02
+updated: 2026-10-03
 title: "Cancellation & Refunds"
 standfirst: "How CLAT CHAMP Premium subscriptions bought on this website renew, how to cancel, and when we refund."
 description: "CLAT CHAMP Premium on the web: prices, automatic renewal, cancelling, refunds and delivery of digital access."
 ---
 
-Effective date: **2 October 2026**.
+Effective date: **3 October 2026**.
 
 ## What you are buying
 
