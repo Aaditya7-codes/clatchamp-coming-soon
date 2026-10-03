@@ -3,7 +3,7 @@ layout: legal
 permalink: /terms/
 updated: 2026-10-03
 title: "Terms of Use — What CLAT Champ Is and Is Not"
-standfirst: "Free to read, an optional Premium subscription, and no connection to the Consortium of NLUs or any law school. The rest is detail."
+standfirst: "Free to read, an optional one-time Premium pass, and no connection to the Consortium of NLUs or any law school. The rest is detail."
 description: "Terms of use for CLAT Champ: an independent CLAT information site and practice app, with no affiliation to the Consortium of NLUs, the NLUs, or any examination body."
 ---
 
@@ -11,7 +11,7 @@ description: "Terms of use for CLAT Champ: an independent CLAT information site 
 online practice portal.** It is not affiliated with, endorsed by, or connected to the
 Consortium of National Law Universities, any National Law University, or any
 other examination or government body. Nothing here is official. The guides are
-free; the only thing for sale is an optional Premium subscription for the practice portal.
+free; the only thing for sale is an optional Premium pass for the practice portal.
 
 By reading the site you accept the terms below. They are short, and written to
 be understood rather than to be impressive.
@@ -67,20 +67,19 @@ You can delete your account at any time from **Account** in the portal.
 ## Premium on the web
 
 Web Premium is sold by Aaditya Sharma, trading as CLAT CHAMP, and paid through
-Razorpay, using UPI, cards or net banking. It is a renewing subscription: ₹1,499 every 3 months or ₹1,999 every year,
-including any applicable taxes, until you cancel. To cancel,
-sign in, open **Account** and choose **Cancel automatic renewal**. Cancelling stops
-the next renewal; Premium continues until the end of the period already paid for. Refunds
-are covered by our [Cancellation & Refunds policy](/refunds/).
+Razorpay, using UPI, cards or net banking. It is a **one-time pass, not a
+subscription**: ₹1,499 for 3 months of access or ₹1,999 for 1 year, including any
+applicable taxes. Access starts when your payment is confirmed and lasts for the
+period you chose. Nothing renews automatically and we do not store your payment
+details. Refunds are covered by our [Cancellation & Refunds policy](/refunds/).
 
-To subscribe you need an account. Purchases are for a parent or guardian, or for
-learners aged 18 or over. A subscription is for one learner’s personal study.
-Please don’t share or resell access, or copy, scrape or republish the practice
-material.
+To buy Premium you need an account. Purchases are for a parent or guardian, or for
+learners aged 18 or over. A pass is for one learner’s personal study. Please don’t
+share or resell access, or copy, scrape or republish the practice material.
 
-We may change
-prices or plans for future periods; we will tell you before a change applies to
-your subscription, and you can cancel before it does.
+If you buy another pass while Premium is still active, the new period starts when
+the current one ends. We may change prices for future purchases; a change never
+affects a pass you have already paid for.
 
 ## Using what is here
 

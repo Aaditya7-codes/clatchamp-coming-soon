@@ -20,7 +20,7 @@ CLAT Champ is operated by **Aaditya Sharma, trading as CLAT Champ**. We answer b
 
 When you write about your account or a payment, use the email address you signed in with and include the date and amount of any payment. That lets us find it quickly.
 
-You can cancel a Premium subscription yourself at any time: sign in at [clatchamp.com/app](/app/), open **Account** and choose **Cancel automatic renewal**. The [cancellation and refunds](/refunds/) page explains what happens next.
+Premium is a one-time pass with no automatic renewal, so there is nothing to cancel. You can see when your Premium ends under **Account** at [clatchamp.com/app](/app/). The [cancellation and refunds](/refunds/) page explains refunds.
 
 ## About this site
 
