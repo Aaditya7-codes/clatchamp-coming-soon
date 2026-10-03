@@ -12,12 +12,12 @@
   --mint: #7ee6c4;
   --violet: #6a4cf0;
   --violet-hi: #7b60f7;
-  --paper: #f6f5fb;
-  --card: #ffffff;
+  --paper: #ebe9f4;
+  --card: #f7f6fb;
   --ink: #1b1730;
   --muted: #5f5a73;
-  --line: #e4e1ee;
-  --band: #cbbffc;
+  --line: #d9d5e8;
+  --band: #d5cdf2;
   --f-ui: "Geist", "Segoe UI", system-ui, -apple-system, sans-serif;
   --f-mono: "Geist Mono", ui-monospace, "SF Mono", Menlo, monospace;
   --wrap: 1180px;
@@ -197,7 +197,11 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px soli
 .faq details[open] summary::after { content: "−"; }
 .faq details p { padding-bottom: 20px; color: var(--muted); max-width: 40em; }
 
-footer.dark { margin-top: 96px; }
+footer.dark { margin-top: -32px; padding-top: 32px; }
+
+/* The light page is a sheet laid over the dark top and bottom, so the change of tone is a soft edge, not a hard cut. */
+header.dark { padding-bottom: 32px; }
+main { position: relative; z-index: 1; margin-top: -32px; padding-bottom: 96px; background: var(--paper); border-radius: 32px; }
 .foot { padding-block: 40px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 16px 32px; font-size: 14px; color: var(--night-muted); }
 .foot nav { display: flex; flex-wrap: wrap; gap: 22px; }
 .foot a { color: var(--night-muted); text-decoration: none; }
