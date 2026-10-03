@@ -26,7 +26,7 @@ Subscriptions renew automatically at the end of each period, at the price shown 
 
 ## Cancelling
 
-Sign in at [clatchamp.com/app](/app/), open **Settings → Manage subscription**, and choose **Cancel automatic renewal**. You can also email [support@clatchamp.com](mailto:support@clatchamp.com) from the address you signed in with. Cancelling stops future charges. Premium stays available until the end of the period you have already paid for.
+Sign in at [clatchamp.com/app](/app/), open **Account**, and choose **Cancel automatic renewal**. You can also email [support@clatchamp.com](mailto:support@clatchamp.com) from the address you signed in with. Cancelling stops future charges. Premium stays available until the end of the period you have already paid for.
 
 ## Refunds
 
