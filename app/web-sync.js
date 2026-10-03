@@ -120,8 +120,10 @@
  // ---------------------------------------------------------------- start: merge, then load the app
  (async()=>{
   const screen=document.getElementById('cs-screen');
+  // Start downloading the app's scripts now, while the saved progress is fetched, instead of after it.
+  for(const src of [...(cfg.appScripts||[]),'web-home.js','app-main.js','web-nav.js']){const l=document.createElement('link');l.rel='preload';l.as='script';l.href=src;document.head.append(l);}
   if(on()){
-   if(screen)screen.innerHTML='<p class="web-loading" role="status">Loading your progress…</p>';
+   
    try{await Promise.race([pull(),new Promise((_,no)=>setTimeout(()=>no(new Error('timeout')),10000))]);state='synced';}
    catch(e){
     if(e.status===401)auth.clear();
@@ -131,7 +133,6 @@
   }
   if(auth?.configured&&!on()&&globalThis.CLATWebSignup){if(screen)screen.innerHTML='';await globalThis.CLATWebSignup.gate();}
   for(const src of cfg.appScripts||[])await new Promise((ok,no)=>{const s=document.createElement('script');s.src=src;s.onload=ok;s.onerror=()=>no(new Error(src));document.body.append(s);});
-  document.getElementById('web-boot-hide')?.remove();
   if(dirty.size)flush();
  })().catch(e=>{document.getElementById('web-boot-hide')?.remove();console.error(e);const s=document.getElementById('cs-screen');if(s)s.innerHTML='<p class="web-loading">CLAT CHAMP couldn’t start. Please reload the page.</p>';});
 })();
