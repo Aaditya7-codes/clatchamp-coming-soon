@@ -301,3 +301,11 @@ html,body{background:#191625}
  #clat-prototype .cs-tabbar button span{font-size:11px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%}
  #clat-prototype .cs-tabbar .cs-tab-count{display:none}
 }
+
+/* ---------------------------------------------------------------- revision home (mistake-revision.js) */
+#clat-prototype .rv-empty p{margin-bottom:18px}
+#clat-prototype .rv-actions{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+#clat-prototype .rv-actions .cs-primary{width:auto;min-height:46px;padding:0 24px;border-radius:999px}
+#clat-prototype .rv-secondary{min-height:46px;padding:0 22px;border-radius:999px;border:1px solid #5a4d78;background:transparent;color:#f5f1ff;font:inherit;font-weight:600;cursor:pointer}
+#clat-prototype .rv-secondary:hover{background:#2b2340}
+#clat-prototype .rv-note{margin-top:18px;font-size:14px}
