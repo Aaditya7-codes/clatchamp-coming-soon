@@ -57,7 +57,7 @@
 
  // ---------------------------------------------------------------- start the app
  screen.innerHTML='';
- for(const src of ['web-home.js','app-main.js'])await new Promise((ok,no)=>{const s=document.createElement('script');s.src=src;s.onload=ok;s.onerror=()=>no(new Error(src));document.body.append(s);});
+ for(const src of ['web-home.js','app-main.js','web-nav.js'])await new Promise((ok,no)=>{const s=document.createElement('script');s.src=src;s.onload=ok;s.onerror=()=>no(new Error(src));document.body.append(s);});
  globalThis.lucide?.createIcons({attrs:{width:20,height:20}});
 
  // On laptops the passage and mock navigator are permanent panels, so keep them open.

@@ -120,6 +120,17 @@
   if(state.step===4)screen.innerHTML=`${progress(3)}<div class="cs-kicker">Diagnostic complete</div><h2>Your starting point.</h2><p>Speed and understanding, side by side.</p><div class="cs-result">${globalThis.CLATScoring.card(score(),questions.length,globalThis.CLATScoring.unanswered(state.answers))}<div class="cs-stat"><span>Speed · WPM</span><strong>${globalThis.CLATScoring.usableSpeed(globalThis.CLATScoring.measurement({paragraphs},state.seconds))?Math.round(words*60/state.seconds).toLocaleString():'—'}</strong><span>Words per minute</span></div><div class="cs-stat"><span>Accuracy</span><strong>${score()/questions.length*100}%</strong><span>${score()} of ${questions.length} correct</span></div></div><div class="cs-meta"><span>${words} words read</span><span>${Math.round(state.seconds)} seconds</span></div><div class="cs-feedback">${globalThis.CLATScoring.measurement({paragraphs},state.seconds).speedStatus==='unreliable'?'Reading too brief for a reliable estimate. Excluded from speed tracking.':'Your WPM measures the first reading only.'} Accuracy is the percentage of questions answered correctly.</div><p style="margin-top:16px">This is your first snapshot. Future passages will help track your progress.</p><details><summary>Review my answers</summary>${questions.map((q,i)=>`<div class="cs-feedback"><span class="cs-kicker">Question ${i+1} · ${state.answers[i]===null?'Unanswered':state.answers[i]===q.correct?'Correct':'Incorrect'}</span><p>${q.text}</p><p>Your answer: ${state.answers[i]===null?'Unanswered · 0 marks':q.options[state.answers[i]]}</p><p>Correct answer: ${q.options[q.correct]}</p><p>${q.why}</p></div>`).join('')}</details><div class="cs-footer">${primary('Go to Home','next')}</div>`;
   if(globalThis.lucide)lucide.createIcons({attrs:{width:18,height:18}});
  }
+ globalThis.CLATWebRoute={
+  current:()=>mocksActive?'mocks':workoutActive?'daily':practiceActive?practice.route():daily.view,
+  go(r){
+   const area=String(r||'home').split('/')[0];
+   if(area==='mocks'){practice.pause();freshWorkout.pause();practiceActive=false;workoutActive=false;mocksActive=true;state.step=5;mocks.open();return;}
+   mocks.leave();mocksActive=false;
+   if(area==='daily'){practice.pause();practiceActive=false;workoutActive=true;freshWorkout.open();return;}
+   if(area==='revision'){freshWorkout.pause();workoutActive=false;practiceActive=true;practice.openRevision();return;}
+   if(area==='practice'){freshWorkout.pause();workoutActive=false;practiceActive=true;practice.goto(r);return;}
+   freshWorkout.pause();workoutActive=false;practice.pause();practiceActive=false;state.step=5;daily.view=['progress','settings'].includes(area)?area:'home';render();
+  }};
  root.addEventListener('click',e=>{const b=e.target.closest('button');if(!b||!root.contains(b))return;
   if(b.disabled)return;
   if(b.dataset.wh||b.dataset.mock||b.dataset.onboarding||b.form?.id==='ob-profile-form'||b.dataset.practice||b.dataset.workout||b.dataset.revision||b.dataset.settings||(b.type==='submit'&&b.form?.id==='st-profile-form'))return;

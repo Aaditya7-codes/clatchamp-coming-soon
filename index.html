@@ -292,6 +292,16 @@
 </footer>
 
 <script>
+// A learner who is already signed in sees "Open dashboard" instead of "Sign in".
+try {
+  var sess = JSON.parse(localStorage.getItem('clat-web-session-v1') || 'null');
+  if (sess && sess.refresh_token) {
+    document.querySelectorAll('a.pill-ghost[href="/app/"]').forEach(function (a) { a.textContent = 'Open dashboard'; });
+    document.querySelectorAll('.cta a.pill-violet[href="/app/"]').forEach(function (a) { a.textContent = 'Continue practising'; });
+  }
+} catch (e) {}
+</script>
+<script>
 (function () {
   var days = Math.ceil((new Date('2026-12-06T00:00:00+05:30') - new Date()) / 86400000);
   if (days > 0 && days < 2000) document.getElementById('days').textContent = String(days);
