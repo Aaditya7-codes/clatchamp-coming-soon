@@ -33,6 +33,8 @@ For each account we store your email address, an account identifier, and your st
 
 Razorpay processes web payments. You give your payment details to Razorpay, not to us; we do not receive your card, UPI or bank details. Razorpay tells us whether a payment succeeded and the paid period, and may process your contact details, payment information and device data under its own privacy policy, including for fraud prevention and legal compliance. Signing in keeps a session token in your browser so you stay signed in. When Premium is active, the web version also saves Premium practice content in your browser so it keeps working offline.
 
+When you create an account, the web version also records, once, where you came from: the tag on the link you followed (for example “whatsapp”), or the name of the website that linked to us (its name only, not the full address), and the page you arrived on. We use it only to learn which of our channels reach students. It is stored with your account, only we can read it, and it is removed when you delete your account. It uses no cookies; until you create an account, it is held only in this browser’s storage.
+
 If you sign in on a browser that already has progress saved without an account, that progress is added to your account. Signing out removes your study information from that browser; it stays in your account.
 
 ## Website hosting and fonts
@@ -41,7 +43,7 @@ The website is hosted on GitHub Pages. Requests to the website provide GitHub wi
 
 The website currently loads fonts from Google Fonts. Your browser contacts Google to request them, disclosing information such as your IP address, browser details and the requested resource. These font requests are part of the website, not the app’s bundled reading screens. Google’s privacy terms apply to its processing.
 
-We have not added advertising, analytics, tracking cookies or newsletter forms to the website. Sign-in is described above. Blog search, topic filters and the countdown run in your browser; the site does not send your search text to us. The app’s local study storage is separate from website cookies.
+We have not added advertising, third-party analytics, tracking cookies or newsletter forms to the website. The only measurement is the one-time source record described under “Web accounts and Razorpay payments”. Sign-in is described above. Blog search, topic filters and the countdown run in your browser; the site does not send your search text to us. The app’s local study storage is separate from website cookies.
 
 ## When you contact us
 

@@ -117,6 +117,18 @@
  document.addEventListener('click',e=>{if(e.target.closest?.('[data-web-reload]'))location.reload();});
  listeners.add(()=>{for(const n of document.querySelectorAll('[data-web-sync-note]>span,[data-web-sync-text]'))n.textContent=noteText[state];});
 
+ // Records, once per account, where the learner first came from (see assets/src.js). Rows are only
+ // readable by us, through the acquisition_report view; a failure here never affects the learner.
+ async function sendSource(){
+  try{
+   if(!on()||localStorage.getItem('clatsrc-sent'))return;
+   const s=JSON.parse(localStorage.getItem('clatsrc-v1')||'{}');
+   await auth.api('/rest/v1/acquisition?on_conflict=user_id',{method:'POST',headers:{Prefer:'resolution=ignore-duplicates,return=minimal'},
+    body:{user_id:auth.userId(),src:s.src||'direct',campaign:s.camp||null,referrer:s.ref||null,landing:s.landing||null}});
+   localStorage.setItem('clatsrc-sent','1');
+  }catch{}
+ }
+
  // ---------------------------------------------------------------- start: merge, then load the app
  (async()=>{
   const screen=document.getElementById('cs-screen');
@@ -134,5 +146,6 @@
   if(auth?.configured&&!on()&&globalThis.CLATWebSignup){if(screen)screen.innerHTML='';await globalThis.CLATWebSignup.gate();}
   for(const src of cfg.appScripts||[])await new Promise((ok,no)=>{const s=document.createElement('script');s.src=src;s.onload=ok;s.onerror=()=>no(new Error(src));document.body.append(s);});
   if(dirty.size)flush();
+  sendSource();
  })().catch(e=>{document.getElementById('web-boot-hide')?.remove();console.error(e);const s=document.getElementById('cs-screen');if(s)s.innerHTML='<p class="web-loading">CLAT CHAMP couldn’t start. Please reload the page.</p>';});
 })();
