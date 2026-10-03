@@ -82,7 +82,7 @@
   const weakest=tried.length>=2?tried.reduce((a,b)=>b.accuracy<a.accuracy?b:a):null;
   const sets=globalThis.CLATPracticeSets||[];
   const subj=sections.map(s=>{
-   const free=sets.filter(x=>x.section===s.section&&!x.stub).length;
+   const free=1; // free practice is one set per subject (Question of the Day's set is separate)
    const sw=rows.filter(r=>r.section===s.section&&r.wpm!==null&&r.wpm>0).slice(-5).map(r=>r.wpm),swpm=sw.length?Math.round(avg(sw)):null;
    const line=s.completedCount>0?[Number.isFinite(s.accuracy)?Math.round(s.accuracy)+'%':'',swpm?swpm+' WPM':''].filter(Boolean).join(' · ')||`${s.completedCount} of ${s.setCount} sets`
     :premium?`${s.setCount} sets`:`${free} free ${free===1?'set':'sets'}`;
