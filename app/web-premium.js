@@ -1,7 +1,7 @@
 // Web replacement for premium.js: accounts (Google or email code), Razorpay subscriptions and the
 // account dialog. Exposes the CLATPremium interface the app uses, plus CLATWebAccount for web-boot.js.
 (() => {
- const auth=globalThis.CLATWebAuth,sync=globalThis.CLATWebSync,cfg=globalThis.CLATWebConfig||{},configured=auth.configured,payOpen=cfg.paymentsOpen===true; // payments stay closed until web-config.json says paymentsOpen: true (live Razorpay keys)
+ const auth=globalThis.CLATWebAuth,sync=globalThis.CLATWebSync,cfg=globalThis.CLATWebConfig||{},configured=auth.configured,payOpen=()=>cfg.paymentsOpen===true||(cfg.paymentsPreview||[]).includes(String(auth.email()||'').toLowerCase()); // closed until web-config.json says paymentsOpen: true; paymentsPreview lists accounts that may test live payments first
  const ENT='clat-web-entitlement-v1',AFTER='clat-web-after-sign-in';
  const plans={quarterly:{label:'3 months',note:'Billed every 3 months',per:'/ 3 months'},annual:{label:'1 year',note:'Billed annually',per:'/ year'}};
  const productIds={quarterly:'com.clatspeed.premium.quarterly',annual:'com.clatspeed.premium.annual'};
@@ -193,7 +193,7 @@
  function controls(){
   const priceButtons=Object.keys(plans).reverse().map(p=>`<button class="pm-plan" data-practice="premium-plan" data-product="${productIds[p]}" aria-pressed="${selected===p}" ${busy?'disabled':''}><span>${plans[p].label}<small>${plans[p].note}</small></span><strong>${esc(cfg.prices?.[p])}</strong></button>`).join('');
   if(configured&&hasAccess()){const now=active()[0];return `<div class="pm-active">✓ Premium active · All five subjects</div><p class="pm-billing">${now.cancel_at_cycle_end||now.status==='cancelled'?'Ends':'Renews'} on ${date(now.current_end)}.</p><button class="cs-text-button" data-web-account>Manage account</button>`;}
-  if(!configured||!payOpen)return `<div class="pm-plans" role="group" aria-label="Subscription plans">${priceButtons}</div><button class="cs-primary" disabled>Premium subscriptions open shortly</button><p class="pm-billing">We’re finishing secure payments for Premium. Everything free — one full set per subject, Mock 1 and Question of the Day — works now.</p>`;
+  if(!configured||!payOpen())return `<div class="pm-plans" role="group" aria-label="Subscription plans">${priceButtons}</div><button class="cs-primary" disabled>Premium subscriptions open shortly</button><p class="pm-billing">We’re finishing secure payments for Premium. Everything free — one full set per subject, Mock 1 and Question of the Day — works now.</p>`;
   if(hasAccess()){const now=active()[0];return `<div class="pm-active">✓ Premium active · All five subjects</div><p class="pm-billing">${now.cancel_at_cycle_end||now.status==='cancelled'?'Ends':'Renews'} on ${date(now.current_end)}.</p><button class="cs-text-button" data-web-account>Manage account</button>`;}
   return `<div class="pm-plans" role="group" aria-label="Subscription plans">${priceButtons}</div>
   <button class="cs-primary" data-practice="premium-buy" ${busy?'disabled':''}>${busy?'Please wait…':`Subscribe · ${esc(cfg.prices?.[selected])} ${plans[selected].per}`}</button>
@@ -208,7 +208,7 @@
   receive(){},
   action(action,id){
    if(action==='premium-plan'){const p=Object.keys(productIds).find(k=>productIds[k]===id);if(p&&!busy){selected=p;notify();}return;}
-   if(action==='premium-buy'){if(!configured||!payOpen)return;checkout();return;}
+   if(action==='premium-buy'){if(!configured||!payOpen())return;checkout();return;}
    if(action==='premium-restore'||action==='premium-manage'){if(!configured){message='Premium subscriptions open shortly.';notify();return;}openDialog();return;}
    if(action==='premium-refresh'){refresh().catch(e=>{message=e.message;notify();});}
   }};
