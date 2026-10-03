@@ -59,20 +59,20 @@
    ${last.length===1?'<p class="wh-lead">Your starting point. Every set you finish adds a point to this chart.</p>':''}</section>`;
  }
 
- function week(rows,now){
+ function week(rows,now,icon){
   const t=now.getTime(),recent=rows.filter(r=>{const w=when(r);return w!==null&&w>t-7*DAY;});
-  if(!recent.length)return rows.length?'':'<section class="wh-card"><h3>Your first week</h3><p>Try one set in each subject, do Question of the Day on three days, and take Mock 01.</p></section>';
+  if(!recent.length)return rows.length?'':`<section class="wh-card"><span class="wh-icon wh-en">${icon('calendar-days')}</span><h3>Your first week</h3><p>Try one set in each subject, do Question of the Day on three days, and take Mock 01.</p><button class="wh-ghost" data-action="open-practice">Start a set</button></section>`;
   const days=new Set(recent.map(r=>new Date(when(r)).toDateString())).size;
   const prev=rows.filter(r=>{const w=when(r);return w!==null&&w>t-14*DAY&&w<=t-7*DAY&&r.wpm>0;}).map(r=>r.wpm),cur=recent.filter(r=>r.wpm>0).map(r=>r.wpm);
   const d=prev.length&&cur.length?Math.round(avg(cur)-avg(prev)):null;
   const parts=[`${recent.length} ${recent.length===1?'set':'sets'} done`,`${days} ${days===1?'day':'days'} practised`];
   if(d)parts.push(`reading speed ${d>0?'up':'down'} ${Math.abs(d)} WPM`);
-  return `<section class="wh-card"><h3>This week</h3><p>${parts.join(' · ')}</p></section>`;
+  return `<section class="wh-card"><span class="wh-icon wh-en">${icon('calendar-days')}</span><h3>This week</h3><p>${parts.join(' · ')}.</p><button class="wh-ghost" data-action="tab-progress">Full progress</button></section>`;
  }
  function render(c){
   ctx=c;const {settings,freshWorkout,sections,icon}=c;
   const now=new Date(),profile=settings.profile(),first=(n=>n?n[0].toUpperCase()+n.slice(1):'')((profile.name||'').trim().split(/\s+/)[0]);
-  const h=now.getHours(),greet=h<12?'Good morning':h<17?'Good afternoon':'Good evening';
+  const greet='Hello';
   const progress=globalThis.CLATProgress,rows=progress?.activityRows?.()||[];
   const revise=globalThis.CLATMistakes?.queue(globalThis.CLATPracticeSets).length||0;
   const premium=globalThis.CLATPremium?.hasAccess?.();
@@ -89,15 +89,16 @@
    return `<button class="wh-subject" data-action="open-practice" data-set="${esc(s.id)}"><span class="wh-icon wh-${tone[s.section]||'en'}">${icon(s.icon)}</span><b>${esc(shortNames[s.section]||s.section)}</b><small>${line}</small>${weakest&&weakest.id===s.id?'<small class="wh-weak">Needs work</small>':''}</button>`;
   }).join('');
   return `<section class="wh">
-   <div class="wh-head"><div><p class="wh-date">${now.toLocaleDateString('en-IN',{weekday:'long',day:'numeric',month:'long'})}</p><h1>${greet}${first?', '+esc(first):''}</h1></div><div class="wh-head-right">${countdown(profile,now)}${globalThis.CLATWebAuth?.signedIn?.()?`<button class="wh-account" data-web-account aria-label="Your account and sign out"><span>${esc((first||globalThis.CLATWebAuth.email()||'?')[0].toUpperCase())}</span>Account</button>`:''}</div></div>
+   ${globalThis.CLATWebAuth?.signedIn?.()?`<div class="wh-bar"><button class="wh-account" data-web-account aria-label="Your account and sign out"><span>${esc((first||globalThis.CLATWebAuth.email()||'?')[0].toUpperCase())}</span>Account</button></div>`:''}
+   <div class="wh-head"><div><p class="wh-date">${now.toLocaleDateString('en-IN',{weekday:'long',day:'numeric',month:'long'})}</p><h1>${greet}${first?', '+esc(first):''}</h1></div>${countdown(profile,now)}</div>
    <div class="wh-grid">${speedPanel(rows,now)}<div class="wh-today">${freshWorkout.card()}</div></div>
    <div class="wh-sec"><h2>Practise by subject</h2><button class="wh-link" data-action="open-practice">All sets →</button></div><div class="wh-subjects">${subj}</div>
    <div class="wh-cards">
-    <section class="wh-card"><h3>Revision list</h3><p>${revise?`${revise} ${revise===1?'question':'questions'} you got wrong, with explanations.`:'Questions you get wrong collect here, with explanations, to try again later.'}</p><button class="wh-ghost" data-action="progress-revision">${revise?'Revise':'Open revision list'}</button></section>
-    <section class="wh-card"><h3>Full-length mocks</h3><p>${mocksTaken?`${mocksTaken} ${mocksTaken===1?'mock':'mocks'} finished. `:''}120 questions in 120 minutes, marked like CLAT.${premium?'':' Mock 01 is free.'}</p><button class="wh-ghost" data-action="open-mocks">${mocksTaken?'Open mocks':'Start Mock 01'}</button></section>
-    ${week(rows,now)}
-    ${premium?'<section class="wh-card wh-premium"><h3>Premium</h3><p>Your Premium subscription is active.</p><button class="wh-ghost" data-action="open-premium">Manage</button></section>':'<section class="wh-card wh-premium"><h3>Premium</h3><p>All 1,000+ questions and 10 full-length mocks.</p><p class="wh-price">From <b>₹1,499</b></p><button class="wh-violet" data-action="open-premium">See plans</button></section>'}
+    <section class="wh-card"><span class="wh-icon wh-lg">${icon('list-checks')}</span><h3>Revision list</h3><p>${revise?`${revise} ${revise===1?'question':'questions'} you got wrong, with explanations.`:'Questions you get wrong collect here, with explanations, to try again later.'}</p><button class="wh-ghost" data-action="progress-revision">${revise?'Revise':'Open revision list'}</button></section>
+    <section class="wh-card"><span class="wh-icon wh-lr">${icon('clipboard-list')}</span><h3>Full-length mocks</h3><p>${mocksTaken?`${mocksTaken} ${mocksTaken===1?'mock':'mocks'} finished. `:''}120 questions in 120 minutes, marked like CLAT.${premium?'':' Mock 01 is free.'}</p><button class="wh-ghost" data-action="open-mocks">${mocksTaken?'Open mocks':'Start Mock 01'}</button></section>
+    ${week(rows,now,icon)}
    </div>
+   ${premium?`<section class="wh-band"><div><h3>Premium</h3><p>Your Premium subscription is active.</p></div><button class="wh-ghost" data-action="open-premium">Manage</button></section>`:`<section class="wh-band"><div><h3>Premium</h3><p>All 1,000+ questions and 10 full-length mocks.</p></div><div class="wh-band-end"><span>From <b>₹1,499</b></span><button class="wh-violet" data-action="open-premium">See plans</button></div></section>`}
    ${globalThis.CLATWebSync?.note(icon)||''}</section>`;
  }
  document.addEventListener('click',e=>{
