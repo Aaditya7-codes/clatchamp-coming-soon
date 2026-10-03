@@ -85,7 +85,7 @@ globalThis.createCLATDaily=function(root,screen,practice,onHome){
    const q=qs[i],choice=session.answers[i];
    body=`<div class="cs-meta"><span>REVIEW · ${position+1} / ${indices.length}</span><span>Question ${i+1}</span></div><div class="cs-review-status">${choice===null?'Unanswered':choice===q.correct?'Correct':'Let’s work through this'}</div><h2>${q.text}</h2><div class="cs-choice-review"><div class="cs-kicker">Your answer${choice===null?'':' · '+'ABCD'[choice]}</div><p>${choice===null?'Unanswered · 0 marks':q.options[choice]}</p></div>${explanation(q)}<div class="cs-footer">${button(position===indices.length-1?'Back to results':'Next explanation',position===indices.length-1?'results':'review-next')}${position>0?link('Previous explanation','review-previous'):''}${position<indices.length-1?link('Back to results','results'):''}${link('Go to Home','home')}</div>`;
   }
-  screen.innerHTML=(saveFailed?'<div class="cs-feedback" role="alert"><h3>Your progress is not fully saved</h3><p>Keep this tab open and retry saving before leaving.</p>'+button('Retry saving','retry-save')+'</div>':'')+body;globalThis.lucide?.createIcons();
+  screen.innerHTML=(saveFailed?'<div class="cs-feedback" role="alert"><h3>Your progress is not fully saved</h3><p>Keep the app open and retry saving before leaving.</p>'+button('Retry saving','retry-save')+'</div>':'')+body+globalThis.CLATNav('home');globalThis.lucide?.createIcons();
  }
  root.addEventListener('click',e=>{
   const b=e.target.closest('button');if(!b||!root.contains(b)||!b.dataset.workout||b.disabled)return;
