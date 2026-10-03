@@ -142,6 +142,6 @@
    if(a==='summary'&&phase==='profile')return move({phase:'summary'});
    if(a==='practice'&&['summary','profile'].includes(phase))return finish('practice');
   });
-  return {active:()=>!state.complete,render};
+  return {active:()=>false,render};
  };
 })();

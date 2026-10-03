@@ -45,7 +45,28 @@
  }
  const googleUrl=()=>cfg.supabaseUrl+'/auth/v1/authorize?provider=google&redirect_to='+encodeURIComponent(location.origin+location.pathname);
 
- globalThis.CLATWebAuth={configured,api,token,saveSession,clear,googleUrl,
+ // Google sign-in with Google's own button: Google returns a signed ID token in the page, which is
+ // exchanged for a session through api.clatchamp.com, so the browser never visits supabase.co.
+ // Google gets the SHA-256 of a one-time nonce, Supabase gets the nonce itself and checks they match.
+ let gsiLoading=null,rawNonce='';
+ function loadGoogle(){
+  if(!cfg.googleClientId)return Promise.reject(new Error('Google sign-in isn’t set up.'));
+  if(globalThis.google?.accounts?.id)return Promise.resolve();
+  return gsiLoading||=new Promise((ok,fail)=>{const s=document.createElement('script');s.src='https://accounts.google.com/gsi/client';s.async=true;
+   s.onload=()=>ok();s.onerror=()=>{gsiLoading=null;fail(new Error('Couldn’t load Google sign-in. Check your connection and try again.'));};document.head.append(s);});
+ }
+ async function renderGoogle(el,onDone){
+  await loadGoogle();
+  const bytes=crypto.getRandomValues(new Uint8Array(32));rawNonce=[...bytes].map(b=>b.toString(16).padStart(2,'0')).join('');
+  const hash=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(rawNonce));
+  const hashed=[...new Uint8Array(hash)].map(b=>b.toString(16).padStart(2,'0')).join('');
+  google.accounts.id.initialize({client_id:cfg.googleClientId,nonce:hashed,use_fedcm_for_button:true,
+   callback:async r=>{try{onDone(null,await api('/auth/v1/token?grant_type=id_token',{method:'POST',signedIn:false,body:{provider:'google',id_token:r.credential,nonce:rawNonce}}));}catch(e){onDone(e);}}});
+  el.textContent='';
+  google.accounts.id.renderButton(el,{type:'standard',theme:'outline',size:'large',text:'continue_with',shape:'pill',logo_alignment:'left',width:Math.min(el.clientWidth||320,400)});
+ }
+
+ globalThis.CLATWebAuth={configured,api,token,saveSession,clear,googleUrl,renderGoogle,google:!!cfg.googleClientId,
   session:()=>session,signedIn:()=>!!session,userId:()=>session?.user_id||null,email:()=>session?.email||'',
   returnError:()=>returnError,justSignedIn:()=>justSignedIn};
 })();

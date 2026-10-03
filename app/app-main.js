@@ -56,10 +56,7 @@
    const sections=practice?.summary()||[];
    const sectionNotes={'English Language':'Comprehension & vocabulary','Current Affairs & GK':'Events & general knowledge','Legal Reasoning':'Principles & application','Logical Reasoning':'Arguments & inference','Quantitative Techniques':'Numbers & data'};
    const shortNames={'English Language':'English','Current Affairs & GK':'Current Affairs & GK','Legal Reasoning':'Legal Reasoning','Logical Reasoning':'Logical Reasoning','Quantitative Techniques':'Quantitative Techniques'};
-   screen.innerHTML=`<section class="home-premium-layout">${settings.homeIntro()}
-   ${freshWorkout.card()}
-
-   <div class="dash-heading"><h2>Practice by subject</h2></div><div class="dash-grid">${sections.map(s=>`<button class="dash-section" data-action="open-practice" data-set="${s.id}"><span class="dash-icon">${icon(s.icon)}</span><b>${shortNames[s.section]}</b></button>`).join('')}</div><button class="cs-primary pm-home-upgrade" data-action="open-premium">${icon('gem')}${globalThis.CLATPremium?.hasAccess()?'Your Premium subscription':'Upgrade to Premium'}</button>${globalThis.CLATWebSync.note(icon)}</section>`;
+   screen.innerHTML=globalThis.CLATWebHome.render({settings,freshWorkout,sections,icon,rerender:render});
   }
   if(daily.view==='progress')screen.innerHTML=globalThis.CLATProgress.render(actualBaseline?{wpm:baselineWpm,accuracy:baselineAccuracy}:null,{subjects:practice.summary(),mistakes:globalThis.CLATMistakes.queue(globalThis.CLATPracticeSets).length});
   if(daily.view==='settings')screen.innerHTML=settings.render();
@@ -125,7 +122,7 @@
  }
  root.addEventListener('click',e=>{const b=e.target.closest('button');if(!b||!root.contains(b))return;
   if(b.disabled)return;
-  if(b.dataset.mock||b.dataset.onboarding||b.form?.id==='ob-profile-form'||b.dataset.practice||b.dataset.workout||b.dataset.revision||b.dataset.settings||(b.type==='submit'&&b.form?.id==='st-profile-form'))return;
+  if(b.dataset.wh||b.dataset.mock||b.dataset.onboarding||b.form?.id==='ob-profile-form'||b.dataset.practice||b.dataset.workout||b.dataset.revision||b.dataset.settings||(b.type==='submit'&&b.form?.id==='st-profile-form'))return;
   if(b.dataset.action==='open-mocks'){practice.pause();freshWorkout.pause();practiceActive=false;workoutActive=false;mocksActive=true;state.step=5;mocks.open();return;}
   if(['tab-home','tab-progress','tab-settings','open-practice','open-premium','daily-fresh','progress-revision'].includes(b.dataset.action)){mocks.leave();mocksActive=false;}
   if(b.dataset.action==='daily-fresh'){practice.pause();practiceActive=false;workoutActive=true;freshWorkout.open();root.scrollIntoView?.({block:'start',behavior:'instant'});return;}
