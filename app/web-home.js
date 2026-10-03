@@ -89,7 +89,6 @@
    return `<button class="wh-subject" data-action="open-practice" data-set="${esc(s.id)}"><span class="wh-icon wh-${tone[s.section]||'en'}">${icon(s.icon)}</span><b>${esc(shortNames[s.section]||s.section)}</b><small>${line}</small>${weakest&&weakest.id===s.id?'<small class="wh-weak">Needs work</small>':''}</button>`;
   }).join('');
   return `<section class="wh">
-   ${globalThis.CLATWebAuth?.signedIn?.()?`<div class="wh-bar"><button class="wh-account" data-web-account aria-label="Your account and sign out"><span>${esc((first||globalThis.CLATWebAuth.email()||'?')[0].toUpperCase())}</span>Account</button></div>`:''}
    <div class="wh-head"><div><p class="wh-date">${now.toLocaleDateString('en-IN',{weekday:'long',day:'numeric',month:'long'})}</p><h1>${greet}${first?', '+esc(first):''}</h1></div>${countdown(profile,now)}</div>
    <div class="wh-grid">${speedPanel(rows,now)}<div class="wh-today">${freshWorkout.card()}</div></div>
    <div class="wh-sec"><h2>Practise by subject</h2><button class="wh-link" data-action="open-practice">All sets →</button></div><div class="wh-subjects">${subj}</div>

@@ -196,7 +196,6 @@ html,body{background:#191625}
 /* ---------------------------------------------------------------- dashboard (web-home.js) */
 .wh{--wh-card:#201b2e;--wh-line:#332c4a;--wh-muted:#a9a1c0;display:grid;gap:20px;color:#f5f1ff}
 .wh h1,.wh h2,.wh h3{margin:0;letter-spacing:-.02em}
-.wh-bar{display:flex;justify-content:flex-end;margin-bottom:-6px}
 .wh-head{display:flex;justify-content:space-between;align-items:center;gap:24px}
 .wh-date{margin:0 0 6px;color:var(--wh-muted);font-size:14px}
 .wh-head h1{font-size:34px;font-weight:700;line-height:1.1}
