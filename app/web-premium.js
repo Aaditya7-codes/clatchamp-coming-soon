@@ -35,10 +35,9 @@
   try{
    if(await refresh()){busy=false;message='Premium is already active on this account.';notify();return;}
    const [sub]=await Promise.all([auth.api('/functions/v1/create-subscription',{method:'POST',body:{plan:selected}}),loadCheckout()]);
-   // ?rzpmin=1 opens checkout with only the key and subscription (diagnostics for a payments issue).
-   const min=/[?&]rzpmin=1/.test(location.search);
-   const rzp=new globalThis.Razorpay({key:sub.key_id,subscription_id:sub.subscription_id,...(min?{}:{name:'CLAT CHAMP',description:'Premium · '+plans[selected].label,
-    image:new URL('brand-icon.png',location.href).href,prefill:{email:auth.email()},theme:{color:'#6241db'}}),
+   // Only the key and subscription: with name, description, logo, prefill and theme added, live checkout
+   // answered "No appropriate payment method found". Razorpay shows the brand name and logo from the account.
+   const rzp=new globalThis.Razorpay({key:sub.key_id,subscription_id:sub.subscription_id,
     handler:async response=>{
      message='Payment received. Unlocking Premium…';notify();
      try{
