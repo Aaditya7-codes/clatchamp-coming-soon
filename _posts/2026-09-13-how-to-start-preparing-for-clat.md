@@ -58,6 +58,8 @@ Depends on your runway. [How many months are enough for CLAT preparation?](/blog
 - [How to prepare for CLAT from Class 11](/blog/how-to-prepare-for-clat-from-class-11/)
 - [How to prepare for CLAT from Class 12](/blog/how-to-prepare-for-clat-from-class-12/)
 - [Is coaching necessary for CLAT?](/blog/is-coaching-necessary-for-clat/)
+- [CLAT registration](/blog/clat-registration/)
+- [How many questions are there in CLAT?](/blog/how-many-questions-are-there-in-clat/)
 
 ## Sources and scope
 

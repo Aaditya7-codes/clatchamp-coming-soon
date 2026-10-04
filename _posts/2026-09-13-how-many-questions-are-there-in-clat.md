@@ -1,7 +1,7 @@
 ---
-title: "How Many Questions Are There in CLAT? 120, Split Five Ways"
+title: "How Many Questions Are in CLAT? 120, 5 Sections"
 standfirst: "120 questions in 120 minutes, across five sections. Here is the split, and what it leaves you per question."
-description: "120 questions in 120 minutes, across five sections. Here is the split, and what it leaves you per question."
+description: "CLAT UG has 120 multiple-choice questions in 120 minutes. See the section-wise split, the marks and the time per question."
 section: "Exam basics"
 order: 8
 last_modified_at: 2026-09-18
@@ -37,6 +37,7 @@ That does not mean abandoning Quantitative Techniques — ten to fourteen marks 
 - [CLAT exam pattern](/blog/clat-exam-pattern/) — marks, timing and the full rules
 - [Is there negative marking in CLAT?](/blog/is-there-negative-marking-in-clat/)
 - [Time management in the CLAT exam](/blog/clat-time-management/)
+- [What type of questions are asked in CLAT?](/blog/what-type-of-questions-are-asked-in-clat/)
 
 - [CLAT syllabus](/blog/clat-syllabus/)
 

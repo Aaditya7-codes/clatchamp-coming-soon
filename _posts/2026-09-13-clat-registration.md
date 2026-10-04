@@ -66,6 +66,7 @@ The fees, deadline, exam date and timings above are taken from the **Consortium 
 - [CLAT eligibility criteria](/blog/clat-eligibility-criteria/)
 - [Documents required on CLAT exam day](/blog/documents-required-on-clat-exam-day/)
 - [CLAT exam day: what to expect](/blog/clat-exam-day/)
+- [CLAT age limit](/blog/clat-age-limit/)
 
 - [CLAT exam pattern](/blog/clat-exam-pattern/)
 

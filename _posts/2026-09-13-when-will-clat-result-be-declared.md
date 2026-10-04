@@ -1,7 +1,7 @@
 ---
-title: "When Will the CLAT Result Be Declared? What Has Been Announced"
+title: "When Will the CLAT Result Be Declared?"
 standfirst: "No confirmed result date is provided here. Use the official CLAT 2027 notices for the release date and any answer-key objection window."
-description: "No confirmed result date is provided here. Use the official CLAT 2027 notices for the release date and any answer-key objection window."
+description: "No confirmed CLAT 2027 result date as of 18 September 2026. What to watch for: provisional answers, objections and the official portal."
 section: "Admissions"
 order: 6
 last_modified_at: 2026-09-18

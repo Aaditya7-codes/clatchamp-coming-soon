@@ -51,6 +51,7 @@ Choose achievable weekly tasks and evaluate progress. Fewer months require prior
 - [How many months are enough for CLAT preparation?](/blog/how-many-months-are-enough-for-clat-preparation/)
 - [How to prepare for CLAT at home](/blog/how-to-prepare-for-clat-at-home/)
 - [Is coaching necessary for CLAT?](/blog/is-coaching-necessary-for-clat/)
+- [Is maths necessary for CLAT?](/blog/is-maths-necessary-for-clat/)
 
 ## Sources and scope
 

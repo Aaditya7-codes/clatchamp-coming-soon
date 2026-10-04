@@ -47,6 +47,7 @@ Since the paper was restructured, every section is built on passages. [Quantitat
 - [How many questions are there in CLAT?](/blog/how-many-questions-are-there-in-clat/)
 - [Is there negative marking in CLAT?](/blog/is-there-negative-marking-in-clat/)
 - [CLAT syllabus](/blog/clat-syllabus/)
+- [What type of questions are asked in CLAT?](/blog/what-type-of-questions-are-asked-in-clat/)
 
 ## Sources and scope
 

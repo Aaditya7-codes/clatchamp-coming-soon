@@ -1,7 +1,7 @@
 ---
-title: "CLAT Maths Topics: Official Areas and a Practice Checklist"
+title: "CLAT Maths Topics: Class 10 Syllabus"
 standfirst: "The official Class 10 maths areas, plus a practical checklist for calculation and data interpretation."
-description: "The official Class 10 maths areas, plus a practical checklist for calculation and data interpretation."
+description: "CLAT Quantitative Techniques stays at Class 10 level. See the official areas and a checklist for arithmetic, algebra and data interpretation."
 section: "Section guides"
 order: 5
 last_modified_at: 2026-09-18

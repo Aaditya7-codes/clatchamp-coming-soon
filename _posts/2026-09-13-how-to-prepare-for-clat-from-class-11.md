@@ -48,6 +48,7 @@ Emphasise revision, fresh practice to check improvements and familiar test routi
 - [CLAT eligibility](/blog/clat-eligibility-criteria/)
 - [How to start preparing for CLAT](/blog/how-to-start-preparing-for-clat/)
 - [How many months are enough for CLAT preparation?](/blog/how-many-months-are-enough-for-clat-preparation/)
+- [Is maths necessary for CLAT?](/blog/is-maths-necessary-for-clat/)
 
 ## Sources and scope
 

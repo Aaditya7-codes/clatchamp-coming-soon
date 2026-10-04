@@ -39,6 +39,7 @@ The journey and pacing suggestions here are preparation advice. Your admit card 
 - [0.25 deducted for a wrong answer](/blog/is-there-negative-marking-in-clat/)
 - [the result](/blog/when-will-clat-result-be-declared/)
 - [CLAT counselling process](/blog/clat-counselling-process/)
+- [CLAT registration](/blog/clat-registration/)
 
 ## Sources and scope
 

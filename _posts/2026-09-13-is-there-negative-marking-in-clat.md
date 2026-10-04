@@ -1,7 +1,7 @@
 ---
-title: "Is There Negative Marking in CLAT? Yes — and When Guessing Still Pays"
+title: "Is There Negative Marking in CLAT? Yes, 0.25"
 standfirst: "Wrong answers lose 0.25 marks. Understand the expected value of guessing and why a positive average is not a guaranteed gain."
-description: "Wrong answers lose 0.25 marks. Understand the expected value of guessing and why a positive average is not a guaranteed gain."
+description: "CLAT UG deducts 0.25 marks for each wrong answer. See how to calculate your score and when guessing still pays."
 section: "Exam basics"
 order: 7
 last_modified_at: 2026-09-18

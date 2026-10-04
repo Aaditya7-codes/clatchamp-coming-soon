@@ -1,6 +1,12 @@
 ---
 layout: default
 ---
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
+{"@type":"ListItem","position":1,"name":"CLAT Champ","item":"{{ site.url }}/"},
+{"@type":"ListItem","position":2,"name":"Blog","item":"{{ site.url }}/blog/"},
+{"@type":"ListItem","position":3,"name":{{ page.title | jsonify }},"item":"{{ page.url | absolute_url }}"}]}
+</script>
 <article class="post">
   <a class="backlink" href="{{ '/blog/' | relative_url }}"><span aria-hidden="true">&#8592;</span> All posts</a>
   <header class="post-head">
@@ -21,7 +27,7 @@ layout: default
 
   <aside class="post-cta" aria-label="Practise with CLAT Champ">
     <p><strong>Practise for CLAT, free.</strong> Passage-based sets for all five sections, full-length mocks and a question every day — online, on your laptop.</p>
-    <a class="btn-primary" href="{{ '/app/' | relative_url }}">Try today’s question <span aria-hidden="true">&#8594;</span></a>
+    <a class="btn-primary" href="{{ '/app/' | relative_url }}?src=blog&amp;utm_campaign={{ page.slug | slice: 0, 55 }}">Try today’s question <span aria-hidden="true">&#8594;</span></a>
   </aside>
 
   {% assign rel = site.posts | where_exp: "p", "p.url != page.url" %}

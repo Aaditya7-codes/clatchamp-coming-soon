@@ -86,6 +86,7 @@ Explain your chosen option and why the others fail. Then practise longer, fresh 
 - [CLAT exam pattern](/blog/clat-exam-pattern/)
 - [CLAT syllabus](/blog/clat-syllabus/)
 - [How to prepare for CLAT English](/blog/how-to-prepare-for-clat-english/)
+- [How many questions are there in CLAT?](/blog/how-many-questions-are-there-in-clat/)
 
 - [How to start preparing for CLAT](/blog/how-to-start-preparing-for-clat/)
 

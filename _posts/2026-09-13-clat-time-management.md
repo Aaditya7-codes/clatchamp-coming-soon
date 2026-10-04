@@ -51,6 +51,8 @@ Record time, attempted questions, correct answers and omissions by section. Chan
 - [the marking scheme](/blog/is-there-negative-marking-in-clat/)
 - [mock analysis](/blog/how-to-analyse-a-clat-mock-test/)
 - [CLAT exam pattern](/blog/clat-exam-pattern/)
+- [How many questions are there in CLAT?](/blog/how-many-questions-are-there-in-clat/)
+- [CLAT exam day](/blog/clat-exam-day/)
 
 ## Sources and scope
 

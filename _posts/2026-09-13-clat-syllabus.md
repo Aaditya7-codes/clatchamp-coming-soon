@@ -49,6 +49,8 @@ For English, include fiction and non-fiction. For GK, include relevant backgroun
 - [CLAT exam pattern](/blog/clat-exam-pattern/) — marks, timing, the rules
 - [How to start preparing for CLAT](/blog/how-to-start-preparing-for-clat/)
 - [What type of questions are asked in CLAT?](/blog/what-type-of-questions-are-asked-in-clat/)
+- [How many questions are there in CLAT?](/blog/how-many-questions-are-there-in-clat/)
+- [Is maths necessary for CLAT?](/blog/is-maths-necessary-for-clat/)
 
 ## Sources and scope
 

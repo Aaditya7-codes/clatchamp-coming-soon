@@ -1,10 +1,10 @@
 ---
-title: "Is Maths Necessary for CLAT? What the Quantitative Section Actually Asks"
+title: "Is Maths Necessary for CLAT? Class 10 Is Enough"
 standfirst: "CLAT UG includes roughly 10–14 Quantitative Techniques questions. Taking maths in Class 11 or 12 is not an eligibility requirement."
-description: "CLAT UG includes roughly 10–14 Quantitative Techniques questions. Taking maths in Class 11 or 12 is not an eligibility requirement."
+description: "CLAT has 10–14 maths questions, all at Class 10 level. You do not need maths in Class 11 or 12. See what is asked and how to prepare."
 section: "Straight answers"
 order: 1
-last_modified_at: 2026-09-18
+last_modified_at: 2026-10-04
 ---
 **Yes, CLAT has a maths section. No, you do not need to have taken maths in Class 11 or 12.**
 
@@ -46,6 +46,16 @@ It does not mean abandoning the section. Ten marks decides admissions at the mar
 ## The short answer
 
 If you are choosing whether to take maths in Class 11 for the sake of CLAT: **you do not need to.** Choose subjects on their own merits. You will still need to practise the maths the entrance exam covers.
+
+## Quick answers
+
+**Does CLAT have maths?** Yes. Quantitative Techniques is roughly 10–14 of the 120 questions.
+
+**Is maths compulsory for CLAT?** The section is part of the paper, but you do not need maths as a Class 11 or 12 subject to be eligible. The mathematics stays at Class 10 level.
+
+**Can I take CLAT without maths in Class 12?** Yes. Eligibility does not depend on having studied maths. You will still need to practise the section itself.
+
+**Do I have to attempt the maths questions?** You may leave questions unanswered, and the published format does not list separate sectional cut-offs. The section above weighs what it is worth against the rest of the paper.
 
 ## Where to go next
 
