@@ -60,6 +60,7 @@ Depends on your runway. [How many months are enough for CLAT preparation?](/blog
 - [Is coaching necessary for CLAT?](/blog/is-coaching-necessary-for-clat/)
 - [CLAT registration](/blog/clat-registration/)
 - [How many questions are there in CLAT?](/blog/how-many-questions-are-there-in-clat/)
+- [CLAT 2027 study plan for the last 60 days](/blog/clat-study-plan-last-60-days/)
 
 ## Sources and scope
 

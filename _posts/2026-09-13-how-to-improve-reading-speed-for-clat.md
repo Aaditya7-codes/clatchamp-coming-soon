@@ -42,6 +42,7 @@ There is no fixed improvement timeline. Continue working on comprehension even i
 - [Class 11](/blog/how-to-prepare-for-clat-from-class-11/)
 - [Time management in the CLAT exam](/blog/clat-time-management/)
 - [What is the English section in CLAT?](/blog/what-is-the-english-section-in-clat/)
+- [CLAT reading comprehension practice](/blog/clat-reading-comprehension-practice/)
 
 ## Sources and scope
 

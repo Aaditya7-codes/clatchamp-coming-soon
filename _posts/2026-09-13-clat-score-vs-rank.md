@@ -51,6 +51,7 @@ That is the number to think in, and it only becomes real at counselling.
 - [CLAT previous year cutoffs](/blog/clat-previous-year-cutoffs/)
 - [CLAT counselling process](/blog/clat-counselling-process/)
 - [When will the CLAT result be declared?](/blog/when-will-clat-result-be-declared/)
+- [CLAT marking scheme](/blog/clat-marking-scheme/)
 
 ## Sources and scope
 

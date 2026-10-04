@@ -44,6 +44,7 @@ Emphasise revision and familiar routines, while still addressing a clear gap whe
 - [How to start preparing for CLAT](/blog/how-to-start-preparing-for-clat/)
 - [How to prepare for CLAT from Class 12](/blog/how-to-prepare-for-clat-from-class-12/)
 - [Is self-study enough for CLAT?](/blog/is-self-study-enough-for-clat/)
+- [CLAT 2027 study plan for the last 60 days](/blog/clat-study-plan-last-60-days/)
 
 ## Sources and scope
 

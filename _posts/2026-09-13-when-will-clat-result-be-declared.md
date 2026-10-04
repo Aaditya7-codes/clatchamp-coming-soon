@@ -35,6 +35,7 @@ This is a dated review, not a live notification service. If you are reading it l
 - [CLAT counselling process](/blog/clat-counselling-process/)
 - [CLAT score vs rank](/blog/clat-score-vs-rank/)
 - [CLAT previous year cutoffs](/blog/clat-previous-year-cutoffs/)
+- [CLAT 2027 important dates](/blog/clat-2027-important-dates/)
 
 - [CLAT exam pattern](/blog/clat-exam-pattern/)
 

@@ -53,6 +53,7 @@ Record time, attempted questions, correct answers and omissions by section. Chan
 - [CLAT exam pattern](/blog/clat-exam-pattern/)
 - [How many questions are there in CLAT?](/blog/how-many-questions-are-there-in-clat/)
 - [CLAT exam day](/blog/clat-exam-day/)
+- [How many mock tests should you take for CLAT?](/blog/how-many-mock-tests-for-clat/)
 
 ## Sources and scope
 

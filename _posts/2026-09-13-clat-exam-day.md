@@ -40,6 +40,7 @@ The journey and pacing suggestions here are preparation advice. Your admit card 
 - [the result](/blog/when-will-clat-result-be-declared/)
 - [CLAT counselling process](/blog/clat-counselling-process/)
 - [CLAT registration](/blog/clat-registration/)
+- [CLAT 2027 admit card](/blog/clat-2027-admit-card/)
 
 ## Sources and scope
 

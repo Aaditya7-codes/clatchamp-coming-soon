@@ -72,6 +72,7 @@ Memorising case law. [Legal Reasoning topics for CLAT](/blog/legal-reasoning-top
 - [What is Legal Reasoning in CLAT?](/blog/what-is-legal-reasoning-in-clat/)
 - [Legal Reasoning topics for CLAT](/blog/legal-reasoning-topics-for-clat/)
 - [How to analyse a CLAT mock test](/blog/how-to-analyse-a-clat-mock-test/)
+- [CLAT reading comprehension practice](/blog/clat-reading-comprehension-practice/)
 
 - [CLAT exam pattern](/blog/clat-exam-pattern/)
 

@@ -46,6 +46,7 @@ Allow enough review time to resolve the useful lessons; it may be shorter or lon
 - [Legal Reasoning](/blog/how-to-prepare-for-clat-legal-reasoning/)
 - [time management in the CLAT exam](/blog/clat-time-management/)
 - [Is self-study enough for CLAT?](/blog/is-self-study-enough-for-clat/)
+- [How many mock tests should you take for CLAT?](/blog/how-many-mock-tests-for-clat/)
 
 ## Sources and scope
 

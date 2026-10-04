@@ -61,6 +61,7 @@ Better reading can support these tasks, but it does not replace factual knowledg
 - [CLAT English topics and question types](/blog/clat-english-topics/)
 - [How to improve reading speed for CLAT](/blog/how-to-improve-reading-speed-for-clat/)
 - [Do you need to read a newspaper daily for CLAT?](/blog/do-you-need-to-read-a-newspaper-daily-for-clat/)
+- [CLAT reading comprehension practice](/blog/clat-reading-comprehension-practice/)
 
 ## Sources and scope
 

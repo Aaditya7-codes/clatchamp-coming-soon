@@ -41,6 +41,7 @@ Follow the admit card and invigilator's directions. If a required document is mi
 - [CLAT exam day: what to expect](/blog/clat-exam-day/)
 - [Time management in the CLAT exam](/blog/clat-time-management/)
 - [CLAT registration](/blog/clat-registration/)
+- [CLAT 2027 admit card](/blog/clat-2027-admit-card/)
 
 ## Sources and scope
 

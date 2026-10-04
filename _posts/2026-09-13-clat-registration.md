@@ -67,6 +67,8 @@ The fees, deadline, exam date and timings above are taken from the **Consortium 
 - [Documents required on CLAT exam day](/blog/documents-required-on-clat-exam-day/)
 - [CLAT exam day: what to expect](/blog/clat-exam-day/)
 - [CLAT age limit](/blog/clat-age-limit/)
+- [CLAT exam fees 2027](/blog/clat-exam-fees/)
+- [CLAT 2027 important dates](/blog/clat-2027-important-dates/)
 
 - [CLAT exam pattern](/blog/clat-exam-pattern/)
 

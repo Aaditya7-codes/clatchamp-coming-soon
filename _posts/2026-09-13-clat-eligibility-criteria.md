@@ -48,6 +48,7 @@ The official CLAT 2027 eligibility page is linked below. **PwD candidates are in
 - [CLAT age limit](/blog/clat-age-limit/)
 - [CLAT registration: dates, fees and the form](/blog/clat-registration/)
 - [CLAT counselling process](/blog/clat-counselling-process/)
+- [CLAT exam fees 2027](/blog/clat-exam-fees/)
 
 ## Sources and scope
 

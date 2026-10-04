@@ -44,6 +44,7 @@ Do not let last-second guessing disrupt answer-sheet alignment or prevent you fr
 - [time management in the CLAT exam](/blog/clat-time-management/)
 - [CLAT exam pattern](/blog/clat-exam-pattern/)
 - [How to analyse a CLAT mock test](/blog/how-to-analyse-a-clat-mock-test/)
+- [CLAT marking scheme](/blog/clat-marking-scheme/)
 
 ## Sources and scope
 
