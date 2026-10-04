@@ -53,6 +53,13 @@
     show('st-quiz');
   }
 
+  var AVG = 238; // average adult silent reading speed, English non-fiction (Brysbaert, 2019)
+  function vs(id, v) {
+    var el = $(id), pct = Math.round((v / AVG - 1) * 100);
+    el.className = 'st-vs ' + (pct > 0 ? 'up' : pct < 0 ? 'down' : '');
+    el.textContent = pct === 0 ? 'About average' : Math.abs(pct) + '% ' + (pct > 0 ? 'above' : 'below') + ' average';
+  }
+
   function submit(e) {
     e.preventDefault();
     var answers = [], ok = 0;
@@ -76,6 +83,7 @@
     var wpm = Math.round(last.words / (last.seconds / 60));
     var eff = Math.round(wpm * ok / current.qs.length);
     last.wpm = wpm; last.ok = ok; last.eff = eff;
+    vs('r-wpm-vs', wpm); vs('r-eff-vs', eff);
     $('r-wpm').textContent = wpm; $('r-acc').textContent = ok + ' / ' + current.qs.length; $('r-eff').textContent = eff;
     var w = $('st-warn');
     if (last.seconds < 8 || wpm > 900) { w.hidden = false; w.textContent = 'That is faster than most people can read and understand, so you were probably skimming. Try again and read the way you would in the exam.'; }

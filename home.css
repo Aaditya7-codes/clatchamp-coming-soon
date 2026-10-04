@@ -62,6 +62,10 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px soli
 .hero .tag { margin-top: 18px; font-size: 22px; font-weight: 500; letter-spacing: -0.01em; color: var(--night-text); }
 .hero .lede { margin-top: 14px; font-size: 18px; color: var(--night-muted); max-width: 30em; }
 .hero .cta { margin-top: 34px; display: flex; flex-wrap: wrap; gap: 12px; }
+@media (min-width: 961px) {
+  .hero .cta { display: grid; grid-template-columns: repeat(2, auto); justify-content: start; }
+  .hero .cta a:first-child { grid-column: 1 / -1; justify-self: start; }
+}
 .hero .small { margin-top: 16px; font-size: 14px; color: var(--night-muted); }
 .hero .small b { color: var(--night-text); font-weight: 600; }
 .how { padding-top: 72px !important; }
