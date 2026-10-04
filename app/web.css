@@ -314,3 +314,8 @@ html,body{background:#191625}
 #clat-prototype .rv-secondary{min-height:46px;padding:0 22px;border-radius:999px;border:1px solid #5a4d78;background:transparent;color:#f5f1ff;font:inherit;font-weight:600;cursor:pointer}
 #clat-prototype .rv-secondary:hover{background:#2b2340}
 #clat-prototype .rv-note{margin-top:18px;font-size:14px}
+
+.wa-signout{display:inline-flex;align-items:center;min-height:40px;margin-left:8px;padding:0 14px;border:1px solid #443a54;border-radius:999px;background:transparent;color:#cfc6e6;font:600 14px/1 Inter,ui-sans-serif,system-ui,sans-serif;cursor:pointer;flex:none}
+.wa-signout:hover{background:#221c30;color:#f5f1ff}
+.wa-signout:focus-visible{outline:2px solid #b9a5ff;outline-offset:2px}
+#clat-prototype:has(.cs-tabbar) .wa-signout{position:fixed;left:16px;bottom:72px;width:216px;margin:0;justify-content:flex-start;padding:0 16px;z-index:15}

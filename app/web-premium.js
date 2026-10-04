@@ -166,7 +166,7 @@
   if(a==='delete-ask'){step='delete';dialogError='';message='';renderDialog();return;}
   if(a==='delete'){deleteAccount();}
  }
- document.addEventListener('click',e=>{const b=e.target.closest?.('[data-web-account]');if(b){e.preventDefault();openDialog();}});
+ document.addEventListener('click',e=>{if(e.target.closest?.('.wa-signout')&&!busy){e.preventDefault();signOut();return;}const b=e.target.closest?.('[data-web-account]');if(b){e.preventDefault();openDialog();}});
 
  // ------------------------------------------------------------------ header account button + notices
  function renderHeader(){
@@ -177,6 +177,9 @@
   const st=sync.status().state;
   b.innerHTML=auth.signedIn()?`<span class="wa-avatar" aria-hidden="true">${esc((auth.email()[0]||'?').toUpperCase())}</span><span class="wa-header-label">Account</span>${st==='stale'||st==='offline'?'<span class="wa-dot" aria-hidden="true"></span>':''}`:'<span class="wa-header-label">Sign in</span>';
   b.setAttribute('aria-label',auth.signedIn()?`Your account (${auth.email()})`:'Sign in or create a free account');
+  let o=top.querySelector('.wa-signout');
+  if(auth.signedIn()&&!o){o=document.createElement('button');o.type='button';o.className='wa-signout';o.textContent='Sign out';top.append(o);}
+  else if(!auth.signedIn()&&o)o.remove();
  }
  function toast(text){const t=document.createElement('p');t.className='wa-toast';t.setAttribute('role','status');t.textContent=text;document.body.append(t);setTimeout(()=>t.remove(),5000);}
  sync.subscribe(()=>{renderHeader();if(dialog?.open&&step==='account')renderDialog();});
