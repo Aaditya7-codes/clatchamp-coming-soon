@@ -1,0 +1,71 @@
+---
+layout: default
+permalink: /speed-test/
+title: "CLAT Reading Speed Test: WPM and Accuracy"
+description: "Free CLAT reading speed test. Read one passage, answer five questions and see your words per minute, accuracy and effective speed. No sign-up, nothing saved."
+image: /assets/brand/social-preview.png
+---
+<link rel="stylesheet" href="/speed-test/speed-test.css">
+<div class="st" id="st">
+  <noscript><p class="st-note">This test needs JavaScript. Please turn it on and reload the page.</p></noscript>
+
+  <section id="st-intro" class="st-panel">
+    <h1>CLAT reading speed test</h1>
+    <p class="st-lede">Read one legal reasoning passage in the style of the CLAT, then answer five questions on it. You get your reading speed in words per minute, your accuracy, and a combined speed that only counts what you understood.</p>
+    <ul class="st-facts">
+      <li>About five minutes.</li>
+      <li>No sign-up. Nothing you do here is saved or sent anywhere.</li>
+      <li>Read the way you would in the exam, not as fast as you can.</li>
+    </ul>
+    <button class="btn-primary" id="st-start" type="button">Start the test</button>
+  </section>
+
+  <section id="st-read" class="st-panel" hidden>
+    <p class="st-hint">Read at your normal pace. Click the button as soon as you have finished.</p>
+    <article id="st-passage" class="st-passage" aria-label="Passage"></article>
+    <button class="btn-primary" id="st-done" type="button">I have finished reading</button>
+  </section>
+
+  <section id="st-quiz" class="st-panel" hidden>
+    <h2 class="st-h2">Five questions</h2>
+    <p class="st-hint">The passage is hidden now. Answer from what you read.</p>
+    <form id="st-form" novalidate>
+      <div id="st-questions"></div>
+      <p id="st-error" class="st-error" role="alert" hidden>Please answer all five questions.</p>
+      <button class="btn-primary" type="submit">See my result</button>
+    </form>
+  </section>
+
+  <section id="st-result" class="st-panel" hidden aria-live="polite">
+    <h2 class="st-h2">Your result</h2>
+    <p id="st-warn" class="st-warn" hidden></p>
+    <div class="st-nums">
+      <div><span id="r-wpm" class="st-big tnum">–</span><span class="st-lab">words per minute</span></div>
+      <div><span id="r-acc" class="st-big tnum">–</span><span class="st-lab">questions correct</span></div>
+      <div><span id="r-eff" class="st-big tnum">–</span><span class="st-lab">effective words per minute</span></div>
+    </div>
+    <p class="st-explain">Effective speed is your words per minute multiplied by your accuracy. Reading fast without understanding does not score in CLAT, so this is the number to watch.</p>
+    <p class="st-explain">The test always uses the same passage, so taking it again is not a fair comparison. To keep measuring, practise new passages: CLAT Champ shows your speed and accuracy after every set.</p>
+    <p class="st-explain">For comparison, a review of 190 studies found that adults read English non-fiction silently at about 238 words per minute on average, with most between 175 and 300 (<a href="https://doi.org/10.1016/j.jml.2019.104047" rel="noopener">Brysbaert, 2019</a>). There is no official CLAT reading-speed target. Five questions on one passage is a rough check, not a measurement, and legal text is denser than ordinary prose, so read your number as a starting point.</p>
+
+    <h3 class="st-h3">Check your answers</h3>
+    <div id="st-review"></div>
+
+    <div class="st-actions">
+      <button class="btn-quiet" id="st-copy" type="button">Copy my result</button>
+    </div>
+    <p id="st-copied" class="st-copied" role="status" hidden>Copied.</p>
+
+    <div class="st-cta">
+      <p><strong>Want this after every practice set?</strong> CLAT Champ shows your reading speed and accuracy for every set, across all five CLAT sections. Free to start.</p>
+      <a class="btn-primary" id="st-cta" href="/app/?src=speedtest&amp;utm_campaign=result">Start practising free <span aria-hidden="true">&#8594;</span></a>
+    </div>
+  </section>
+
+  <section class="st-more">
+    <h2 class="st-h2">How to read the result</h2>
+    <p>Words per minute is the passage length divided by the time you took. Accuracy is how many of the five questions you got right. If your accuracy is low, slow down: speed built on misreading does not help. If your accuracy is high and your speed is low, practise reading passages under a time limit.</p>
+    <p>Our guide to <a href="/blog/how-to-improve-reading-speed-for-clat/">improving reading speed for CLAT</a> explains how to build speed without losing accuracy, and <a href="/blog/clat-reading-comprehension-practice/">how to practise reading comprehension</a> gives a daily routine.</p>
+  </section>
+</div>
+<script src="/speed-test/speed-test.js" defer></script>
