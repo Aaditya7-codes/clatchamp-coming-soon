@@ -19,7 +19,7 @@ globalThis.createCLATDaily=function(root,screen,practice,onHome){
   const assigned=sets.find(s=>s.id===data.days[stamp]);if(assigned){if(valid(x,assigned))data.sessions[stamp]=x;else repairedDays.add(stamp);}
  }
  function assignment(d=new Date()){
-  const stamp=day(d),existing=sets.find(s=>s.id===data.days[stamp]);
+  const stamp=day(d),existing=sets.find(s=>s.id===data.days[stamp]&&!s.stub);if(!existing&&data.days[stamp])delete data.sessions[stamp];
   const excluded=new Set(practice.dailyExcludedIds());
   const separate=sets.filter(s=>!excluded.has(s.id)&&!s.stub);
   // After all separate content is exhausted, revision is preferable to an empty daily card.

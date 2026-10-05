@@ -22,14 +22,17 @@
   if(st.kind==='set')sets[st.i]=item.payload;else papers[st.i]=item.payload;
   stubs.delete(item.id);return true;
  }
- // Saved Premium sets are used only while the signed-in account is Premium (a free account on a shared computer gets nothing).
- if(account?.hasAccess())(await cacheAll()).forEach(apply);
-
- // ---------------------------------------------------------------- network
  const DAILY='clat-web-daily-v1';
  const today=(d=new Date())=>`${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
- const timeout=(p,ms)=>Promise.race([p,new Promise((_,no)=>setTimeout(()=>no(new Error('timeout')),ms))]);
  let daily=null;try{daily=JSON.parse(localStorage.getItem(DAILY)||'null');}catch{}
+ // Saved sets: everything for a Premium account; for a free account only today's free daily set
+ // (so a free account on a shared computer never sees another account's Premium sets).
+ const cached=await cacheAll();
+ if(account?.hasAccess())cached.forEach(apply);
+ else if(daily?.date===today())cached.filter(i=>i.id===daily.id).forEach(apply);
+
+ // ---------------------------------------------------------------- network
+ const timeout=(p,ms)=>Promise.race([p,new Promise((_,no)=>setTimeout(()=>no(new Error('timeout')),ms))]);
  if(account?.configured&&navigator.onLine!==false){
   try{
    // A returning learner's Premium status is already saved on this computer, so check it in the
