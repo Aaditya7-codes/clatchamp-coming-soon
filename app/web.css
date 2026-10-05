@@ -365,3 +365,11 @@ html,body{background:#191625}
 .ww-nudge button{flex:none;min-height:42px;padding:0 18px;border:0;border-radius:999px;background:#6a4cf0;color:#fff;font:inherit;font-weight:600;font-size:14.5px;cursor:pointer}
 .ww-nudge button:hover{background:#7a5ff5}
 @media (max-width:700px){.ww-nudge{flex-direction:column;align-items:stretch}}
+
+/* sign-up inside an in-app browser (YouTube, Instagram, Reddit): email first, way out to Chrome */
+.su-inapp{margin-top:22px;padding:16px;border:1px solid #3a3252;border-radius:16px;background:#1d182b}
+.su-inapp p{margin:0 0 12px;color:#d9d3ea;font-size:14.5px;line-height:1.5}
+.su-inapp-go{display:flex;gap:10px;flex-wrap:wrap}
+.su-inapp-go .su-secondary{flex:1;min-width:140px;text-align:center;text-decoration:none;display:inline-flex;align-items:center;justify-content:center}
+.su-inapp .su-input{margin-top:12px}
+.su-inapp-go .su-secondary{margin-top:0}

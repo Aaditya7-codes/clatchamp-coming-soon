@@ -1,13 +1,13 @@
 ---
 layout: legal
 permalink: /privacy/
-updated: 2026-10-03
+updated: 2026-10-05
 title: "Privacy Policy"
 standfirst: "How CLAT CHAMP handles information in the app, on this website and when you contact us."
 description: "CLAT CHAMP privacy policy: study data in the app and your browser, free web accounts that save your progress, Apple and Razorpay subscriptions, website hosting, fonts, email support and your choices."
 ---
 
-Effective date: **4 October 2026**.
+Effective date: **5 October 2026**.
 
 ## About this policy
 
@@ -43,7 +43,7 @@ The website is hosted on GitHub Pages. Requests to the website provide GitHub wi
 
 The website currently loads fonts from Google Fonts. Your browser contacts Google to request them, disclosing information such as your IP address, browser details and the requested resource. These font requests are part of the website, not the app’s bundled reading screens. Google’s privacy terms apply to its processing.
 
-We have not added advertising, tracking cookies or newsletter forms to the website. The public pages and the blog use Cloudflare Web Analytics, a cookie-free service that counts page views and visits without tracking individual visitors; it does not run inside the signed-in practice app. Cloudflare’s privacy terms apply to its processing. The other measurement is the one-time source record described under “Web accounts and Razorpay payments”. Sign-in is described above. Blog search, topic filters and the countdown run in your browser; the site does not send your search text to us. The app’s local study storage is separate from website cookies.
+We have not added advertising, tracking cookies or newsletter forms to the website. The public pages, the blog and the sign-up page of the practice app use Cloudflare Web Analytics, a cookie-free service that counts page views and visits without tracking individual visitors; it does not run inside the signed-in practice app. Cloudflare’s privacy terms apply to its processing. The other measurement is the one-time source record described under “Web accounts and Razorpay payments”. Sign-in is described above. Blog search, topic filters and the countdown run in your browser; the site does not send your search text to us. The app’s local study storage is separate from website cookies.
 
 ## When you contact us
 
