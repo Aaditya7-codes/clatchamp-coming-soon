@@ -69,6 +69,74 @@
   if(d)parts.push(`reading speed ${d>0?'up':'down'} ${Math.abs(d)} WPM`);
   return `<section class="wh-card"><span class="wh-icon wh-en">${icon('calendar-days')}</span><h3>This week</h3><p>${parts.join(' · ')}.</p><button class="wh-ghost" data-action="tab-progress">Full progress</button></section>`;
  }
+ // ------------------------------------------------------------------ first set + rewards
+ // New learners get one obvious first step (a short, accessible Legal set); every finished set then
+ // shows what the learner earned: a baseline, personal bests, a milestone and a clear next set.
+ // All figures come from the learner's own attempts; 238 WPM is the published adult average
+ // (Brysbaert 2019), the same figure the free speed test uses.
+ const AVG_WPM=238,ORDER=['Legal Reasoning','English Language','Logical Reasoning','Current Affairs & GK','Quantitative Techniques'];
+ const label=s=>shortNames[s]||s;
+ const route=r=>globalThis.CLATWebRoute?.go?.(r);
+ const doneIds=()=>new Set((globalThis.CLATProgress?.activityRows?.()||[]).map(r=>r.setId).filter(Boolean));
+ function playable(){
+  let daily=null;try{daily=JSON.parse(localStorage.getItem('clat-web-daily-v1')||'null')?.id;}catch{}
+  const premium=globalThis.CLATPremium?.hasAccess?.();
+  return (globalThis.CLATPracticeSets||[]).filter(s=>!s.stub&&s.collection!=='Starter samples'&&(premium||s.id!==daily));
+ }
+ function firstSet(){const sets=playable();return sets.find(s=>s.id==='legal-2024-01')||sets.find(s=>s.section==='Legal Reasoning')||sets[0]||null;}
+ function nextSet(after){
+  const done=doneIds(),sets=playable().filter(s=>!done.has(s.id)&&s.id!==after.id);
+  const start=Math.max(0,ORDER.indexOf(after.section));
+  for(let i=1;i<=ORDER.length;i++){const sec=ORDER[(start+i)%ORDER.length],s=sets.find(x=>x.section===sec);if(s)return s;}
+  return null;
+ }
+ const mins=s=>Math.max(4,Math.round(s.paragraphs.join(' ').split(/\s+/).length/200+s.questions.length*0.9));
+ function firstCard(rows){
+  if(rows.length)return '';
+  const s=firstSet();if(!s)return '';
+  return `<section class="wh-first"><div><p class="wh-first-k">Start here</p><h2>Your first set: ${s.questions.length} ${esc(label(s.section))} questions</h2><p>One short passage, about ${mins(s)} minutes. At the end you’ll see your reading speed and accuracy.</p></div><button class="wh-first-go" data-wh="first-set" data-set="${esc(s.id)}">Start your first set →</button></section>`;
+ }
+ function reward(set,attempt,correct){
+  try{
+   const rows=globalThis.CLATProgress?.activityRows?.()||[];
+   const mine=rows.filter(r=>r.setId===set.id),others=rows.filter(r=>r.setId!==set.id);
+   if(mine.length&&others.some(r=>(when(r)||0)>(when(mine[mine.length-1])||0)))return ''; // an old result reopened
+   const n=set.questions.length,wpm=mine.find(r=>r.wpm)?.wpm||null,first=!others.length;
+   const premium=globalThis.CLATPremium?.hasAccess?.();
+   const lines=[];
+   let head='';
+   if(first){
+    head=`<p class="wr-badge">✓ First set done</p><h2>${correct/n>=0.8?'Strong start.':correct/n>=0.5?'Good start.':'You’ve made a start.'} This is your baseline.</h2>`;
+    if(wpm){const pct=Math.round((wpm/AVG_WPM-1)*100);
+     lines.push(`Reading speed <b>${wpm} WPM</b>`+(pct>=1?`, ${pct}% faster than the ${AVG_WPM} WPM adult average.`:pct>=-1?`, right at the ${AVG_WPM} WPM adult average.`:`. The adult average is ${AVG_WPM} WPM, and timed practice is how that gap closes.`));}
+    lines.push(`Accuracy <b>${correct} of ${n}</b>.${correct<n?' Every question you missed is saved in Revision, with an explanation.':''}`);
+    lines.push('Every set from now on is compared with this, so you can watch both climb.');
+   }else{
+    const bestW=Math.max(0,...others.map(r=>r.wpm||0)),bestA=Math.max(0,...others.map(r=>r.total?r.correct/r.total:0));
+    const count=new Set(rows.map(r=>r.setId||r.id)).size;
+    if(wpm&&bestW&&wpm>bestW)lines.push(`New personal best speed: <b>${wpm} WPM</b> (up from ${bestW}).`);
+    if(correct/n>bestA)lines.push(`Best accuracy yet: <b>${correct} of ${n}</b>.`);
+    if([3,5,10,25,50,100].includes(count))lines.push(`That’s <b>${count} sets</b> finished.`);
+    if(!lines.length)return nextLine(set,premium,false);
+    head=`<p class="wr-badge">✓ ${/best/i.test(lines.join(''))?'New personal best':'Milestone'}</p>`;
+   }
+   return `<section class="wr-reward" role="status">${head}${lines.map(l=>`<p>${l}</p>`).join('')}${nextLine(set,premium,true)}</section>`;
+  }catch(e){console.warn('reward',e);return '';}
+ }
+ function nextLine(set,premium,inside){
+  const nx=nextSet(set),more=(globalThis.CLATPracticeSets||[]).filter(s=>s.section===set.section&&s.collection!=='Starter samples').length-1;
+  const go=nx?`<button class="wr-next" data-wr="next" data-set="${esc(nx.id)}">Next: ${esc(label(nx.section))} →</button>`:'';
+  const prem=!premium&&more>0?`<p class="wr-prem">Premium has ${more} more ${esc(label(set.section))} sets like this and 10 full mocks, from ₹1,499. <button class="wr-link" data-wr="premium">See plans</button></p>`:'';
+  if(!go&&!prem)return '';
+  return inside?`<div class="wr-actions">${go}${prem}</div>`:`<section class="wr-reward wr-quiet"><div class="wr-actions">${go}${prem}</div></section>`;
+ }
+ document.addEventListener('click',e=>{
+  const b=e.target.closest?.('[data-wr]');if(!b)return;
+  if(b.dataset.wr==='next')route('practice/set/'+b.dataset.set);
+  if(b.dataset.wr==='premium')route('practice/premium');
+ });
+ globalThis.CLATWebReward={result:reward};
+
  // Phones only: offer "Add to home screen" (Chrome's own install prompt, or Safari's Share menu on iPhone).
  const HIDE='clat-web-install-hidden';
  function install(){
@@ -106,6 +174,7 @@
   }).join('');
   return `<section class="wh">
    <div class="wh-head"><div><p class="wh-date">${now.toLocaleDateString('en-IN',{weekday:'long',day:'numeric',month:'long'})}</p><h1>${greet}${first?', '+esc(first):''}</h1></div>${countdown(profile,now)}</div>
+   ${firstCard(rows)}
    <div class="wh-grid">${speedPanel(rows,now)}<div class="wh-today">${freshWorkout.card()}</div></div>
    <div class="wh-sec"><h2>Practise by subject</h2><button class="wh-link" data-action="open-practice">All sets →</button></div><div class="wh-subjects">${subj}</div>
    <div class="wh-cards">
@@ -119,6 +188,7 @@
  }
  document.addEventListener('click',e=>{
   const b=e.target.closest('[data-wh]');if(!b||!ctx)return;
+  if(b.dataset.wh==='first-set'){route('practice/set/'+b.dataset.set);return;}
   if(b.dataset.wh==='install-hide'){try{localStorage.setItem(HIDE,'1');}catch{}}
   if(b.dataset.wh==='install'&&globalThis.CLATInstallPrompt){const ev=globalThis.CLATInstallPrompt;globalThis.CLATInstallPrompt=null;ev.prompt();ev.userChoice?.finally?.(()=>ctx.rerender?.());}
   if(b.dataset.wh==='year-edit')yearEdit=true;
