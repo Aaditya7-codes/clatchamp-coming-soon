@@ -1,0 +1,33 @@
+{
+ "name": "CLAT CHAMP",
+ "short_name": "CLAT Champ",
+ "description": "Practise all five CLAT sections, the Question of the Day and full-length mocks.",
+ "id": "/app/",
+ "start_url": "/app/",
+ "scope": "/app/",
+ "display": "standalone",
+ "orientation": "any",
+ "background_color": "#191625",
+ "theme_color": "#191625",
+ "lang": "en-IN",
+ "icons": [
+  {
+   "src": "icon-192.png",
+   "sizes": "192x192",
+   "type": "image/png",
+   "purpose": "any"
+  },
+  {
+   "src": "icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "any"
+  },
+  {
+   "src": "icon-maskable-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "maskable"
+  }
+ ]
+}
