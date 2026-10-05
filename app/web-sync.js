@@ -123,10 +123,11 @@
   try{
    if(!on()||localStorage.getItem('clatsrc-sent'))return;
    const s=JSON.parse(localStorage.getItem('clatsrc-v1')||'{}');
-   await auth.api('/rest/v1/acquisition?on_conflict=user_id',{method:'POST',headers:{Prefer:'resolution=ignore-duplicates,return=minimal'},
+   // Plain insert: the on_conflict form was refused (403) by row security. A repeat gives 409, which is fine.
+   await auth.api('/rest/v1/acquisition',{method:'POST',headers:{Prefer:'return=minimal'},
     body:{user_id:auth.userId(),src:s.src||'direct',campaign:s.camp||null,referrer:s.ref||null,landing:s.landing||null}});
    localStorage.setItem('clatsrc-sent','1');
-  }catch{}
+  }catch(e){if(e?.status===409){try{localStorage.setItem('clatsrc-sent','1');}catch{}}else console.warn('Source not recorded',e?.status,e?.message);}
  }
 
  // ---------------------------------------------------------------- start: merge, then load the app
