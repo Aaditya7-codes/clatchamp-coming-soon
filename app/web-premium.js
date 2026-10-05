@@ -198,15 +198,18 @@
 
  // Once per account, the first time the plan screen is shown, record that it was seen and the screen
  // they came from (path only). Read by us only, through funnel_report; a failure never affects the learner.
+ let planBusy=false,planTries=0;
  async function planSeen(){
+  if(planBusy||planTries>=3||!auth.signedIn()||hasAccess())return;   // learners who already have Premium are not counted
+  const k='clatplan-'+auth.userId();
   try{
-   if(!auth.signedIn())return;
-   const k='clatplan-'+auth.userId();
    if(localStorage.getItem(k))return;
-   localStorage.setItem(k,'1');
+   planBusy=true;planTries++;
    const from=/^#\/[\w.\-\/]+$/.test(location.hash)?location.hash.slice(1,81):null;
    await auth.api('/rest/v1/funnel_events',{method:'POST',headers:{Prefer:'return=minimal'},body:{user_id:auth.userId(),event:'plan_viewed',detail:from}});
-  }catch(e){if(e?.status!==409)console.warn('Plan view not recorded',e?.status);}
+   localStorage.setItem(k,'1');   // only once the record is saved, so a failed request is tried again later
+  }catch(e){if(e?.status===409){try{localStorage.setItem(k,'1');}catch{}}else console.warn('Plan view not recorded',e?.status);}
+  finally{planBusy=false;}
  }
 
  // ------------------------------------------------------------------ CLATPremium interface

@@ -56,7 +56,7 @@
     }
    }else if(daily?.date!==today()){
     const item=await timeout(account.daily(today()),4000);
-    if(item?.id){await cachePut([item]);apply(item);daily={date:today(),id:item.id};try{localStorage.setItem(DAILY,JSON.stringify(daily));}catch{}}
+    if(item?.id){await cachePut([item]);if(apply(item)){daily={date:today(),id:item.id};try{localStorage.setItem(DAILY,JSON.stringify(daily));}catch{}}}
    }
   }catch(e){console.warn('Online content unavailable; continuing with saved content.',e);}
  }

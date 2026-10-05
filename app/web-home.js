@@ -99,7 +99,8 @@
  // Straight after sign-up: one focused screen that leads into the first set, before the dashboard.
  // "Skip to dashboard" (or finishing any set) retires it for good on this browser.
  const SKIP='clat-web-welcome-skipped';
- const skipped=()=>{try{return !!localStorage.getItem(SKIP);}catch{return true;}};
+ let skipNow=false; // also remembered in memory, in case storage refuses the write
+ const skipped=()=>{if(skipNow)return true;try{return !!localStorage.getItem(SKIP);}catch{return true;}};
  function welcome(first,icon){
   const s=firstSet();if(!s)return '';
   return `<section class="wh wh-welcome"><div class="ww">
@@ -211,7 +212,7 @@
  document.addEventListener('click',e=>{
   const b=e.target.closest('[data-wh]');if(!b||!ctx)return;
   if(b.dataset.wh==='first-set'){route('practice/set/'+b.dataset.set);return;}
-  if(b.dataset.wh==='welcome-skip'){try{localStorage.setItem(SKIP,'1');}catch{}}
+  if(b.dataset.wh==='welcome-skip'){skipNow=true;try{localStorage.setItem(SKIP,'1');}catch{}}
   if(b.dataset.wh==='install-hide'){try{localStorage.setItem(HIDE,'1');}catch{}}
   if(b.dataset.wh==='install'&&globalThis.CLATInstallPrompt){const ev=globalThis.CLATInstallPrompt;globalThis.CLATInstallPrompt=null;ev.prompt();ev.userChoice?.finally?.(()=>ctx.rerender?.());}
   if(b.dataset.wh==='year-edit')yearEdit=true;

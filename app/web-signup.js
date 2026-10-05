@@ -15,7 +15,9 @@
  // where Google refuses to sign anyone in. There, email comes first and we offer a way into Chrome,
  // carrying the visitor's source tag so the sign-up is still credited to the right channel.
  const ua=navigator.userAgent;
- const inApp=/; wv\)|FBAN|FBAV|Instagram|Snapchat|Reddit\/|LinkedInApp|\bLine\//.test(ua)||(/iPhone|iPad|iPod/.test(ua)&&!/Safari\/|CriOS|FxiOS|EdgiOS|GSA\//.test(ua));
+ // An iPhone home-screen app has no "Safari/" in its user agent too, so it is excluded explicitly.
+ const standalone=matchMedia('(display-mode: standalone)').matches||navigator.standalone===true;
+ const inApp=!standalone&&(/; wv\)|FBAN|FBAV|Instagram|Snapchat|Reddit\/|LinkedInApp|\bLine\//.test(ua)||(/iPhone|iPad|iPod/.test(ua)&&!/Safari\/|CriOS|FxiOS|EdgiOS|GSA\//.test(ua)));
  const android=/Android/.test(ua);
  function chromeUrl(){
   const s=read('clatsrc-v1')||{},q=new URLSearchParams(location.search);
@@ -67,7 +69,7 @@
     <form data-su="send" novalidate>${up?`<label for="su-name">Your first name</label><input id="su-name" class="su-input" autocomplete="given-name" maxlength="40" placeholder="e.g. Riya" value="${esc(name)}" ${dis}>
     <p class="su-hint">The learner’s name, even if you sign up with a parent’s email address.</p>`:''}<label for="su-email">Email address</label><input id="su-email" class="su-input" type="email" autocomplete="email" placeholder="you@example.com" value="${esc(email)}" ${dis}>
     ${err}<button class="su-primary" ${dis}>${busy?'Sending…':'Email me a sign-in code'}</button></form>
-    ${inApp&&auth.google?`<div class="su-inapp"><p>Google sign-in doesn’t work inside the YouTube, Instagram or Reddit app. Use your email above, or open this page in ${android?'Chrome':'Safari'} to use Google.</p><div class="su-inapp-go">${android?`<a class="su-secondary" href="intent://${chromeUrl().replace('https://','')}#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=${encodeURIComponent(chromeUrl())};end">Open in Chrome</a>`:''}<button type="button" class="su-secondary" data-su="copy">${copied?'Link copied':'Copy link'}</button></div>${copied==='show'?`<input class="su-input" readonly value="${esc(chromeUrl())}" aria-label="Link to this page">`:''}</div>`:''}
+    ${inApp&&auth.google?`<div class="su-inapp"><p>Google sign-in doesn’t work inside the YouTube, Instagram or Reddit app. Use your email above, or open this page in ${android?'Chrome':'Safari'} to use Google.</p><div class="su-inapp-go">${android?`<a class="su-secondary" href="intent://${chromeUrl().replace('https://','')}#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=${encodeURIComponent(chromeUrl())};end">Open in Chrome</a>`:''}<button type="button" class="su-secondary" data-su="copy">${copied===true?'Link copied':'Copy link'}</button></div>${copied==='show'?`<input class="su-input" readonly value="${esc(chromeUrl())}" aria-label="Link to this page">`:''}</div>`:''}
     <p class="su-swap">${up?'Already have an account? <button type="button" class="su-link" data-su="mode">Sign in</button>':'New to CLAT Champ? <button type="button" class="su-link" data-su="mode">Create a free account</button>'}</p>`;
   }
   const guest=offline?`<div class="su-offline" role="status"><p><b>We can’t reach the sign-in server right now.</b> You can practise without an account for now. Your progress is kept in this browser and added to your account when you sign in.</p><button type="button" class="su-secondary" data-su="guest">Practise without an account for now</button></div>`:'';
