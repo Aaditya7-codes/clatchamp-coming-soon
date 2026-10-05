@@ -10,7 +10,7 @@
  const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
  const date=t=>new Date(t).toLocaleDateString('en-IN',{day:'numeric',month:'long',year:'numeric'});
  const session=()=>auth.session();
- let entitlement=auth.signedIn()?read(ENT):null,selected='annual',busy=false,message='';
+ let entitlement=auth.signedIn()?read(ENT):null,selected='quarterly',busy=false,message='';
  const listeners=new Set(),notify=()=>{listeners.forEach(f=>{try{f();}catch(e){console.warn(e);}});renderDialog();renderHeader();};
 
  // ------------------------------------------------------------------ entitlement
@@ -214,7 +214,7 @@
 
  // ------------------------------------------------------------------ CLATPremium interface
  function controls(){
-  const priceButtons=Object.keys(plans).reverse().map(p=>`<button class="pm-plan" data-practice="premium-plan" data-product="${productIds[p]}" aria-pressed="${selected===p}" ${busy?'disabled':''}><span>${plans[p].label}<small>${plans[p].note}</small></span><strong>${esc(cfg.prices?.[p])}</strong></button>`).join('');
+  const priceButtons=Object.keys(plans).map(p=>`<button class="pm-plan" data-practice="premium-plan" data-product="${productIds[p]}" aria-pressed="${selected===p}" ${busy?'disabled':''}><span>${plans[p].label}<small>${plans[p].note}</small></span><strong>${esc(cfg.prices?.[p])}</strong></button>`).join('');
   if(configured&&hasAccess()&&(daysLeft()>30||!payOpen())){const now=active()[0];return `<div class="pm-active">✓ Premium active · All five subjects</div><p class="pm-billing">${now.cancel_at_cycle_end||now.status==='cancelled'?'Ends':'Renews'} on ${date(now.current_end)}.</p><button class="cs-text-button" data-web-account>Manage account</button>`;}
   if(!configured||!payOpen())return `<div class="pm-plans" role="group" aria-label="Premium passes">${priceButtons}</div><button class="cs-primary" disabled>Premium opens shortly</button><p class="pm-billing">We’re finishing secure payments for Premium. Everything free — one full set per subject, Mock 1 and Question of the Day — works now.</p>`;
   planSeen();
