@@ -196,11 +196,25 @@
   },{once:true});
  }
 
+ // Once per account, the first time the plan screen is shown, record that it was seen and the screen
+ // they came from (path only). Read by us only, through funnel_report; a failure never affects the learner.
+ async function planSeen(){
+  try{
+   if(!auth.signedIn())return;
+   const k='clatplan-'+auth.userId();
+   if(localStorage.getItem(k))return;
+   localStorage.setItem(k,'1');
+   const from=/^#\/[\w.\-\/]+$/.test(location.hash)?location.hash.slice(1,81):null;
+   await auth.api('/rest/v1/funnel_events',{method:'POST',headers:{Prefer:'return=minimal'},body:{user_id:auth.userId(),event:'plan_viewed',detail:from}});
+  }catch(e){if(e?.status!==409)console.warn('Plan view not recorded',e?.status);}
+ }
+
  // ------------------------------------------------------------------ CLATPremium interface
  function controls(){
   const priceButtons=Object.keys(plans).reverse().map(p=>`<button class="pm-plan" data-practice="premium-plan" data-product="${productIds[p]}" aria-pressed="${selected===p}" ${busy?'disabled':''}><span>${plans[p].label}<small>${plans[p].note}</small></span><strong>${esc(cfg.prices?.[p])}</strong></button>`).join('');
   if(configured&&hasAccess()&&(daysLeft()>30||!payOpen())){const now=active()[0];return `<div class="pm-active">✓ Premium active · All five subjects</div><p class="pm-billing">${now.cancel_at_cycle_end||now.status==='cancelled'?'Ends':'Renews'} on ${date(now.current_end)}.</p><button class="cs-text-button" data-web-account>Manage account</button>`;}
   if(!configured||!payOpen())return `<div class="pm-plans" role="group" aria-label="Premium passes">${priceButtons}</div><button class="cs-primary" disabled>Premium opens shortly</button><p class="pm-billing">We’re finishing secure payments for Premium. Everything free — one full set per subject, Mock 1 and Question of the Day — works now.</p>`;
+  planSeen();
   return `<div class="pm-plans" role="group" aria-label="Premium passes">${priceButtons}</div>
   ${hasAccess()?`<p class="pm-billing">Your Premium ends on ${date(active()[0].current_end)}. A new pass starts when it ends.</p>`:''}
   <button class="cs-primary" data-practice="premium-buy" ${busy?'disabled':''}>${busy?'Please wait…':`${hasAccess()?'Extend Premium':'Get Premium'} · ${esc(cfg.prices?.[selected])} ${plans[selected].per}`}</button>
