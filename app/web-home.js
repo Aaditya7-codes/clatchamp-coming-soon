@@ -69,6 +69,22 @@
   if(d)parts.push(`reading speed ${d>0?'up':'down'} ${Math.abs(d)} WPM`);
   return `<section class="wh-card"><span class="wh-icon wh-en">${icon('calendar-days')}</span><h3>This week</h3><p>${parts.join(' · ')}.</p><button class="wh-ghost" data-action="tab-progress">Full progress</button></section>`;
  }
+ // Phones only: offer "Add to home screen" (Chrome's own install prompt, or Safari's Share menu on iPhone).
+ const HIDE='clat-web-install-hidden';
+ function install(){
+  const ua=navigator.userAgent;
+  const standalone=matchMedia('(display-mode: standalone)').matches||navigator.standalone===true;
+  const phone=matchMedia('(max-width:900px) and (pointer:coarse)').matches;
+  let hidden=false;try{hidden=!!localStorage.getItem(HIDE);}catch{}
+  if(standalone||!phone||hidden)return '';
+  const ios=/iPhone|iPad|iPod/.test(ua)&&!/CriOS|FxiOS|EdgiOS/.test(ua);
+  const hide='<button class="wh-ghost" data-wh="install-hide">Not now</button>';
+  if(globalThis.CLATInstallPrompt)return `<section class="wh-band wh-install"><div><h3>Add CLAT Champ to your home screen</h3><p>It opens full screen, with no app store download.</p></div><div class="wh-band-end"><button class="wh-violet" data-wh="install">Add to home screen</button>${hide}</div></section>`;
+  if(ios)return `<section class="wh-band wh-install"><div><h3>Add CLAT Champ to your home screen</h3><p>In Safari, open the Share menu and choose <b>Add to Home Screen</b>. It opens full screen, with no app store download.</p></div><div class="wh-band-end">${hide}</div></section>`;
+  return '';
+ }
+ addEventListener('clat-install-ready',()=>ctx?.rerender?.());
+ addEventListener('appinstalled',()=>{globalThis.CLATInstallPrompt=null;ctx?.rerender?.();});
  function render(c){
   ctx=c;const {settings,freshWorkout,sections,icon}=c;
   const now=new Date(),profile=settings.profile(),first=(n=>n?n[0].toUpperCase()+n.slice(1):'')((profile.name||'').trim().split(/\s+/)[0]);
@@ -97,11 +113,14 @@
     <section class="wh-card"><span class="wh-icon wh-lr">${icon('clipboard-list')}</span><h3>Full-length mocks</h3><p>${mocksTaken?`${mocksTaken} ${mocksTaken===1?'mock':'mocks'} finished. `:''}120 questions in 120 minutes, marked like CLAT.${premium?'':' Mock 01 is free.'}</p><button class="wh-ghost" data-action="open-mocks">${mocksTaken?'Open mocks':'Start Mock 01'}</button></section>
     ${week(rows,now,icon)}
    </div>
+   ${install()}
    ${premium?`<section class="wh-band"><div><h3>Premium</h3><p>Your Premium subscription is active.</p></div><button class="wh-ghost" data-action="open-premium">Manage</button></section>`:`<section class="wh-band"><div><h3>Premium</h3><p>All 1,000+ questions and 10 full-length mocks.</p></div><div class="wh-band-end"><span>From <b>₹1,499</b></span><button class="wh-violet" data-action="open-premium">See plans</button></div></section>`}
    ${globalThis.CLATWebSync?.note(icon)||''}</section>`;
  }
  document.addEventListener('click',e=>{
   const b=e.target.closest('[data-wh]');if(!b||!ctx)return;
+  if(b.dataset.wh==='install-hide'){try{localStorage.setItem(HIDE,'1');}catch{}}
+  if(b.dataset.wh==='install'&&globalThis.CLATInstallPrompt){const ev=globalThis.CLATInstallPrompt;globalThis.CLATInstallPrompt=null;ev.prompt();ev.userChoice?.finally?.(()=>ctx.rerender?.());}
   if(b.dataset.wh==='year-edit')yearEdit=true;
   if(b.dataset.wh==='year-cancel')yearEdit=false;
   if(b.dataset.wh==='year'){ctx.settings.saveProfile({...ctx.settings.profile(),examYear:b.dataset.year});yearEdit=false;}

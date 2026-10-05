@@ -3,6 +3,8 @@
 // Content only ever grows on a device, so saved progress is never pruned.
 (async () => {
  globalThis.CLATAppInfo={version:'1.0',build:'web'};
+ // Keep Chrome's install prompt for the dashboard's "Add to home screen" button (web-home.js).
+ addEventListener('beforeinstallprompt',e=>{e.preventDefault();globalThis.CLATInstallPrompt=e;dispatchEvent(new Event('clat-install-ready'));});
  const account=globalThis.CLATWebAccount,sets=globalThis.CLATPracticeSets,papers=globalThis.CLATMocksData.papers;
  const screen=document.getElementById('cs-screen');
  const status=text=>{document.getElementById('web-boot-hide')?.remove();screen.innerHTML=`<p class="web-loading" role="status">${text}</p>`;};
