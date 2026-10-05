@@ -1,6 +1,6 @@
 // A local-calendar assignment stays fixed for its day; active sessions never swap mid-question.
 globalThis.createCLATDaily=function(root,screen,practice,onHome){
- const key='clat-speed-daily-rotation-v1',sets=globalThis.CLATPracticeSets.filter(s=>s.collection!=='Starter samples'&&(s.section!=='Current Affairs & GK'||s.newsWindow));
+ const key='clat-speed-daily-rotation-v1',sets=globalThis.CLATPracticeSets.filter(s=>s.collection!=='Starter samples'&&(!globalThis.CLATWebConfig?.dailyPool||globalThis.CLATWebConfig.dailyPool.includes(s.id))&&(s.section!=='Current Affairs & GK'||s.newsWindow));
  const sections=Object.keys(globalThis.CLATPracticeOrder.order);
  const day=(d=new Date())=>`${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
  let data={days:{},sessions:{}},date=null,set=null,session=null,view='intro',clock=null,reward=false,active=false,saveFailed=false;
