@@ -74,6 +74,7 @@
   busy=false;message='';
   if(!saved&&!confirm('Some recent progress hasn’t reached your account yet. If you sign out now, it will be lost. Sign out anyway?')){renderDialog();return;}
   auth.api('/auth/v1/logout',{method:'POST'}).catch(()=>{});
+  try{indexedDB.deleteDatabase('clat-champ-web');}catch{}
   sync.forget();saveEnt(null);auth.clear();location.reload();
  }
  async function deleteAccount(){

@@ -22,7 +22,8 @@
   if(st.kind==='set')sets[st.i]=item.payload;else papers[st.i]=item.payload;
   stubs.delete(item.id);return true;
  }
- (await cacheAll()).forEach(apply);
+ // Saved Premium sets are used only while the signed-in account is Premium (a free account on a shared computer gets nothing).
+ if(account?.hasAccess())(await cacheAll()).forEach(apply);
 
  // ---------------------------------------------------------------- network
  const DAILY='clat-web-daily-v1';
