@@ -96,6 +96,27 @@
   const s=firstSet();if(!s)return '';
   return `<section class="wh-first"><div><p class="wh-first-k">Start here</p><h2>Your first set: ${s.questions.length} ${esc(label(s.section))} questions</h2><p>One short passage, about ${mins(s)} minutes. At the end you’ll see your reading speed and accuracy.</p></div><button class="wh-first-go" data-wh="first-set" data-set="${esc(s.id)}">Start your first set →</button></section>`;
  }
+ // Straight after sign-up: one focused screen that leads into the first set, before the dashboard.
+ // "Skip to dashboard" (or finishing any set) retires it for good on this browser.
+ const SKIP='clat-web-welcome-skipped';
+ const skipped=()=>{try{return !!localStorage.getItem(SKIP);}catch{return true;}};
+ function welcome(first,icon){
+  const s=firstSet();if(!s)return '';
+  return `<section class="wh wh-welcome"><div class="ww">
+   <h1>${first?`Welcome, ${esc(first)}.`:'Welcome.'}</h1>
+   <p class="ww-lead">First, let’s measure your reading speed and accuracy. Everything you practise from here is compared with this.</p>
+   <div class="ww-set"><span class="wh-icon wh-${tone[s.section]||'lr'}">${icon(s.icon||'scale')}</span><div><b>${s.questions.length} ${esc(label(s.section))} questions</b><small>One short passage · about ${mins(s)} minutes</small></div></div>
+   <ol class="ww-steps"><li>Read the passage. The timer measures your reading speed.</li><li>Answer the questions.</li><li>See your words per minute and accuracy, with an explanation for every answer.</li></ol>
+   <div class="ww-go"><button class="wh-first-go" data-wh="first-set" data-set="${esc(s.id)}">Start your first set →</button><button class="ww-skip" data-wh="welcome-skip">Skip to dashboard</button></div>
+  </div></section>`;
+ }
+ // Mocks screen: until a first set is done, point out that a mock is two hours and a set is minutes.
+ function mockNudge(){
+  if((globalThis.CLATProgress?.activityRows?.()||[]).length)return '';
+  const s=firstSet();if(!s)return '';
+  return `<div class="ww-nudge"><p>A full mock takes 2 hours. Start with a ${mins(s)}-minute practice set to get your baseline first.</p><button data-wh-nudge="${esc(s.id)}">Try a ${mins(s)}-minute set →</button></div>`;
+ }
+ document.addEventListener('click',e=>{const b=e.target.closest?.('[data-wh-nudge]');if(b)route('practice/set/'+b.dataset.whNudge);});
  function reward(set,attempt,correct){
   try{
    const rows=globalThis.CLATProgress?.activityRows?.()||[];
@@ -135,7 +156,7 @@
   if(b.dataset.wr==='next')route('practice/set/'+b.dataset.set);
   if(b.dataset.wr==='premium')route('practice/premium');
  });
- globalThis.CLATWebReward={result:reward};
+ globalThis.CLATWebReward={result:reward,mockNudge};
 
  // Phones only: offer "Add to home screen" (Chrome's own install prompt, or Safari's Share menu on iPhone).
  const HIDE='clat-web-install-hidden';
@@ -158,6 +179,7 @@
   const now=new Date(),profile=settings.profile(),first=(n=>n?n[0].toUpperCase()+n.slice(1):'')((profile.name||'').trim().split(/\s+/)[0]);
   const greet='Hello';
   const progress=globalThis.CLATProgress,rows=progress?.activityRows?.()||[];
+  if(!rows.length&&!skipped()){const w=welcome(first,icon);if(w)return w;}
   const revise=globalThis.CLATMistakes?.queue(globalThis.CLATPracticeSets).length||0;
   const premium=globalThis.CLATPremium?.hasAccess?.();
   const mocksTaken=(read('clat-champ-mocks-v1')?.attempts||[]).filter(a=>a.finished).length;
@@ -189,6 +211,7 @@
  document.addEventListener('click',e=>{
   const b=e.target.closest('[data-wh]');if(!b||!ctx)return;
   if(b.dataset.wh==='first-set'){route('practice/set/'+b.dataset.set);return;}
+  if(b.dataset.wh==='welcome-skip'){try{localStorage.setItem(SKIP,'1');}catch{}}
   if(b.dataset.wh==='install-hide'){try{localStorage.setItem(HIDE,'1');}catch{}}
   if(b.dataset.wh==='install'&&globalThis.CLATInstallPrompt){const ev=globalThis.CLATInstallPrompt;globalThis.CLATInstallPrompt=null;ev.prompt();ev.userChoice?.finally?.(()=>ctx.rerender?.());}
   if(b.dataset.wh==='year-edit')yearEdit=true;

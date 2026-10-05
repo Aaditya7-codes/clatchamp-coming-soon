@@ -343,3 +343,25 @@ html,body{background:#191625}
 #clat-prototype .wr-next{min-height:46px;padding:0 22px;border:0;border-radius:999px;background:#6a4cf0;color:#fff;font:inherit;font-weight:600;cursor:pointer}
 #clat-prototype .wr-prem{margin:0!important;color:#b9b1cc!important;font-size:14px!important}
 #clat-prototype .wr-link{padding:0;border:0;background:none;color:#c4b4ff;font:inherit;font-weight:600;text-decoration:underline;cursor:pointer}
+
+/* first visit after sign-up: one focused step before the dashboard (web-home.js welcome) */
+.wh-welcome{min-height:min(640px,calc(100vh - 120px));align-content:center}
+.ww{max-width:620px;margin:0 auto;padding:40px;background:var(--wh-card);border:1px solid var(--wh-line);border-radius:24px}
+.ww h1{margin:0 0 12px;font-size:32px;line-height:1.2;letter-spacing:-.5px}
+.ww-lead{margin:0 0 28px;color:var(--wh-muted);font-size:16.5px;line-height:1.55}
+.ww-set{display:flex;align-items:center;gap:16px;padding:16px 18px;border:1px solid var(--wh-line);border-radius:16px}
+.ww-set .wh-icon{margin:0;flex:none}
+.ww-set b{display:block;font-size:17px;font-weight:600}
+.ww-set small{display:block;margin-top:4px;color:var(--wh-muted);font-size:14px}
+.ww-steps{margin:24px 0 32px;padding-left:22px;color:#d9d3ea;font-size:15px;line-height:1.6}
+.ww-steps li+li{margin-top:6px}
+.ww-go{display:flex;align-items:center;gap:20px;flex-wrap:wrap}
+.ww-skip{background:none;border:0;padding:8px 4px;color:var(--wh-muted);font:inherit;font-size:14.5px;text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+.ww-skip:hover{color:#f5f1ff}
+@media (max-width:600px){.ww{padding:24px 20px}.ww h1{font-size:26px}.ww-go{flex-direction:column;align-items:stretch}.ww-go .wh-first-go{width:100%}}
+/* mocks list and intro, before the first set */
+.ww-nudge{display:flex;align-items:center;justify-content:space-between;gap:16px;margin:16px 0;padding:16px 20px;background:#2a2147;border:1px solid #5a4a92;border-radius:16px}
+.ww-nudge p{margin:0;color:#d9d3ea;font-size:15px;line-height:1.5}
+.ww-nudge button{flex:none;min-height:42px;padding:0 18px;border:0;border-radius:999px;background:#6a4cf0;color:#fff;font:inherit;font-weight:600;font-size:14.5px;cursor:pointer}
+.ww-nudge button:hover{background:#7a5ff5}
+@media (max-width:700px){.ww-nudge{flex-direction:column;align-items:stretch}}

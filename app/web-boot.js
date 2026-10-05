@@ -21,7 +21,8 @@
  function apply(item){
   const st=stubs.get(item?.id);
   if(!st||item.content_version!==st.v||!item.payload)return false;
-  if(st.kind==='set')sets[st.i]=item.payload;else papers[st.i]=item.payload;
+  // Mock titles follow the public order ("Mock 02" is the second-easiest), whatever a cached copy says.
+  if(st.kind==='set')sets[st.i]=item.payload;else papers[st.i]={...item.payload,title:papers[st.i].title};
   stubs.delete(item.id);return true;
  }
  const DAILY='clat-web-daily-v1';
