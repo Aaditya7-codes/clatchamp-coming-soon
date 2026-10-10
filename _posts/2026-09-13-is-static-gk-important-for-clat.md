@@ -1,5 +1,6 @@
 ---
 title: "Is Static GK Important for CLAT? How the Section Really Splits"
+seo_title: "Is Static GK Important for CLAT? How the Section Splits"
 standfirst: "Yes. Background knowledge and historical events of continuing significance are part of preparation; there is no official static-versus-current percentage."
 description: "Yes. Background knowledge and historical events of continuing significance are part of preparation; there is no official static-versus-current percentage."
 section: "Straight answers"

@@ -1,5 +1,6 @@
 ---
 title: "Do You Need to Read a Newspaper Daily for CLAT? What Actually Helps"
+seo_title: "Do You Need to Read a Newspaper Daily for CLAT?"
 standfirst: "A newspaper is one way to build reading practice and current-affairs knowledge. Here is how to use it selectively."
 description: "A newspaper is one way to build reading practice and current-affairs knowledge. Here is how to use it selectively."
 section: "Straight answers"

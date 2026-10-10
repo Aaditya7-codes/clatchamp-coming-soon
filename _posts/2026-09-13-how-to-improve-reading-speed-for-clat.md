@@ -1,5 +1,6 @@
 ---
 title: "How to Improve Reading Speed for CLAT Without Losing Accuracy"
+seo_title: "Improve Reading Speed for CLAT Without Losing Accuracy"
 standfirst: "Measure reading time alongside accuracy, practise on fresh passages, and set targets from your own results."
 description: "Measure reading time alongside accuracy, practise on fresh passages, and set targets from your own results."
 section: "How to prepare"

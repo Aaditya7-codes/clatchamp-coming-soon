@@ -1,5 +1,6 @@
 ---
 title: "What Is the English Section in CLAT? Comprehension, Not Grammar"
+seo_title: "What Is CLAT English? Comprehension, Not Grammar"
 standfirst: "The English section is comprehension from 450-word passages — inference, tone and main idea. Vocabulary lists and grammar drills are not where the marks are."
 description: "The English section is comprehension from 450-word passages — inference, tone and main idea. Vocabulary lists and grammar drills are not where the marks are."
 section: "Exam basics"

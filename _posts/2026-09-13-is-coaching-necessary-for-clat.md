@@ -1,5 +1,6 @@
 ---
 title: "Is Coaching Necessary for CLAT? What It Gives You, and What It Doesn't"
+seo_title: "Is Coaching Necessary for CLAT? What It Gives You"
 standfirst: "Coaching is not an eligibility requirement. Decide whether you need the structure, feedback and practice support a course offers."
 description: "Coaching is not an eligibility requirement. Decide whether you need the structure, feedback and practice support a course offers."
 section: "Straight answers"

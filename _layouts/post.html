@@ -15,9 +15,19 @@ layout: default
     {% if page.standfirst %}<p class="standfirst">{{ page.standfirst }}</p>{% endif %}
     <p class="byline">
       <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%-d %B %Y" }}</time>
-      {% if page.last_modified_at %} · Updated {{ page.last_modified_at | date: "%-d %B %Y" }}{% elsif page.verified %} · Last verified {{ page.verified | date: "%-d %B %Y" }}{% endif %}
+      {% if page.last_modified_at %} · Updated <time datetime="{{ page.last_modified_at | date_to_xmlschema }}">{{ page.last_modified_at | date: "%-d %B %Y" }}</time>{% elsif page.verified %} · Last verified {{ page.verified | date: "%-d %B %Y" }}{% endif %}
     </p>
+    <p class="hubline">Part of the <a href="{{ '/clat-2027/' | relative_url }}">CLAT 2027 guide</a></p>
   </header>
+
+  {% if page.answer %}
+  <section class="qa" aria-labelledby="qa-q">
+    <p class="qa-label">Short answer</p>
+    <h2 id="qa-q">{{ page.answer_q }}</h2>
+    <div class="qa-a">{{ page.answer | markdownify }}</div>
+    <p class="qa-meta"><span>Checked against the official notice on {{ page.checked | date: "%-d %B %Y" }}</span>{% if page.source_url %}<a href="{{ page.source_url }}" rel="noopener">{{ page.source_label | default: "Official source" }} ↗</a>{% endif %}</p>
+  </section>
+  {% endif %}
 
   {% if page.verified %}
   <div class="verify"><strong>Checked against official sources.</strong> Figures on this page are taken from the Consortium of NLUs notification for CLAT 2027. Rules change between cycles — always confirm against the Consortium before acting on a deadline.</div>

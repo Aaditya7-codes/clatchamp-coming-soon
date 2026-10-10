@@ -1,5 +1,6 @@
 ---
 title: "How to Prepare for CLAT from Class 11: A Plan Around Your Exam Date"
+seo_title: "How to Prepare for CLAT from Class 11: Plan by Exam Date"
 standfirst: "Build reading, maths and reasoning together, then increase timed practice as your actual exam date approaches."
 description: "Build reading, maths and reasoning together, then increase timed practice as your actual exam date approaches."
 section: "How to prepare"

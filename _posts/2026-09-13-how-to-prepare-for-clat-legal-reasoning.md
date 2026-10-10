@@ -1,5 +1,6 @@
 ---
 title: "How to Prepare for CLAT Legal Reasoning: Find the Rule, Then Apply It"
+seo_title: "CLAT Legal Reasoning Preparation: Find the Rule, Then Apply"
 standfirst: "Identify rules in the passage, test their conditions and exceptions, and review the reasoning behind each answer."
 description: "Identify rules in the passage, test their conditions and exceptions, and review the reasoning behind each answer."
 section: "How to prepare"

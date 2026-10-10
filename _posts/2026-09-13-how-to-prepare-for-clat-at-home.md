@@ -1,5 +1,6 @@
 ---
 title: "How to Prepare for CLAT at Home: Structure Without a Classroom"
+seo_title: "How to Prepare for CLAT at Home Without a Classroom"
 standfirst: "Routine, environment and accountability when nobody is checking. The four things a classroom supplies, and how to build each one yourself."
 description: "Routine, environment and accountability when nobody is checking. The four things a classroom supplies, and how to build each one yourself."
 section: "How to prepare"

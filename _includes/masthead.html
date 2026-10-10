@@ -4,7 +4,8 @@
     <span class="nm">CLAT Champ</span>
   </a>
   <nav class="nav" aria-label="Main">
-    <a href="{{ '/' | relative_url }}"{% if page.url == '/' %} class="on" aria-current="page"{% endif %}>Home</a>
+    <a class="nav-home" href="{{ '/' | relative_url }}"{% if page.url == '/' %} class="on" aria-current="page"{% endif %}>Home</a>
+    <a href="{{ '/clat-2027/' | relative_url }}"{% if page.url == '/clat-2027/' %} class="on" aria-current="page"{% endif %}>CLAT 2027 guide</a>
     <a href="{{ '/blog/' | relative_url }}"{% if page.url contains '/blog' %} class="on" aria-current="page"{% endif %}>Blog</a>
     <a href="{{ '/speed-test/' | relative_url }}"{% if page.url contains '/speed-test' %} class="on" aria-current="page"{% endif %}>Speed test</a>
     <a class="chip-app" href="{{ '/app/' | relative_url }}">Start practising <span aria-hidden="true">&#8594;</span></a>

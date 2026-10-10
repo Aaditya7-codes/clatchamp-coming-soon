@@ -1,5 +1,6 @@
 ---
 title: "How to Prepare for CLAT from Class 12: Plan for the Months You Have"
+seo_title: "How to Prepare for CLAT from Class 12: Use the Months Left"
 standfirst: "Count back from the December exam, balance school work, and build a plan around your current skills."
 description: "Count back from the December exam, balance school work, and build a plan around your current skills."
 section: "How to prepare"

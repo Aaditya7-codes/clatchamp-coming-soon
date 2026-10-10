@@ -1,7 +1,8 @@
 ---
 title: "What Are Quantitative Techniques in CLAT? Class 10 Maths, From a Passage"
+seo_title: "What Are Quantitative Techniques in CLAT? Class 10 Maths"
 standfirst: "Quantitative Techniques is data interpretation built on arithmetic — ratios, percentages, averages. Nothing beyond Class 10, and the smallest section of the paper."
-description: "Quantitative Techniques is data interpretation built on arithmetic — ratios, percentages, averages. Nothing beyond Class 10, and the smallest section of the paper."
+description: "Quantitative Techniques is data interpretation built on arithmetic: ratios, percentages, averages. Nothing beyond Class 10, and the smallest section."
 section: "Exam basics"
 order: 3
 last_modified_at: 2026-09-18

@@ -1,58 +1,59 @@
 ---
-title: "CLAT Eligibility Criteria: Marks, Subjects and Categories"
-standfirst: "45% in Class 12, or 40% for SC, ST and PwD candidates. No subject requirement, no upper age limit, and candidates still sitting their boards may apply."
-description: "45% in Class 12, or 40% for SC, ST and PwD candidates. No subject requirement, no upper age limit, and candidates still sitting their boards may apply."
+title: "CLAT Eligibility 2027: Marks, Age Limit, Stream and Class 12"
+standfirst: "45% in Class 12, or 40% for SC, ST and PwD candidates. No upper age limit, no stream listed, and candidates still sitting their boards may apply."
+description: "CLAT UG 2027 eligibility: 45% in Class 12 (40% for SC, ST, PwD), no upper age limit, any stream, and how Class 12 students can apply before their results."
 section: "Admissions"
 order: 1
-last_modified_at: 2026-09-18
+last_modified_at: 2026-10-10
+checked: 2026-10-10
+answer_q: "Who is eligible for CLAT UG 2027?"
+answer: "You need **45% marks in Class 12** (or the equivalent), or **40% if you are SC, ST or PwD**. There is **no upper age limit**, and the official criteria list **no stream or subject requirement**. If you are sitting Class 12 in March or April 2027 you can still apply, and show proof of passing at the time of admission."
+source_url: "https://clat2027.consortiumofnlus.ac.in/clat-2027/ug-eligibility.html"
+source_label: "Official UG eligibility"
 ---
-For **CLAT UG**, you need to have passed Class 12 (or an equivalent examination) with a minimum of:
+## What marks do you need for CLAT?
 
-- **45%** marks — all other candidates, including General and OBC
-- **40%** marks — **SC, ST and PwD** candidates
+You must have passed Class 12 (or an equivalent examination) with at least:
 
-There is **no upper age limit**, and **no subject requirement**. You may have taken any stream.
+| Category | Minimum marks in Class 12 |
+|---|---|
+| General, OBC and all other candidates | **45%** |
+| SC, ST and PwD candidates | **40%** |
 
-## You can apply while still in Class 12
+The official page states the general requirement as 45% of marks "or its equivalent in grade". PwD candidates sit in the 40% group, alongside SC and ST. If your board gives grades, the equivalent applies.
 
-Candidates appearing for their qualifying examination in **March or April 2027** are eligible to sit CLAT. You will be required to produce evidence of having passed, with the required percentage, **at the time of admission** — not at the time of application.
+## Is there an age limit for CLAT?
 
-The December 2026 entrance exam therefore comes before those candidates’ 2027 board results.
+No. The official eligibility page says there is **no upper age limit** for candidates appearing for the UG programme in CLAT 2027. It lists no minimum age either. Our short guide to the [CLAT age limit](/blog/clat-age-limit/) has more.
 
-## Stream does not matter
+## Can I apply while I am still in Class 12?
 
-A common worry, and an unnecessary one. The eligibility criteria do not prescribe a school stream. Applicants from science, commerce and humanities must meet the same applicable qualification and marks requirements.
+Yes. Candidates **appearing for their qualifying examination in March or April 2027** are eligible to sit CLAT. You must produce evidence of having passed, with the required percentage, **at the time of admission**, not at the time of application. If you cannot, you lose your right to be considered for admission.
 
-That includes mathematics — see [is maths necessary for CLAT?](/blog/is-maths-necessary-for-clat/), since [Quantitative Techniques](/blog/what-are-quantitative-techniques-in-clat/) does not go beyond Class 10.
+The December 2026 entrance exam therefore comes before those candidates' 2027 board results.
 
-## Nationality
+## Does my stream matter for CLAT?
 
-Indian nationals may apply, as may NRIs, and PIO and OCI card holders. NRI and NRI-sponsored seats are handled separately by individual universities rather than through the common process — check the university you are interested in.
+No stream is listed in the eligibility criteria. Applicants from science, commerce and humanities meet the same marks requirement. That includes maths: see [is maths necessary for CLAT?](/blog/is-maths-necessary-for-clat/), since [Quantitative Techniques](/blog/what-are-quantitative-techniques-in-clat/) does not go beyond Class 10.
 
-## Reservation
+## What about nationality, NRI seats and reservation?
 
-To claim reservation, you must produce the relevant certificate — SC, ST, OBC, PwD or BPL — **at the time of admission**. Categories and quotas differ between universities: some NLUs operate state-domicile reservation alongside the all-India categories, and those rules are set by the university, not by the Consortium.
+The eligibility page does not cover these, so we do not state rules for them here. Nationality conditions, NRI and NRI-sponsored seats, and seat reservation (including any state-domicile quota) are set outside the page above: in the Consortium's admission and counselling notices and by each university. Check those, and the specific NLU you want, before you rely on a category or quota. Keep your certificates ready in good time. See the [counselling process](/blog/clat-counselling-process/).
 
-Do not assume the category you claimed at application will be accepted without the certificate. Get the paperwork in order early so that a missing or mismatched certificate does not delay verification.
+## Is this the same for CLAT PG?
 
-## CLAT PG
-
-This page covers UG admission. Postgraduate applicants must consult the separate PG eligibility rules; do not apply the UG thresholds to an LL.M. application.
-
-## Where the figures come from
-
-The official CLAT 2027 eligibility page is linked below. **PwD candidates are included in the 40% category**, alongside SC and ST candidates. Verify the current text before applying.
+No. This page covers UG admission. Postgraduate applicants must consult the separate PG eligibility rules. Do not apply the UG thresholds to an LL.M. application.
 
 ## Where to go next
 
 - [CLAT age limit](/blog/clat-age-limit/)
 - [CLAT registration: dates, fees and the form](/blog/clat-registration/)
-- [CLAT counselling process](/blog/clat-counselling-process/)
 - [CLAT exam fees 2027](/blog/clat-exam-fees/)
+- [CLAT counselling process](/blog/clat-counselling-process/)
 
 ## Sources and scope
 
-Official references checked on 18 September 2026. Study routines and teaching examples are editorial suggestions, not official requirements.
+Official references checked on 10 October 2026. Verify the current text before applying.
 
 - [Official UG eligibility](https://clat2027.consortiumofnlus.ac.in/clat-2027/ug-eligibility.html)
 - [Official UG syllabus](https://clat2027.consortiumofnlus.ac.in/clat-2027/ug-syllabus.html)

@@ -1,13 +1,16 @@
 ---
-title: "What Type of Questions Are Asked in CLAT? One From Each Section"
+title: "What Type of Questions Come in CLAT? Examples by Section"
 standfirst: "Five short, original multiple-choice examples with answers and reasoning. These teach the tasks, not the full length or difficulty of the exam."
-description: "Five short, original multiple-choice examples with answers and reasoning. These teach the tasks, not the full length or difficulty of the exam."
+description: "What CLAT questions look like: one original multiple-choice example for English, GK, Legal Reasoning, Logical Reasoning and Quant, with answers and reasoning."
 section: "Exam basics"
 order: 9
-last_modified_at: 2026-09-18
+last_modified_at: 2026-10-10
+checked: 2026-10-10
+answer_q: "What type of questions are asked in CLAT?"
+answer: "Every CLAT UG question is **multiple choice**, and the paper is built on passages or numerical material. **English** tests comprehension, **Current Affairs and GK** tests knowledge around a text, **Legal Reasoning** applies a given rule to facts, **Logical Reasoning** tests arguments, and **Quantitative Techniques** uses short numerical data. Five worked examples follow."
+source_url: "https://clat2027.consortiumofnlus.ac.in/clat-2027/ug-question-format.html"
+source_label: "Official question-paper format"
 ---
-**CLAT UG uses multiple-choice questions across English, GK, Legal Reasoning, Logical Reasoning and Quantitative Techniques.** Questions use passages or numerical material; they do not all share the same passage length, and GK can require related knowledge beyond the text.
-
 These five original, shortened teaching examples illustrate different tasks. They are not past-paper questions or calibrated full-length exam sets. Fictional scenarios and rules are labelled below.
 
 ## 1. English Language
@@ -87,12 +90,11 @@ Explain your chosen option and why the others fail. Then practise longer, fresh 
 - [CLAT syllabus](/blog/clat-syllabus/)
 - [How to prepare for CLAT English](/blog/how-to-prepare-for-clat-english/)
 - [How many questions are there in CLAT?](/blog/how-many-questions-are-there-in-clat/)
-
 - [How to start preparing for CLAT](/blog/how-to-start-preparing-for-clat/)
 
 ## Sources and scope
 
-Official references checked on 18 September 2026. Study routines and teaching examples are editorial suggestions, not official requirements.
+Official references checked on 10 October 2026. Study routines and teaching examples are editorial suggestions, not official requirements.
 
 - [Official UG syllabus](https://clat2027.consortiumofnlus.ac.in/clat-2027/ug-syllabus.html)
 - [Official question-paper format](https://clat2027.consortiumofnlus.ac.in/clat-2027/ug-question-format.html)

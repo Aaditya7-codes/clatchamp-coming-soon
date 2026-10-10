@@ -1,5 +1,6 @@
 ---
 title: "How Many Months Are Enough for CLAT Preparation? Plans for 6, 12 and 24"
+seo_title: "How Many Months Are Enough for CLAT Preparation?"
 standfirst: "There is no single right answer. Here is what each runway realistically allows, and what you have to give up on the shortest one."
 description: "There is no single right answer. Here is what each runway realistically allows, and what you have to give up on the shortest one."
 section: "Straight answers"

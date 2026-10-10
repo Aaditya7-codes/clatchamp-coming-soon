@@ -1,5 +1,6 @@
 ---
 title: "Is Self-Study Enough for CLAT? What a Complete Plan Has to Include"
+seo_title: "Is Self-Study Enough for CLAT? What a Plan Must Include"
 standfirst: "Self-study can be a workable route if you have a plan, useful explanations, regular practice and a way to resolve doubts."
 description: "Self-study can be a workable route if you have a plan, useful explanations, regular practice and a way to resolve doubts."
 section: "Straight answers"

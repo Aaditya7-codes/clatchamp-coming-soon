@@ -9,6 +9,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Newsreader:ital,opsz,wght@0,6..72,300..500;1,6..72,300..500&display=swap">
 <link rel="stylesheet" href="{{ '/styles.css' | relative_url }}">
-{% seo %}
+{%- assign t = page.seo_title | default: page.title | default: site.title -%}
+{%- assign full = t | append: " | CLAT Champ" -%}
+<title>{% if full.size <= 60 %}{{ full | escape }}{% else %}{{ t | escape }}{% endif %}</title>
+{% seo title=false %}
 <!-- Cloudflare Web Analytics: cookie-free visit counter, public pages only (not loaded in /app/) -->
 <script defer type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "f8fb692c1bd7432ab5c9764d3b5cc06c"}'></script>
